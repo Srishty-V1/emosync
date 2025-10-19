@@ -12,8 +12,7 @@ const STATIC_ASSETS = [
   '/styles.css',
   '/app.js',
   '/manifest.json',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  'https://i.ibb.co/0pwmb3ZP/great.png' // Custom EmoSync logo
 ];
 
 // Install event - cache static assets
@@ -125,14 +124,14 @@ self.addEventListener('sync', (event) => {
   }
 });
 
-// Push notification handling
+// Push notification handling with custom logo
 self.addEventListener('push', (event) => {
   console.log('🔔 Push notification received');
   
   const options = {
     body: event.data ? event.data.text() : 'Time for your daily emotional check-in 💖',
-    icon: '/icons/icon-192x192.png',
-    badge: '/icons/icon-96x96.png',
+    icon: 'https://i.ibb.co/0pwmb3ZP/great.png', // Custom EmoSync logo
+    badge: 'https://i.ibb.co/0pwmb3ZP/great.png', // Custom EmoSync logo
     tag: 'emosync-reminder',
     data: {
       url: '/?action=daily-checkin'
@@ -141,12 +140,12 @@ self.addEventListener('push', (event) => {
       {
         action: 'checkin',
         title: 'Start Check-in',
-        icon: '/icons/icon-96x96.png'
+        icon: 'https://i.ibb.co/0pwmb3ZP/great.png'
       },
       {
         action: 'later',
         title: 'Remind Later',
-        icon: '/icons/icon-96x96.png'
+        icon: 'https://i.ibb.co/0pwmb3ZP/great.png'
       }
     ],
     requireInteraction: false,
@@ -245,7 +244,8 @@ function scheduleReminder(minutes) {
   setTimeout(() => {
     self.registration.showNotification('EmoSync Reminder 🌙', {
       body: 'How are you feeling now? Take a moment to check in with yourself.',
-      icon: '/icons/icon-192x192.png',
+      icon: 'https://i.ibb.co/0pwmb3ZP/great.png', // Custom EmoSync logo
+      badge: 'https://i.ibb.co/0pwmb3ZP/great.png', // Custom EmoSync logo
       tag: 'emosync-reminder-delayed',
       data: { url: '/' }
     });
@@ -283,14 +283,15 @@ async function sendWellnessReminder() {
   if (hour >= 7 && hour <= 22) {
     await self.registration.showNotification('EmoSync Wellness Check 🌸', {
       body: 'Remember: Healing isn\'t linear – it\'s creative. How can you nurture yourself today?',
-      icon: '/icons/icon-192x192.png',
+      icon: 'https://i.ibb.co/0pwmb3ZP/great.png', // Custom EmoSync logo
+      badge: 'https://i.ibb.co/0pwmb3ZP/great.png', // Custom EmoSync logo
       tag: 'wellness-check',
       data: { url: '/' },
       actions: [
         {
           action: 'open',
           title: 'Open EmoSync',
-          icon: '/icons/icon-96x96.png'
+          icon: 'https://i.ibb.co/0pwmb3ZP/great.png'
         }
       ]
     });
@@ -312,6 +313,6 @@ self.addEventListener('beforeinstallprompt', (event) => {
   // The app will handle this in the main thread
 });
 
-console.log('💖 EmoSync Service Worker loaded successfully');
+console.log('💖 EmoSync Service Worker loaded successfully with custom logo');
 console.log('✨ Created with love by @SrishtySynergy');
 console.log('🌙 "Healing isn\'t linear – it\'s creative."');
