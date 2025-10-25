@@ -2,23 +2,27 @@
 
 /* CSS Variables for Premium Design System */
 :root {
+    /* FORCE DARK MODE ALWAYS */
+    color-scheme: dark only;
+    
     /* Primary Colors */
     --primary-gold: #D4AF37;
     --warm-brown: #8B7355;
     --deep-black: #1A1A1A;
     
-    /* Background Colors */
-    --cream: #F5F5DC;
-    --beige: #F5F5DC;
-    --soft-white: #FAFAFA;
+    /* Dark Mode Colors (ALWAYS ON) */
+    --cream: #2A2A2A;
+    --beige: #2A2A2A;
+    --soft-white: #1E1E1E;
+    --text-color: #FAFAFA;
     
     /* Accent Colors */
     --sage-green: #A8B5A0;
     --soft-peach: #FFDAB9;
     
-    /* Typography */
-    --font-body: 'Segoe UI', 'Roboto', sans-serif;
-    --font-header: 'Times New Roman', serif;
+    /* Typography - PLAYWRITE US MODERN */
+    --font-body: "Playwrite US Modern", cursive;
+    --font-header: "Playwrite US Modern", cursive;
     --font-size-body: 16px;
     --font-size-large: 18px;
     --font-size-header: 24px;
@@ -54,13 +58,10 @@
     --transition-spring: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Dark Mode Variables */
-[data-theme="dark"] {
-    --cream: #2A2A2A;
-    --beige: #2A2A2A;
-    --soft-white: #1E1E1E;
-    --deep-black: #FAFAFA;
-    --warm-brown: #B8A082;
+/* FORCE DARK MODE EVERYWHERE */
+body {
+    background: var(--deep-black) !important;
+    color: var(--text-color) !important;
 }
 
 /* Reset and Base Styles */
@@ -75,8 +76,8 @@ body {
     font-family: var(--font-body);
     font-size: var(--font-size-body);
     line-height: var(--line-height);
-    background-color: var(--soft-white);
-    color: var(--deep-black);
+    background-color: var(--deep-black);
+    color: var(--text-color);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -104,7 +105,7 @@ body.reduce-motion *,
     padding-bottom: 100px; /* Space for bottom nav */
     max-width: 480px;
     margin: 0 auto;
-    background-color: var(--soft-white);
+    background-color: var(--deep-black);
     position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -129,43 +130,15 @@ body.reduce-motion *,
     }
 }
 
-/* Floating Background Paths Animation */
-.floating-paths {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    opacity: 0.4;
-    z-index: 0;
-}
-
-.floating-paths svg {
-    width: 100%;
-    height: 100%;
-}
-
-.floating-path {
-    stroke: var(--primary-gold);
-    stroke-width: 0.5;
-    fill: none;
-    stroke-linecap: round;
-    opacity: 0.6;
-    animation: pathFloat 20s ease-in-out infinite;
-}
-
-@keyframes pathFloat {
-    0%, 100% { 
-        stroke-dasharray: 5 15;
-        stroke-dashoffset: 0;
-        opacity: 0.3;
-    }
-    50% { 
-        stroke-dasharray: 10 5;
-        stroke-dashoffset: 25;
-        opacity: 0.8;
-    }
+/* REMOVE ALL FLOATING PATHS AND SHADER ANIMATIONS */
+.floating-paths,
+.shader-animation,
+.animated-bg,
+canvas,
+svg.paths {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
 /* Premium Header Styles */
@@ -178,7 +151,7 @@ body.reduce-motion *,
 
 .header h1, .header h2 {
     font-family: var(--font-header);
-    color: var(--deep-black);
+    color: var(--text-color);
     margin-bottom: var(--spacing-sm);
     text-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
 }
@@ -207,24 +180,71 @@ body.reduce-motion *,
     }
 }
 
+/* SPLASH SCREEN - NO FLICKER, INSTANT DISPLAY */
+#splash-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, 
+        var(--primary-gold) 0%, 
+        var(--warm-brown) 35%,
+        var(--sage-green) 65%,
+        var(--soft-peach) 100%);
+    background-size: 400% 400%;
+    animation: premiumGradientShift 6s ease infinite;
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+}
+
+/* REMOVE FLICKER - ALL ELEMENTS APPEAR INSTANTLY */
+#splash-screen,
+#splash-screen *,
+.splash-content,
+.logo-container,
+.app-logo,
+.logo-text,
+.tagline,
+.modality-pills,
+.pill,
+.cta-button {
+    opacity: 1 !important;
+    animation: none !important;
+    transition: none !important;
+    animation-delay: 0s !important;
+}
+
+#splash-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+@keyframes premiumGradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    25% { background-position: 100% 50%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+}
+
+.splash-content {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
 /* Premium Logo Styles */
 .logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: var(--spacing-xl);
-    animation: logoFloat 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-@keyframes logoFloat {
-    from {
-        opacity: 0;
-        transform: translateY(-30px) scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
 }
 
 .app-logo {
@@ -246,7 +266,7 @@ body.reduce-motion *,
 .logo-text {
     font-size: 32px;
     font-weight: bold;
-    color: var(--soft-white);
+    color: var(--text-color);
     text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     font-family: var(--font-header);
     animation: textGlow 3s ease-in-out infinite alternate;
@@ -261,7 +281,20 @@ body.reduce-motion *,
     }
 }
 
-/* Premium Header Logo Styles */
+/* HIDE LOGOS ON EMOTION PAGES */
+#insight-hub .header-logo,
+#insight-hub .header-logo-small,
+#insight-hub .logo-header,
+#exercise-screen .header-logo,
+#exercise-screen .header-logo-small,
+.emotion-page .brand-logo,
+.emotion-page .logo-header {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Premium Header Logo Styles (for other pages) */
 .header-logo {
     display: flex;
     align-items: center;
@@ -303,6 +336,57 @@ body.reduce-motion *,
     text-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
 }
 
+/* REMOVE BACKGROUND ANIMATIONS FROM EMOTION SELECTOR */
+#emotion-selector .animated-bg,
+#emotion-selector canvas,
+#emotion-selector svg.paths,
+#emotion-selector .floating-paths,
+#emotion-selector .shader-animation {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.tagline {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.95;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.modality-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xxl);
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pill {
+    background: rgba(255,255,255,0.25);
+    color: var(--text-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-pill);
+    font-size: 14px;
+    font-weight: 500;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: var(--transition-smooth);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.pill:hover {
+    background: rgba(255,255,255,0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
 /* Premium Back Button */
 .back-button {
     position: absolute;
@@ -338,140 +422,6 @@ body.reduce-motion *,
     transform: scale(0.95);
 }
 
-/* Premium Splash Screen */
-#splash-screen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, 
-        var(--primary-gold) 0%, 
-        var(--warm-brown) 35%,
-        var(--sage-green) 65%,
-        var(--soft-peach) 100%);
-    background-size: 400% 400%;
-    animation: premiumGradientShift 6s ease infinite;
-    color: var(--soft-white);
-    position: relative;
-    overflow: hidden;
-}
-
-#splash-screen::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
-    pointer-events: none;
-}
-
-@keyframes premiumGradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    25% { background-position: 100% 50%; }
-    50% { background-position: 100% 100%; }
-    75% { background-position: 0% 100%; }
-}
-
-.splash-content {
-    text-align: center;
-    animation: splashReveal 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    position: relative;
-    z-index: 10;
-}
-
-@keyframes splashReveal {
-    from { 
-        opacity: 0;
-        transform: translateY(50px) scale(0.9);
-        filter: blur(10px);
-    }
-    to { 
-        opacity: 1;
-        transform: translateY(0) scale(1);
-        filter: blur(0px);
-    }
-}
-
-.tagline {
-    font-size: var(--font-size-large);
-    margin-bottom: var(--spacing-xl);
-    opacity: 0.95;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    animation: taglineFloat 1.5s 0.5s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-@keyframes taglineFloat {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 0.95;
-        transform: translateY(0);
-    }
-}
-
-.modality-pills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-xxl);
-    max-width: 380px;
-    margin-left: auto;
-    margin-right: auto;
-    animation: pillsReveal 2s 1s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-@keyframes pillsReveal {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.pill {
-    background: rgba(255,255,255,0.25);
-    color: var(--soft-white);
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: var(--radius-pill);
-    font-size: 14px;
-    font-weight: 500;
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255,255,255,0.2);
-    transition: var(--transition-smooth);
-    text-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    animation: pillFloat 3s ease-in-out infinite;
-}
-
-.pill:hover {
-    background: rgba(255,255,255,0.4);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-@keyframes pillFloat {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-3px); }
-}
-
-.pill:nth-child(2n) {
-    animation-delay: 0.5s;
-}
-
-.pill:nth-child(3n) {
-    animation-delay: 1s;
-}
-
 /* Premium Buttons */
 .cta-button {
     background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%);
@@ -493,6 +443,7 @@ body.reduce-motion *,
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
     position: relative;
     overflow: hidden;
+    font-family: var(--font-body);
 }
 
 .cta-button::before {
@@ -539,6 +490,7 @@ body.reduce-motion *,
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
+    font-family: var(--font-body);
 }
 
 .action-button::after {
@@ -579,7 +531,7 @@ body.reduce-motion *,
 
 .action-button.outline:hover {
     background: var(--warm-brown);
-    color: var(--soft-white);
+    color: var(--text-color);
     transform: translateY(-2px);
     box-shadow: var(--shadow-soft);
 }
@@ -667,6 +619,7 @@ body.reduce-motion *,
     color: var(--deep-black);
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
     transition: var(--transition-smooth);
+    font-family: var(--font-body);
 }
 
 .emotion-card:hover .emotion-label {
@@ -720,6 +673,7 @@ body.reduce-motion *,
     justify-content: center;
     backdrop-filter: blur(15px);
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    font-family: var(--font-body);
 }
 
 .tab:hover {
@@ -881,6 +835,7 @@ body.reduce-motion *,
     font-size: 11px;
     font-weight: 600;
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    font-family: var(--font-body);
 }
 
 /* Premium Responsive Design */
@@ -1030,6 +985,7 @@ textarea:focus {
     font-weight: 600 !important;
     text-shadow: 0 1px 2px rgba(0,0,0,0.1) !important;
     animation: toastBounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+    font-family: var(--font-body) !important;
 }
 
 @keyframes toastBounceIn {
@@ -1047,20 +1003,12 @@ textarea:focus {
     }
 }
 
-/* Premium Dark Mode Enhancements */
-[data-theme="dark"] .emotion-card,
-[data-theme="dark"] .exercise-card,
-[data-theme="dark"] .tab {
-    background: linear-gradient(135deg, 
-        rgba(42, 42, 42, 0.9) 0%, 
-        rgba(30, 30, 30, 0.8) 100%);
-    border-color: rgba(212, 175, 55, 0.3);
-}
-
-[data-theme="dark"] .bottom-nav {
-    background: linear-gradient(135deg, 
-        rgba(30, 30, 30, 0.95) 0%, 
-        rgba(42, 42, 42, 0.9) 100%);
+/* Apply Playwrite font to all text elements */
+h1, h2, h3, h4, h5, h6,
+p, span, div, button, input, textarea,
+.tagline, .pill, .emotion-label, .tab-label, .nav-label,
+.exercise-title, .exercise-instruction, .logo-text {
+    font-family: "Playwrite US Modern", cursive !important;
 }
 
 console.log('💎 EmoSync Premium CSS loaded - Feel, Heal, and Rewire!');
