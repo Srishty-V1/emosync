@@ -27,8 +27,9 @@
             z-index: -10;
             background: #000;
             pointer-events: none;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
         `;
-        
+
         // Create video element with all attributes
         const video = document.createElement('video');
         video.className = 'native-video-bg';
@@ -44,17 +45,14 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 32px;
             pointer-events: none;
+            display: block;
         `;
         
-        // Add multiple source fallbacks
+        // Use only the correct video source
         const sources = [
-            'assets/videos/14478854_1920_1080_30fps%20(online-video-cutter.com).mp4',
-            './assets/videos/14478854_1920_1080_30fps (online-video-cutter.com).mp4',
-            '/assets/videos/14478854_1920_1080_30fps (online-video-cutter.com).mp4',
-            'assets/videos/bg-video.mp4',
-            './assets/videos/bg-video.mp4',
-            '/assets/videos/bg-video.mp4'
+            'assets/videos/14478854_1920_1080_30fps (online-video-cutter.com).mp4'
         ];
         
         sources.forEach(src => {
