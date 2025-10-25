@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* GOOGLE DRIVE MP4 BACKGROUND IN ROUNDED CONTAINER */
+        /* LOCAL MP4 BACKGROUND IN ROUNDED CONTAINER */
         .video-bg-container {
             position: fixed;
             top: 20px;
@@ -223,16 +223,25 @@
             }
         };
         
-        // NATIVE VIDEO BACKGROUND INIT
-        window.initNativeVideoBackground = function() {
+        // LOCAL VIDEO BACKGROUND INIT
+        window.initLocalVideoBackground = function() {
             const video = document.querySelector('.native-video-bg');
             if (video) {
-                video.play().catch(e => {
-                    console.log('Video autoplay blocked:', e);
-                    // Retry on user interaction
-                    document.addEventListener('click', () => {
-                        video.play().catch(() => {});
-                    }, { once: true });
+                // Force autoplay with better error handling
+                video.play().then(() => {
+                    console.log('✅ Background video started successfully!');
+                }).catch(e => {
+                    console.log('Video autoplay blocked, will retry on user interaction:', e);
+                    // Retry on any user interaction
+                    const playOnInteraction = () => {
+                        video.play().then(() => {
+                            console.log('✅ Background video started after user interaction!');
+                            document.removeEventListener('click', playOnInteraction);
+                            document.removeEventListener('touchstart', playOnInteraction);
+                        }).catch(() => {});
+                    };
+                    document.addEventListener('click', playOnInteraction, { once: true });
+                    document.addEventListener('touchstart', playOnInteraction, { once: true });
                 });
             }
         };
@@ -245,8 +254,8 @@
             
             // REMOVED AUTO-ADVANCE - APP NOW WAITS FOR START BUTTON ONLY
             
-            // Initialize native video background
-            window.initNativeVideoBackground();
+            // Initialize local video background
+            window.initLocalVideoBackground();
             
             // Setup swipe navigation
             const trigger = document.querySelector('.swipe-nav-trigger');
@@ -285,10 +294,11 @@
     </script>
 </head>
 <body>
-    <!-- GOOGLE DRIVE MP4 VIDEO BACKGROUND -->
+    <!-- LOCAL MP4 VIDEO BACKGROUND -->
     <div class="video-bg-container">
-        <video class="native-video-bg" autoplay muted loop playsinline>
-            <source src="https://drive.google.com/uc?export=download&id=19H8NeBIHHQUfgvAqUO32FcUSSTjU3FZC" type="video/mp4">
+        <video class="native-video-bg" autoplay muted loop playsinline preload="auto">
+            <source src="assets/videos/14478854_1920_1080_30fps (online-video-cutter.com).mp4" type="video/mp4">
+            <source src="assets/videos/14478854_1920_1080_30fps%20(online-video-cutter.com).mp4" type="video/mp4">
         </video>
         <div class="video-overlay"></div>
     </div>
@@ -655,6 +665,6 @@
         </div>
     </div>
 
-    <script src="app.js?v=no-auto-advance" defer></script>
+    <script src="app.js?v=local-video-bg" defer></script>
 </body>
 </html>
