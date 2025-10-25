@@ -13,39 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- BULLETPROOF VIDEO INJECTOR - LOADS IMMEDIATELY -->
+    <script src="video-inject.js" async></script>
+    
     <style>
-        /* LOCAL MP4 BACKGROUND IN ROUNDED CONTAINER */
-        .video-bg-container {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            right: 20px;
-            bottom: 20px;
-            border-radius: 32px;
-            overflow: hidden;
-            z-index: -10;
-            background: #000;
-        }
-        .native-video-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            pointer-events: none;
-        }
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.4));
-            pointer-events: none;
-            z-index: -9;
-        }
-        
         /* SWIPE-IN NAVIGATION DRAWER */
         .swipe-nav-trigger {
             position: fixed;
@@ -146,171 +118,9 @@
             }
         }
     </style>
-    
-    <!-- BULLETPROOF BOOTSTRAP -->
-    <script>
-        console.log('🚨 EMERGENCY BOOTSTRAP LOADING...');
-        
-        window.startEmoSyncJourney = function() {
-            console.log('🚀 START BUTTON CLICKED!');
-            const splash = document.getElementById('splash-screen');
-            const emotionSelector = document.getElementById('emotion-selector');
-            if (splash && emotionSelector) {
-                splash.classList.remove('active');
-                splash.style.display = 'none';
-                emotionSelector.classList.add('active');
-                emotionSelector.style.display = 'block';
-                updateNavButtons('emotion-selector');
-            }
-        };
-        
-        window.selectEmotion = function(emotion) {
-            const hub = document.getElementById('insight-hub');
-            const selector = document.getElementById('emotion-selector');
-            if (hub && selector) {
-                selector.classList.remove('active');
-                selector.style.display = 'none';
-                hub.classList.add('active');
-                hub.style.display = 'block';
-                const titleEl = document.getElementById('emotion-title');
-                if (titleEl) titleEl.textContent = emotion.toUpperCase().replace('-', ' ') + ' ✨';
-                updateNavButtons('insight-hub');
-            }
-        };
-        
-        window.selectModality = function(modality) {
-            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-            const selectedTab = document.querySelector(`[data-modality="${modality}"]`);
-            if (selectedTab) selectedTab.classList.add('active');
-        };
-        
-        window.showScreen = function(screenId) {
-            document.querySelectorAll('.screen').forEach(screen => {
-                screen.classList.remove('active');
-                screen.style.display = 'none';
-            });
-            const targetScreen = document.getElementById(screenId);
-            if (targetScreen) {
-                targetScreen.classList.add('active');
-                targetScreen.style.display = 'block';
-                updateNavButtons(screenId);
-                closeNavDrawer();
-            }
-        };
-        
-        window.updateNavButtons = function(activeScreen) {
-            document.querySelectorAll('.nav-chip').forEach(btn => btn.classList.remove('active'));
-            const activeBtn = document.querySelector(`[data-screen="${activeScreen}"]`);
-            if (activeBtn) activeBtn.classList.add('active');
-        };
-        
-        // SWIPE NAV FUNCTIONS
-        window.openNavDrawer = function() {
-            const drawer = document.querySelector('.swipe-nav-drawer');
-            const overlay = document.querySelector('.nav-overlay');
-            if (drawer && overlay) {
-                drawer.classList.add('open');
-                overlay.classList.add('open');
-            }
-        };
-        
-        window.closeNavDrawer = function() {
-            const drawer = document.querySelector('.swipe-nav-drawer');
-            const overlay = document.querySelector('.nav-overlay');
-            if (drawer && overlay) {
-                drawer.classList.remove('open');
-                overlay.classList.remove('open');
-            }
-        };
-        
-        // FORCE VIDEO BACKGROUND TO PLAY
-        window.forceVideoPlay = function() {
-            const video = document.querySelector('.native-video-bg');
-            if (video) {
-                console.log('🎬 Attempting to start background video...');
-                video.currentTime = 0;
-                
-                const playPromise = video.play();
-                
-                if (playPromise !== undefined) {
-                    playPromise.then(() => {
-                        console.log('✅ Background video started successfully!');
-                        video.loop = true;
-                    }).catch(error => {
-                        console.log('❌ Video autoplay blocked:', error);
-                        // Try again on any user interaction
-                        const retryPlay = () => {
-                            video.play().then(() => {
-                                console.log('✅ Background video started after user interaction!');
-                                video.loop = true;
-                            }).catch(e => console.log('Still blocked:', e));
-                        };
-                        
-                        document.addEventListener('click', retryPlay, { once: true });
-                        document.addEventListener('touchstart', retryPlay, { once: true });
-                        document.addEventListener('keydown', retryPlay, { once: true });
-                    });
-                }
-            }
-        };
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            const startBtn = document.getElementById('start-reset-button');
-            if (startBtn) {
-                startBtn.addEventListener('click', window.startEmoSyncJourney);
-            }
-            
-            // REMOVED AUTO-ADVANCE - APP NOW WAITS FOR START BUTTON ONLY
-            
-            // Force video to play immediately
-            setTimeout(window.forceVideoPlay, 500);
-            
-            // Setup swipe navigation
-            const trigger = document.querySelector('.swipe-nav-trigger');
-            const overlay = document.querySelector('.nav-overlay');
-            
-            if (trigger) {
-                trigger.addEventListener('click', window.openNavDrawer);
-            }
-            
-            if (overlay) {
-                overlay.addEventListener('click', window.closeNavDrawer);
-            }
-            
-            // ESC to close drawer
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    window.closeNavDrawer();
-                }
-            });
-            
-            // Touch events for swipe
-            let startX = 0;
-            document.addEventListener('touchstart', function(e) {
-                if (e.touches[0].clientX < 30) {
-                    startX = e.touches[0].clientX;
-                }
-            });
-            
-            document.addEventListener('touchmove', function(e) {
-                if (startX > 0 && e.touches[0].clientX > startX + 50) {
-                    window.openNavDrawer();
-                    startX = 0;
-                }
-            });
-        });
-    </script>
 </head>
 <body>
-    <!-- LOCAL MP4 VIDEO BACKGROUND -->
-    <div class="video-bg-container">
-        <video class="native-video-bg" autoplay muted loop playsinline preload="auto" poster="">
-            <source src="assets/videos/14478854_1920_1080_30fps%20(online-video-cutter.com).mp4" type="video/mp4">
-            <source src="./assets/videos/14478854_1920_1080_30fps (online-video-cutter.com).mp4" type="video/mp4">
-            <source src="/assets/videos/14478854_1920_1080_30fps (online-video-cutter.com).mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
-    </div>
+    <!-- VIDEO BACKGROUND WILL BE INJECTED HERE BY video-inject.js -->
 
     <!-- SWIPE NAV TRIGGER ZONE -->
     <div class="swipe-nav-trigger"></div>
@@ -674,6 +484,122 @@
         </div>
     </div>
 
-    <script src="app.js?v=force-video-play" defer></script>
+    <script>
+        // BULLETPROOF BOOTSTRAP FOR APP FUNCTIONS
+        console.log('🚨 EMERGENCY BOOTSTRAP LOADING...');
+        
+        window.startEmoSyncJourney = function() {
+            console.log('🚀 START BUTTON CLICKED!');
+            const splash = document.getElementById('splash-screen');
+            const emotionSelector = document.getElementById('emotion-selector');
+            if (splash && emotionSelector) {
+                splash.classList.remove('active');
+                splash.style.display = 'none';
+                emotionSelector.classList.add('active');
+                emotionSelector.style.display = 'block';
+                updateNavButtons('emotion-selector');
+            }
+        };
+        
+        window.selectEmotion = function(emotion) {
+            const hub = document.getElementById('insight-hub');
+            const selector = document.getElementById('emotion-selector');
+            if (hub && selector) {
+                selector.classList.remove('active');
+                selector.style.display = 'none';
+                hub.classList.add('active');
+                hub.style.display = 'block';
+                const titleEl = document.getElementById('emotion-title');
+                if (titleEl) titleEl.textContent = emotion.toUpperCase().replace('-', ' ') + ' ✨';
+                updateNavButtons('insight-hub');
+            }
+        };
+        
+        window.selectModality = function(modality) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            const selectedTab = document.querySelector(`[data-modality="${modality}"]`);
+            if (selectedTab) selectedTab.classList.add('active');
+        };
+        
+        window.showScreen = function(screenId) {
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.remove('active');
+                screen.style.display = 'none';
+            });
+            const targetScreen = document.getElementById(screenId);
+            if (targetScreen) {
+                targetScreen.classList.add('active');
+                targetScreen.style.display = 'block';
+                updateNavButtons(screenId);
+                closeNavDrawer();
+            }
+        };
+        
+        window.updateNavButtons = function(activeScreen) {
+            document.querySelectorAll('.nav-chip').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.querySelector(`[data-screen="${activeScreen}"]`);
+            if (activeBtn) activeBtn.classList.add('active');
+        };
+        
+        // SWIPE NAV FUNCTIONS
+        window.openNavDrawer = function() {
+            const drawer = document.querySelector('.swipe-nav-drawer');
+            const overlay = document.querySelector('.nav-overlay');
+            if (drawer && overlay) {
+                drawer.classList.add('open');
+                overlay.classList.add('open');
+            }
+        };
+        
+        window.closeNavDrawer = function() {
+            const drawer = document.querySelector('.swipe-nav-drawer');
+            const overlay = document.querySelector('.nav-overlay');
+            if (drawer && overlay) {
+                drawer.classList.remove('open');
+                overlay.classList.remove('open');
+            }
+        };
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const startBtn = document.getElementById('start-reset-button');
+            if (startBtn) {
+                startBtn.addEventListener('click', window.startEmoSyncJourney);
+            }
+            
+            // Setup swipe navigation
+            const trigger = document.querySelector('.swipe-nav-trigger');
+            const overlay = document.querySelector('.nav-overlay');
+            
+            if (trigger) {
+                trigger.addEventListener('click', window.openNavDrawer);
+            }
+            
+            if (overlay) {
+                overlay.addEventListener('click', window.closeNavDrawer);
+            }
+            
+            // ESC to close drawer
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    window.closeNavDrawer();
+                }
+            });
+            
+            // Touch events for swipe
+            let startX = 0;
+            document.addEventListener('touchstart', function(e) {
+                if (e.touches[0].clientX < 30) {
+                    startX = e.touches[0].clientX;
+                }
+            });
+            
+            document.addEventListener('touchmove', function(e) {
+                if (startX > 0 && e.touches[0].clientX > startX + 50) {
+                    window.openNavDrawer();
+                    startX = 0;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
