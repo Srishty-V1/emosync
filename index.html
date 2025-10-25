@@ -223,26 +223,34 @@
             }
         };
         
-        // LOCAL VIDEO BACKGROUND INIT
-        window.initLocalVideoBackground = function() {
+        // FORCE VIDEO BACKGROUND TO PLAY
+        window.forceVideoPlay = function() {
             const video = document.querySelector('.native-video-bg');
             if (video) {
-                // Force autoplay with better error handling
-                video.play().then(() => {
-                    console.log('✅ Background video started successfully!');
-                }).catch(e => {
-                    console.log('Video autoplay blocked, will retry on user interaction:', e);
-                    // Retry on any user interaction
-                    const playOnInteraction = () => {
-                        video.play().then(() => {
-                            console.log('✅ Background video started after user interaction!');
-                            document.removeEventListener('click', playOnInteraction);
-                            document.removeEventListener('touchstart', playOnInteraction);
-                        }).catch(() => {});
-                    };
-                    document.addEventListener('click', playOnInteraction, { once: true });
-                    document.addEventListener('touchstart', playOnInteraction, { once: true });
-                });
+                console.log('🎬 Attempting to start background video...');
+                video.currentTime = 0;
+                
+                const playPromise = video.play();
+                
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        console.log('✅ Background video started successfully!');
+                        video.loop = true;
+                    }).catch(error => {
+                        console.log('❌ Video autoplay blocked:', error);
+                        // Try again on any user interaction
+                        const retryPlay = () => {
+                            video.play().then(() => {
+                                console.log('✅ Background video started after user interaction!');
+                                video.loop = true;
+                            }).catch(e => console.log('Still blocked:', e));
+                        };
+                        
+                        document.addEventListener('click', retryPlay, { once: true });
+                        document.addEventListener('touchstart', retryPlay, { once: true });
+                        document.addEventListener('keydown', retryPlay, { once: true });
+                    });
+                }
             }
         };
         
@@ -254,8 +262,8 @@
             
             // REMOVED AUTO-ADVANCE - APP NOW WAITS FOR START BUTTON ONLY
             
-            // Initialize local video background
-            window.initLocalVideoBackground();
+            // Force video to play immediately
+            setTimeout(window.forceVideoPlay, 500);
             
             // Setup swipe navigation
             const trigger = document.querySelector('.swipe-nav-trigger');
@@ -296,9 +304,10 @@
 <body>
     <!-- LOCAL MP4 VIDEO BACKGROUND -->
     <div class="video-bg-container">
-        <video class="native-video-bg" autoplay muted loop playsinline preload="auto">
-            <source src="assets/videos/14478854_1920_1080_30fps (online-video-cutter.com).mp4" type="video/mp4">
+        <video class="native-video-bg" autoplay muted loop playsinline preload="auto" poster="">
             <source src="assets/videos/14478854_1920_1080_30fps%20(online-video-cutter.com).mp4" type="video/mp4">
+            <source src="./assets/videos/14478854_1920_1080_30fps (online-video-cutter.com).mp4" type="video/mp4">
+            <source src="/assets/videos/14478854_1920_1080_30fps (online-video-cutter.com).mp4" type="video/mp4">
         </video>
         <div class="video-overlay"></div>
     </div>
@@ -665,6 +674,6 @@
         </div>
     </div>
 
-    <script src="app.js?v=local-video-bg" defer></script>
+    <script src="app.js?v=force-video-play" defer></script>
 </body>
 </html>
