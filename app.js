@@ -1,13 +1,13 @@
 // EmoSync Premium JavaScript - Feel, Heal, and Rewire 💎
 // Created with love by @SrishtySynergy ✨
-// Now with 2000+ Therapeutic Exercises! 🚀
+// Now with 2000+ Therapeutic Exercises + Beautiful Video Background! 🚀
 
 // Load Exercise Database System
 let exerciseLoader;
 
 // Video Background System 🎬
-let videoBackgroundEnabled = false;
-let currentVideoSrc = null;
+let videoBackgroundEnabled = true; // AUTO-ENABLE VIDEO BACKGROUND
+let currentVideoSrc = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4'; // Fallback video
 
 // Premium Animation System 🎭 (SIMPLIFIED - NO FLOATING PATHS)
 class PremiumAnimations {
@@ -201,10 +201,6 @@ try {
     moodHistory = JSON.parse(localStorage.getItem('emoSyncMoodHistory')) || [];
     streakCount = parseInt(localStorage.getItem('emoSyncStreak')) || 0;
     journalEntries = JSON.parse(localStorage.getItem('emoSyncJournalEntries')) || {};
-    
-    // Load video background preference
-    videoBackgroundEnabled = localStorage.getItem('emoSyncVideoBackground') === 'true';
-    currentVideoSrc = localStorage.getItem('emoSyncVideoSrc');
 } catch (e) {
     console.log('🔒 localStorage not available (sandbox mode)');
 }
@@ -231,72 +227,65 @@ function startEmoSyncJourney() {
     }, 800);
 }
 
-// 🎬 VIDEO BACKGROUND FUNCTIONS
-function setBackgroundType(type) {
+// 🎬 AUTO-ENABLE VIDEO BACKGROUND SYSTEM
+function initializeVideoBackground() {
+    console.log('🎬 Initializing video background...');
+    
+    // Try multiple video sources in order of preference
+    const videoSources = [
+        './assets/videos/emosync-bg.mp4', // Your uploaded video (if it works)
+        'https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4', // Backup 1
+        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4' // Backup 2
+    ];
+    
     const videoContainer = document.getElementById('video-background-container');
-    const videoUploadSection = document.getElementById('video-upload-section');
-    const buttons = document.querySelectorAll('.bg-option');
+    const video = document.getElementById('background-video');
     
-    // Update button states
-    buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    if (!video || !videoContainer) {
+        console.warn('⚠️  Video elements not found');
+        return;
+    }
     
-    if (type === 'video') {
-        videoBackgroundEnabled = true;
-        videoUploadSection.style.display = 'block';
-        if (currentVideoSrc) {
-            enableVideoBackground(currentVideoSrc);
+    let currentSourceIndex = 0;
+    
+    function tryNextVideo() {
+        if (currentSourceIndex >= videoSources.length) {
+            console.warn('⚠️  All video sources failed, keeping gradient background');
+            return;
         }
-        showToast('🎬 Video background enabled! Upload a video to use.', 'info');
-    } else {
-        videoBackgroundEnabled = false;
-        videoUploadSection.style.display = 'none';
-        disableVideoBackground();
-        showToast('🌈 Gradient background restored!', 'info');
+        
+        const videoSrc = videoSources[currentSourceIndex];
+        console.log(`🎬 Trying video source ${currentSourceIndex + 1}:`, videoSrc);
+        
+        video.src = videoSrc;
+        video.load();
+        
+        video.onloadeddata = () => {
+            console.log('✅ Video loaded successfully!');
+            videoContainer.style.opacity = '1';
+            videoContainer.style.zIndex = '-1';
+            videoContainer.classList.add('active');
+            
+            // Hide gradient on splash screen when video loads
+            const splashScreen = document.getElementById('splash-screen');
+            if (splashScreen) {
+                splashScreen.style.background = 'rgba(26, 26, 26, 0.3)'; // Semi-transparent overlay
+            }
+            
+            showToast('🎆 Beautiful background loaded!', 'success');
+        };
+        
+        video.onerror = () => {
+            console.warn(`⚠️  Video source ${currentSourceIndex + 1} failed, trying next...`);
+            currentSourceIndex++;
+            tryNextVideo();
+        };
     }
     
-    // Save preference
-    try {
-        localStorage.setItem('emoSyncVideoBackground', videoBackgroundEnabled);
-    } catch (e) {
-        console.log('Sandbox mode - settings not persistent');
-    }
-}
-
-function handleVideoUpload(event) {
-    const file = event.target.files[0];
-    if (!file) return;
-    
-    // Validate file type
-    if (!file.type.startsWith('video/')) {
-        showToast('⚠️  Please select a valid video file', 'warning');
-        return;
-    }
-    
-    // Check file size (limit to 50MB)
-    if (file.size > 50 * 1024 * 1024) {
-        showToast('⚠️  Video too large! Please use files under 50MB', 'warning');
-        return;
-    }
-    
-    showToast('🔄 Processing your video...', 'info');
-    
-    // Create object URL for the video
-    const videoURL = URL.createObjectURL(file);
-    currentVideoSrc = videoURL;
-    
-    // Enable video background
-    enableVideoBackground(videoURL);
-    
-    showToast('🎆 Video background applied successfully!', 'success');
-    
-    // Save preference (URL won't persist across sessions but choice will)
-    try {
-        localStorage.setItem('emoSyncVideoSrc', videoURL);
-        localStorage.setItem('emoSyncVideoBackground', 'true');
-    } catch (e) {
-        console.log('Sandbox mode - video not persistent across sessions');
-    }
+    // Start trying video sources
+    setTimeout(() => {
+        tryNextVideo();
+    }, 1000); // Delay to let page load first
 }
 
 function enableVideoBackground(videoSrc) {
@@ -310,13 +299,13 @@ function enableVideoBackground(videoSrc) {
         video.onloadeddata = () => {
             videoContainer.style.opacity = '1';
             videoContainer.style.zIndex = '-1';
+            videoContainer.classList.add('active');
             console.log('🎬 Video background loaded successfully!');
         };
         
         video.onerror = () => {
             console.warn('⚠️  Video failed to load, using gradient fallback');
             disableVideoBackground();
-            showToast('⚠️  Video failed to load, using gradient background', 'warning');
         };
     }
 }
@@ -333,6 +322,7 @@ function disableVideoBackground() {
     if (videoContainer) {
         videoContainer.style.opacity = '0';
         videoContainer.style.zIndex = '-999';
+        videoContainer.classList.remove('active');
     }
 }
 
@@ -982,12 +972,8 @@ async function initializeApp() {
     // Initialize exercise loader
     exerciseLoader = new ExerciseLoader();
     
-    // Initialize video background if enabled
-    if (videoBackgroundEnabled && currentVideoSrc) {
-        setTimeout(() => {
-            enableVideoBackground(currentVideoSrc);
-        }, 1000);
-    }
+    // 🎬 AUTO-INITIALIZE VIDEO BACKGROUND
+    initializeVideoBackground();
     
     // Preload popular emotions for instant access
     exerciseLoader.preloadPopularEmotions().catch(err => {
@@ -1010,6 +996,7 @@ async function initializeApp() {
     
     console.log('✨ EmoSync Premium ready!');
     console.log('💎 2000+ therapeutic exercises loaded!');
+    console.log('🎬 Beautiful video background enabled!');
     console.log('💖 Created with love by @SrishtySynergy');
     console.log('🌙 "Healing isn\'t linear – it\'s creative."');
 }
@@ -1151,71 +1138,4 @@ if (document.readyState === 'loading') {
     initializeApp();
 }
 
-// 🎬 ADD VIDEO BACKGROUND STYLES
-if (!document.getElementById('video-background-styles')) {
-    const videoStyles = document.createElement('style');
-    videoStyles.id = 'video-background-styles';
-    videoStyles.textContent = `
-        .video-bg-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -999;
-            opacity: 0;
-            transition: opacity 1s ease;
-        }
-        
-        .video-background {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(13, 17, 23, 0.4);
-            backdrop-filter: blur(1px);
-        }
-        
-        .bg-option {
-            padding: 8px 16px;
-            margin: 4px;
-            border: 2px solid var(--primary-gold);
-            background: transparent;
-            color: var(--primary-gold);
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .bg-option:hover,
-        .bg-option.active {
-            background: var(--primary-gold);
-            color: var(--deep-black);
-        }
-        
-        #video-upload {
-            width: 100%;
-            padding: 12px;
-            border: 2px dashed var(--primary-gold);
-            background: rgba(212, 175, 55, 0.1);
-            border-radius: 8px;
-            color: #FAFAFA;
-            cursor: pointer;
-        }
-        
-        #video-upload:hover {
-            border-color: var(--sage-green);
-            background: rgba(168, 181, 160, 0.1);
-        }
-    `;
-    document.head.appendChild(videoStyles);
-}
-
-console.log('🎆 EmoSync Premium Enhanced - Start Your Reset button fixed + Video backgrounds ready!');
+console.log('🎆 EmoSync Premium Enhanced - Video background auto-enabled on startup!');
