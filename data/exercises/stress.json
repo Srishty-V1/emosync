@@ -1,0 +1,727 @@
+{
+  "emotion": "stress",
+  "displayName": "Stress",
+  "description": "Tension in the mind, tightness in the body. Let's release it.",
+  "modalities": {
+    "art": [
+      {
+        "title": "The Stress Monster",
+        "instruction": "Draw your stress as a creature. Give it a name, shape, and color. Then transform it by adding calming elements - maybe flowers growing from it, or soft colors surrounding it. As you draw, repeat: 'I'm transforming my stress into strength.'",
+        "duration": "10-15 minutes",
+        "materials": "Paper, colored pencils/markers",
+        "affirmation": "I release tension through creative expression"
+      },
+      {
+        "title": "Tension Release Mandala",
+        "instruction": "Draw a circle and fill it with repetitive patterns that represent your tension. Start with jagged lines for stress, then gradually make them smoother and more flowing as you work outward. End with gentle curves and spirals.",
+        "duration": "15-20 minutes", 
+        "materials": "Paper, pen/pencils",
+        "affirmation": "I create order from chaos"
+      },
+      {
+        "title": "Calming Color Wash",
+        "instruction": "Using watercolors or soft pastels, create gentle washes of blue and green across your paper. Let the colors blend and flow naturally. Focus only on creating soothing color combinations that represent peace.",
+        "duration": "12-18 minutes",
+        "materials": "Watercolors or pastels, paper", 
+        "affirmation": "I paint my way to peace"
+      },
+      {
+        "title": "Peaceful Place Collage",
+        "instruction": "Create a collage of images that represent peace to you - nature scenes, cozy spaces, gentle colors. Arrange them mindfully, focusing on creating a visual sanctuary you can return to mentally.",
+        "duration": "20-30 minutes",
+        "materials": "Magazines, glue, scissors",
+        "affirmation": "I create my own sanctuary"
+      },
+      {
+        "title": "Stress Scribble Release", 
+        "instruction": "On a large paper, scribble out all your stress with bold, chaotic lines. Use dark colors for tension. Then, on a new paper, draw gentle, flowing lines with lighter colors. Feel the contrast.",
+        "duration": "8-12 minutes",
+        "materials": "Large paper, crayons or markers",
+        "affirmation": "I release what weighs me down"
+      },
+      {
+        "title": "Clay Stress Sculpture",
+        "instruction": "Mold clay into the shape of your stress - sharp, twisted, heavy. Then slowly reshape it into something beautiful and smooth. Feel your hands transforming the tension.",
+        "duration": "15-25 minutes",
+        "materials": "Clay or playdough",
+        "affirmation": "My hands heal what my mind carries"
+      },
+      {
+        "title": "Worry Stone Painting",
+        "instruction": "Find a smooth stone and paint it with calming colors and patterns. As you paint, imagine transferring all your worries into the stone, then covering them with peace and beauty.",
+        "duration": "20-30 minutes", 
+        "materials": "Smooth stone, acrylic paints, brushes",
+        "affirmation": "I transform worry into wonder"
+      },
+      {
+        "title": "Stress Timeline Art",
+        "instruction": "Draw a timeline of your stress from past to future. Mark the stressful moments with dark colors, then add bright colors for moments of relief and joy. See stress as temporary.",
+        "duration": "15-20 minutes",
+        "materials": "Paper, colored pencils",
+        "affirmation": "This stress is temporary, my strength is eternal"
+      },
+      {
+        "title": "Body Stress Map",
+        "instruction": "Draw an outline of your body and color in where you feel stress - red for tense areas, yellow for mild tension. Then add cooling colors like blue and green to 'heal' those areas.",
+        "duration": "10-15 minutes",
+        "materials": "Paper, colored pencils",
+        "affirmation": "I listen to my body and respond with kindness"
+      },
+      {
+        "title": "Dream Garden Visualization Art",
+        "instruction": "Draw or paint your ideal peaceful garden where stress cannot exist. Include elements that make you feel calm - flowers, water, soft paths. This is your stress-free mental retreat.",
+        "duration": "20-30 minutes",
+        "materials": "Paper, paints or pencils",
+        "affirmation": "I cultivate peace in my inner garden"
+      }
+    ],
+    "breathwork": [
+      {
+        "title": "4-7-8 Stress Relief Breath",
+        "instruction": "Inhale through your nose for 4 counts, hold for 7 counts, exhale through your mouth for 8 counts making a 'whoosh' sound. Repeat 4 times. Feel your nervous system calming with each exhale.",
+        "duration": "3-5 minutes",
+        "materials": "None needed",
+        "affirmation": "My breath is my anchor to calm"
+      },
+      {
+        "title": "Ocean Wave Breathing",
+        "instruction": "Breathe in slowly like a wave building, hold briefly at the peak, then exhale like the wave crashing on shore. Visualize each wave washing away your stress and tension.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I flow with life's natural rhythms"
+      },
+      {
+        "title": "Square Breathing",
+        "instruction": "Breathe in for 4, hold for 4, breathe out for 4, hold empty for 4. Visualize drawing a perfect square with your breath, creating stability and calm in your mind and body.",
+        "duration": "5-8 minutes",
+        "materials": "None needed", 
+        "affirmation": "I create stability through my breath"
+      },
+      {
+        "title": "Balloon Belly Breathing",
+        "instruction": "Place one hand on chest, one on belly. Breathe so only the belly hand moves, like inflating a balloon. Count 'balloon up' on inhale, 'balloon down' on exhale. Feel deep relaxation.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I breathe deeply into peace"
+      },
+      {
+        "title": "Color Breathing",
+        "instruction": "Inhale cool blue or green light, visualizing it filling your body with calm. Exhale warm red or orange light, releasing all stress and tension. Continue this colorful breath cycle.",
+        "duration": "8-12 minutes", 
+        "materials": "None needed",
+        "affirmation": "I breathe in peace and breathe out stress"
+      },
+      {
+        "title": "Counted Exhale Breathing",
+        "instruction": "Breathe in normally, then exhale counting slowly from 10 down to 1. If you lose count, simply start again at 10. This redirects anxious thoughts to the present moment.",
+        "duration": "5-8 minutes",
+        "materials": "None needed",
+        "affirmation": "I focus my mind through breath"
+      },
+      {
+        "title": "Humming Bee Breath",
+        "instruction": "Close your ears with your thumbs, index fingers above eyebrows, other fingers closed over eyes. Hum as you exhale, feeling the vibration calm your nervous system.",
+        "duration": "3-6 minutes",
+        "materials": "None needed",
+        "affirmation": "I vibrate at the frequency of peace"
+      },
+      {
+        "title": "Stress Melting Breath",
+        "instruction": "With each inhale, imagine breathing in warmth and light. With each exhale, visualize stress melting away from your body like ice in sunlight, leaving you refreshed.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "Stress melts away with each breath"
+      },
+      {
+        "title": "Three-Part Breath",
+        "instruction": "Breathe into your belly (hand on belly rises), then ribcage (ribs expand), then chest (chest rises slightly). Exhale in reverse order. This fully oxygenates and calms you.",
+        "duration": "8-12 minutes", 
+        "materials": "None needed",
+        "affirmation": "I breathe fully into every part of my being"
+      },
+      {
+        "title": "Cooling Breath",
+        "instruction": "Curl your tongue and inhale through it like a straw (or purse lips if you can't curl). Feel the cool air. Exhale normally through nose. This naturally cools stress and agitation.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I cool the fire of stress with my breath"
+      }
+    ],
+    "somatic": [
+      {
+        "title": "Progressive Stress Release",
+        "instruction": "Starting with your toes, tense each muscle group for 5 seconds, then release completely. Feel the contrast between tension and relaxation. Work your way up to your head, releasing stress from each part.",
+        "duration": "10-15 minutes",
+        "materials": "Comfortable space to lie down",
+        "affirmation": "My body knows how to heal and relax"
+      },
+      {
+        "title": "Shoulder Drop & Roll",
+        "instruction": "Notice where you hold stress in your shoulders. Slowly lift them to your ears, hold for 3 seconds, then drop them completely. Roll them backward 5 times, forward 5 times. Feel the release.",
+        "duration": "3-5 minutes",
+        "materials": "None needed",
+        "affirmation": "I release the weight I carry in my shoulders"
+      },
+      {
+        "title": "Stress Shake-Out",
+        "instruction": "Stand and gently shake your hands, then arms, then whole body. Animals naturally shake to release stress and trauma. Shake for 2 minutes, then stand still and notice the sensations.",
+        "duration": "3-5 minutes",
+        "materials": "Standing space",
+        "affirmation": "I shake off what no longer serves me"
+      },
+      {
+        "title": "Jaw Release Massage",
+        "instruction": "Place your fingers on your temples and make small circles. Move to your jaw muscles and massage gently. Open and close your mouth slowly. We hold lots of stress in our jaw.",
+        "duration": "5-8 minutes",
+        "materials": "None needed", 
+        "affirmation": "I release tension from every part of my face"
+      },
+      {
+        "title": "Neck Tension Release",
+        "instruction": "Slowly turn your head right, hold 10 seconds. Turn left, hold 10 seconds. Tilt ear to shoulder on each side. Roll head in gentle circles. Breathe into any tight spots.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I free my neck from the burden of stress"
+      },
+      {
+        "title": "Foot Grounding Exercise", 
+        "instruction": "Stand barefoot and feel your feet connecting to the ground. Lift your toes, press them down. Rock forward and back, side to side. Feel yourself rooted and supported by the earth.",
+        "duration": "5-8 minutes",
+        "materials": "Floor space",
+        "affirmation": "I am grounded, supported, and stable"
+      },
+      {
+        "title": "Heart Opening Stretch",
+        "instruction": "Sit tall, clasp hands behind your back. Lift chest and squeeze shoulder blades together. Hold 30 seconds. This releases stress stored in the chest and opens your heart space.",
+        "duration": "5-10 minutes", 
+        "materials": "Chair or floor",
+        "affirmation": "I open my heart to peace and joy"
+      },
+      {
+        "title": "Gentle Spinal Twist",
+        "instruction": "Sit cross-legged, place right hand behind you, left hand on right knee. Gently twist right, hold, breathe. Repeat left. This wrings out stress from your core and spine.",
+        "duration": "8-12 minutes",
+        "materials": "Floor space",
+        "affirmation": "I wring out tension and twist into ease"
+      },
+      {
+        "title": "Hip Circle Release",
+        "instruction": "Stand with hands on hips. Make slow, large circles with your hips - 5 each direction. We store emotions in our hips. Breathe and let whatever comes up move through you.",
+        "duration": "5-8 minutes",
+        "materials": "Standing space", 
+        "affirmation": "I free my hips and release stored emotions"
+      },
+      {
+        "title": "Whole Body Stretch Wave",
+        "instruction": "Stand with arms overhead. Slowly wave your body like seaweed, starting from your fingers down to your toes. Let the wave motion release tension from head to toe. Move fluidly.",
+        "duration": "5-10 minutes",
+        "materials": "Standing space",
+        "affirmation": "I flow like water, releasing all that binds me"
+      }
+    ],
+    "cbt": [
+      {
+        "title": "Stress Thought Challenge",
+        "instruction": "Write down your stressful thoughts. Ask: Is this thought realistic? What evidence do I have? What would I tell a friend in this situation? Rewrite each thought in a more balanced way.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I have power over my thoughts"
+      },
+      {
+        "title": "The Worry Time Technique",
+        "instruction": "Schedule 15 minutes as your daily 'worry time.' When stressful thoughts arise outside this time, write them down and tell yourself 'I'll think about this during worry time.' This contains your stress.",
+        "duration": "5-15 minutes",
+        "materials": "Notebook, timer",
+        "affirmation": "I choose when to engage with worry"
+      },
+      {
+        "title": "Evidence Examination",
+        "instruction": "For each stressful belief, create two columns: 'Evidence For' and 'Evidence Against.' Fill both sides honestly. Often you'll find the evidence against is stronger than you thought.",
+        "duration": "15-20 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I examine my thoughts with curiosity, not judgment"
+      },
+      {
+        "title": "Catastrophic Thinking Scale",
+        "instruction": "Rate your stressful situation from 1-10. Then ask: 'What would a 10 actually look like?' Often you'll realize your situation is a 3-5, not the 9 it feels like emotionally.",
+        "duration": "8-12 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I see situations clearly, not through the lens of stress"
+      },
+      {
+        "title": "Best Friend Advice",
+        "instruction": "Write about your stressful situation. Then write the advice you'd give your best friend if they came to you with this exact problem. We're often kinder to others than ourselves.",
+        "duration": "10-15 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I treat myself with the same kindness I show my friends"
+      },
+      {
+        "title": "Thought Stopping Technique",
+        "instruction": "When you notice a stressful thought loop, say 'STOP' out loud or visualize a red stop sign. Then immediately redirect to a prepared positive thought or calming image.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I control my thoughts; they don't control me"
+      },
+      {
+        "title": "Stress Reframe Practice",
+        "instruction": "Write your stressful situation. Then rewrite it three different ways: as a challenge to overcome, a learning opportunity, and a chance to grow stronger. Find the empowering perspective.",
+        "duration": "12-18 minutes",
+        "materials": "Paper, pen", 
+        "affirmation": "I choose empowering perspectives on life's challenges"
+      },
+      {
+        "title": "Future Self Wisdom",
+        "instruction": "Imagine yourself 5 years from now, having successfully handled this stress. What would that wiser future you tell current you about this situation? Write their advice.",
+        "duration": "10-15 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I trust in my ability to handle whatever comes"
+      },
+      {
+        "title": "Stress Belief Investigation",
+        "instruction": "Identify the core belief behind your stress (e.g., 'I must be perfect'). Ask: Where did this belief come from? Is it helping or hurting me now? What would I believe instead?",
+        "duration": "15-25 minutes", 
+        "materials": "Paper, pen",
+        "affirmation": "I choose beliefs that serve my wellbeing"
+      },
+      {
+        "title": "Problem vs. Worry Sorting", 
+        "instruction": "List your stressors. Sort them into 'Problems I can solve' and 'Worries I can't control.' Make action plans for problems, acceptance practices for worries.",
+        "duration": "15-20 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I focus my energy where I have power to create change"
+      }
+    ],
+    "rebt": [
+      {
+        "title": "Must vs. Prefer Challenge",
+        "instruction": "Identify thoughts with 'must,' 'should,' or 'have to.' Replace them: 'I must be perfect' becomes 'I prefer to do well, but making mistakes is human and okay.' Feel the pressure decrease.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I prefer progress over perfection"
+      },
+      {
+        "title": "Awfulizing Reality Check",
+        "instruction": "When you think something is 'awful' or 'terrible,' ask: 'Is this truly the worst thing that could happen? What percentage awful is this really?' Often it's inconvenient, not awful.",
+        "duration": "8-12 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I see challenges as inconveniences, not catastrophes"
+      },
+      {
+        "title": "I Can't Stand It vs. I Don't Like It",
+        "instruction": "Replace 'I can't stand this' with 'I don't like this, but I can handle it.' You've survived 100% of your difficult days so far. You're stronger than you think.",
+        "duration": "10-15 minutes",
+        "materials": "Paper, pen", 
+        "affirmation": "I can handle whatever life brings my way"
+      },
+      {
+        "title": "Worthless vs. Fallible Human",
+        "instruction": "Challenge thoughts that label you as 'worthless' or 'failure.' Replace with: 'I'm a fallible human who sometimes makes mistakes, and that's perfectly normal and acceptable.'",
+        "duration": "12-18 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "My worth is not determined by my performance"
+      },
+      {
+        "title": "Demand vs. Wish Transformation",
+        "instruction": "Transform demanding thoughts: 'Life must be fair' becomes 'I wish life were always fair, but it often isn't, and I can still find meaning and joy.' Demands create stress; wishes allow peace.",
+        "duration": "10-15 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I wish for the best while accepting what is"
+      },
+      {
+        "title": "Global vs. Specific Labeling",
+        "instruction": "Replace global labels like 'I'm stupid' with specific observations: 'I made a mistake in this specific situation.' You are not your behaviors; you're a complex, valuable person.",
+        "duration": "12-18 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I am more than any single action or mistake"
+      },
+      {
+        "title": "Approval Need Challenge",
+        "instruction": "Question the belief 'I need everyone's approval.' Ask: 'Do I approve of everyone? Is it possible or necessary for everyone to like me?' Practice self-approval instead.",
+        "duration": "15-20 minutes", 
+        "materials": "Paper, pen",
+        "affirmation": "My self-worth comes from within, not from others' opinions"
+      },
+      {
+        "title": "Comfort Zone Rationality",
+        "instruction": "Challenge 'I can't handle discomfort.' Remember times you've handled difficult emotions before. Discomfort is temporary and survivable, not dangerous or permanent.",
+        "duration": "10-15 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I can handle temporary discomfort for long-term growth"
+      },
+      {
+        "title": "Certainty vs. Probability",
+        "instruction": "Replace 'What if something terrible happens?' with 'What are the actual probabilities?' Most of what we worry about never happens. Focus on likely, not possible, outcomes.",
+        "duration": "12-18 minutes",
+        "materials": "Paper, pen", 
+        "affirmation": "I focus on probabilities, not possibilities"
+      },
+      {
+        "title": "Rational Coping Statements",
+        "instruction": "Create rational responses to your irrational stress thoughts. Practice phrases like: 'This is difficult, not impossible,' 'I prefer things to go well, but I can handle setbacks.'",
+        "duration": "15-25 minutes",
+        "materials": "Paper, pen",
+        "affirmation": "I respond to life's challenges with rational thinking"
+      }
+    ],
+    "neural": [
+      {
+        "title": "Calm Anchor Installation",
+        "instruction": "Recall a time you felt completely calm and peaceful. Anchor this feeling by pressing your thumb and forefinger together while visualizing that moment. Practice this daily to create an instant calm trigger.",
+        "duration": "10-15 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I can access calm whenever I need it"
+      },
+      {
+        "title": "Stress Pattern Interrupt",
+        "instruction": "Notice your stress pattern: thoughts → feelings → behaviors. Create a new pattern: stress thought → take 3 deep breaths → positive affirmation → calming action. Repeat until it becomes automatic.",
+        "duration": "15-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I create new pathways to peace"
+      },
+      {
+        "title": "Confident Self Visualization",
+        "instruction": "Visualize yourself handling a stressful situation with complete confidence and calm. See yourself breathing easily, thinking clearly, feeling grounded. Rehearse this mental movie daily.",
+        "duration": "15-20 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I am calm, confident, and capable"
+      },
+      {
+        "title": "Success Memory Installation",
+        "instruction": "Recall a time you successfully handled stress. Amplify this memory - see it brighter, hear it clearer, feel it stronger. This becomes your template for handling future stress.",
+        "duration": "12-18 minutes",
+        "materials": "Quiet space", 
+        "affirmation": "I have successfully handled challenges before and I can do it again"
+      },
+      {
+        "title": "Stress-Free Identity Rehearsal",
+        "instruction": "Imagine yourself as someone who naturally stays calm under pressure. How do they walk, talk, breathe? Mentally rehearse being this calm person throughout your day.",
+        "duration": "15-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I am naturally calm and centered"
+      },
+      {
+        "title": "Neuroplasticity Meditation",
+        "instruction": "As you relax, tell your brain: 'I'm creating new neural pathways of peace.' Visualize these pathways as golden threads connecting calm thoughts to calm feelings and actions.",
+        "duration": "20-30 minutes",
+        "materials": "Quiet space",
+        "affirmation": "My brain is creating new pathways to peace and calm"
+      },
+      {
+        "title": "Stress Response Rewiring",
+        "instruction": "Practice responding to imagined stress with immediate calm breathing instead of tension. Mentally rehearse: stressor appears → instant calm breath → relaxed response. Train this new automatic response.",
+        "duration": "15-20 minutes", 
+        "materials": "Quiet space",
+        "affirmation": "I automatically respond to challenges with calm and clarity"
+      },
+      {
+        "title": "Peaceful Future Self",
+        "instruction": "Visualize yourself 6 months from now, having mastered stress management. Feel how peaceful and confident this future you is. Let this version of yourself teach you their secrets.",
+        "duration": "18-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I am becoming more peaceful and resilient every day"
+      },
+      {
+        "title": "Calm Command Installation",
+        "instruction": "Choose a word like 'peace' or 'calm.' While deeply relaxed, repeat this word and associate it with feelings of complete tranquility. Use this word as your instant calm trigger.",
+        "duration": "15-20 minutes",
+        "materials": "Quiet space", 
+        "affirmation": "I have instant access to deep calm and peace"
+      },
+      {
+        "title": "Stress Resilience Programming",
+        "instruction": "Imagine stress as water and yourself as a mountain - solid, unshakeable, letting the water flow around you without being moved. Install this resilient identity deep in your subconscious.",
+        "duration": "20-30 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I am unshakeable in the face of life's storms"
+      }
+    ],
+    "journaling": [
+      {
+        "title": "Stress Story Rewrite",
+        "instruction": "Write about your stressful situation as if you're the hero of your own story. What challenges are you facing? What strengths do you have? How will you overcome this? Write your triumphant ending.",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I am the author of my own story"
+      },
+      {
+        "title": "Stress Dialogue Journal",
+        "instruction": "Write a conversation between you and your stress. Let your stress speak first - what is it trying to tell you? Then respond with compassion and wisdom. Find the message within the tension.",
+        "duration": "15-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I listen to my stress with compassion and wisdom"
+      },
+      {
+        "title": "Gratitude in Stress Journal",
+        "instruction": "Even in stressful times, write 5 things you're grateful for today. Include one thing about the stressful situation that might lead to growth or positive change. Find the hidden gifts.",
+        "duration": "10-15 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I find blessings even in challenging times"
+      },
+      {
+        "title": "Stress Release Stream",
+        "instruction": "Set a timer for 10 minutes and write continuously about your stress without stopping or editing. Let everything flow out onto paper. Then tear up the paper as a symbolic release.",
+        "duration": "12-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I release my burdens onto paper and let them go"
+      },
+      {
+        "title": "Future Self Letter",
+        "instruction": "Write a letter from your future self (who has overcome this stress) to your current self. What wisdom, encouragement, and guidance would this wiser version of you offer?",
+        "duration": "15-20 minutes", 
+        "materials": "Journal and pen",
+        "affirmation": "My future self guides me with wisdom and love"
+      },
+      {
+        "title": "Stress Pattern Recognition",
+        "instruction": "Write about your stress patterns: What triggers you? How does your body respond? What thoughts arise? Recognizing patterns is the first step to changing them.",
+        "duration": "18-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "Awareness of my patterns gives me power to change them"
+      },
+      {
+        "title": "Stress Lessons Journal",
+        "instruction": "Write about what this stressful experience is teaching you. How is it making you stronger? What skills are you developing? Find the growth within the challenge.",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen", 
+        "affirmation": "Every challenge teaches me valuable lessons"
+      },
+      {
+        "title": "Compassionate Self-Talk", 
+        "instruction": "Write down your inner critic's harsh words about your stress. Then rewrite them as if your most compassionate friend were speaking to you. Practice this kinder internal voice.",
+        "duration": "12-18 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I speak to myself with kindness and understanding"
+      },
+      {
+        "title": "Stress Victory Journal",
+        "instruction": "Write about times you've successfully handled stress before. Include small victories and major triumphs. You have more strength and resilience than you realize.",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I am stronger than my challenges"
+      },
+      {
+        "title": "Ideal Day Without Stress",
+        "instruction": "Write in detail about how you'd spend a day if you felt completely peaceful and unstressed. What would you do? How would you feel? This becomes a roadmap for creating more peace.",
+        "duration": "20-25 minutes",
+        "materials": "Journal and pen", 
+        "affirmation": "I create days filled with peace and joy"
+      }
+    ],
+    "eft": [
+      {
+        "title": "Stress Release Tapping",
+        "instruction": "While tapping the karate chop point, say: 'Even though I feel stressed, I deeply accept myself.' Tap each point while saying 'This stress' and finish with 'I choose to feel calm and centered.'",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I tap into my natural healing power"
+      },
+      {
+        "title": "Specific Stress Situation Tapping",
+        "instruction": "Think of your specific stressful situation. Rate the intensity 1-10. Tap while saying 'Even though I'm stressed about [situation], I accept myself.' Continue tapping until intensity drops below 3.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I clear stress from my energy system"
+      },
+      {
+        "title": "Body Stress Tapping",
+        "instruction": "Notice where you feel stress in your body. Tap while saying: 'This tension in my shoulders/jaw/stomach... I acknowledge this stress and choose to release it.' Focus on the physical sensations.",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "My body releases stress and returns to natural balance"
+      },
+      {
+        "title": "Stress Belief Tapping",
+        "instruction": "Identify a stressful belief like 'I can't handle this.' Tap while saying: 'Even though I believe I can't handle this, I'm open to feeling capable and strong.' Shift the belief gradually.",
+        "duration": "10-15 minutes",
+        "materials": "None needed", 
+        "affirmation": "I release limiting beliefs and embrace my strength"
+      },
+      {
+        "title": "Past Stress Memory Tapping",
+        "instruction": "If current stress reminds you of past events, gently tap while thinking of that memory. Say: 'That was then, this is now. I'm safe and capable of handling life's challenges.'",
+        "duration": "10-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I heal old wounds and create new possibilities"
+      },
+      {
+        "title": "Anticipatory Stress Tapping",
+        "instruction": "For future worries, tap while saying: 'Even though I'm worried about what might happen, I trust in my ability to handle whatever comes.' Clear the stress before it manifests.",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I face the future with confidence and trust"
+      },
+      {
+        "title": "Stress Overwhelm Tapping",
+        "instruction": "When everything feels like too much, tap while saying: 'Even though I feel overwhelmed, I choose to take things one step at a time. I can handle this.' Break it down into manageable pieces.",
+        "duration": "8-15 minutes", 
+        "materials": "None needed",
+        "affirmation": "I handle life one peaceful step at a time"
+      },
+      {
+        "title": "Perfectionist Stress Tapping",
+        "instruction": "For perfectionism-related stress, tap while saying: 'Even though I pressure myself to be perfect, I choose to accept my human imperfection. Good enough is truly good enough.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I embrace my perfectly imperfect humanity"
+      },
+      {
+        "title": "Control Stress Tapping",
+        "instruction": "For stress about things beyond your control, tap: 'Even though I want to control everything, I choose to focus on what I can influence and release the rest with love.'",
+        "duration": "8-12 minutes",
+        "materials": "None needed", 
+        "affirmation": "I focus my energy where I have power and release the rest"
+      },
+      {
+        "title": "Stress Positive Installation",
+        "instruction": "After clearing stress, tap in positive statements: 'I am calm and centered... I handle challenges with ease... I trust in my resilience...' Install new, empowering patterns.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I install patterns of peace and resilience"
+      }
+    ],
+    "emdr": [
+      {
+        "title": "Butterfly Hug for Stress",
+        "instruction": "Cross your arms over your chest, hands on shoulders. Gently pat alternately left-right while thinking about your stress. Feel it softening and moving through your body. End by imagining stress leaving with each exhale.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I process and release what no longer serves me"
+      },
+      {
+        "title": "Bilateral Knee Tapping",
+        "instruction": "Sit comfortably and alternately tap your knees with your hands while thinking about your stressful situation. Let whatever thoughts or feelings arise just pass through without judgment.",
+        "duration": "8-12 minutes", 
+        "materials": "Chair",
+        "affirmation": "I allow difficult emotions to flow through and release"
+      },
+      {
+        "title": "Walking Bilateral Processing",
+        "instruction": "Take a slow walk while focusing on your stress. Pay attention to the left-right-left rhythm of your steps. Let this natural bilateral movement help process and release the tension.",
+        "duration": "15-20 minutes",
+        "materials": "Walking space",
+        "affirmation": "Each step carries me toward greater peace"
+      },
+      {
+        "title": "Eye Movement Stress Release",
+        "instruction": "While thinking of your stress, slowly move your eyes left and right 20-30 times. Then up and down 20 times. Then in circles. This stimulates the brain's natural processing mechanisms.",
+        "duration": "5-8 minutes",
+        "materials": "None needed",
+        "affirmation": "My brain naturally knows how to process and heal"
+      },
+      {
+        "title": "Bilateral Sound Processing",
+        "instruction": "Listen to bilateral music or sounds that alternate between left and right ears. While listening, gently hold your stressful thoughts and feelings, letting them process naturally.",
+        "duration": "15-25 minutes", 
+        "materials": "Headphones, bilateral audio",
+        "affirmation": "Sound waves carry away my stress and tension"
+      },
+      {
+        "title": "Safe Place Installation",
+        "instruction": "Visualize a completely safe, peaceful place while doing bilateral stimulation (knee tapping or butterfly hugs). Install this as a resource you can access when stress arises.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I carry peace within me wherever I go"
+      },
+      {
+        "title": "Stress Container Visualization",
+        "instruction": "Visualize putting your stress into a strong container while doing bilateral movements. Lock it up securely, knowing you can return to process it when you're ready and resourced.",
+        "duration": "8-12 minutes",
+        "materials": "None needed", 
+        "affirmation": "I contain my stress and choose when to process it"
+      },
+      {
+        "title": "Resource Installation EMDR",
+        "instruction": "Think of a time you felt strong and capable while doing butterfly hugs. Enhance all the positive feelings, sights, and sounds. Install this resource to access during stressful times.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I am resourced, strong, and capable"
+      },
+      {
+        "title": "Dual Attention Stress Relief",
+        "instruction": "Hold your stress gently in awareness while simultaneously noticing the present moment - sounds, sensations, your breathing. This dual attention helps process without overwhelm.",
+        "duration": "10-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I can hold difficulty while staying present and grounded"
+      },
+      {
+        "title": "Bilateral Breathing",
+        "instruction": "Breathe in while tapping your left knee, breathe out while tapping your right knee. Continue this bilateral breathing pattern while gently holding your stressful thoughts.",
+        "duration": "8-15 minutes",
+        "materials": "Chair", 
+        "affirmation": "My breath and body work together to restore balance"
+      }
+    ],
+    "yoga": [
+      {
+        "title": "Child's Pose Surrender",
+        "instruction": "Kneel and sit back on your heels, then fold forward with arms extended or by your sides. Breathe deeply and with each exhale, surrender your stress to the earth. Stay for 5-10 breaths, feeling supported.",
+        "duration": "5-10 minutes",
+        "materials": "Yoga mat or soft surface",
+        "affirmation": "I surrender what I cannot control"
+      },
+      {
+        "title": "Cat-Cow Stress Release",
+        "instruction": "On hands and knees, arch your back (cow) on inhale, round your spine (cat) on exhale. Let this gentle movement massage your spine and release tension from your core.",
+        "duration": "5-8 minutes",
+        "materials": "Yoga mat or soft surface",
+        "affirmation": "I move with my breath and release tension"
+      },
+      {
+        "title": "Legs Up the Wall Pose", 
+        "instruction": "Lie on your back with legs up against a wall. This restorative pose activates your rest-and-digest system, naturally reducing stress. Breathe deeply and feel your nervous system calming.",
+        "duration": "10-20 minutes",
+        "materials": "Wall space, mat or blanket",
+        "affirmation": "I rest and allow my body to restore itself"
+      },
+      {
+        "title": "Gentle Neck Release Sequence",
+        "instruction": "Sitting tall, slowly drop your right ear to right shoulder. Hold 30 seconds. Repeat left. Then gently nod yes and shake no. Release the weight of stress from your neck.",
+        "duration": "5-8 minutes",
+        "materials": "Chair or floor",
+        "affirmation": "I release the weight I carry in my neck and shoulders"
+      },
+      {
+        "title": "Supported Bridge Pose",
+        "instruction": "Lie on back, knees bent, feet flat. Lift hips and place a pillow or block underneath for support. This gentle backbend opens the heart and releases stored stress.",
+        "duration": "8-15 minutes", 
+        "materials": "Mat, pillow or yoga block",
+        "affirmation": "I open my heart and release what weighs me down"
+      },
+      {
+        "title": "Seated Forward Fold",
+        "instruction": "Sit with legs extended, slowly fold forward over your legs. Don't force it - let gravity do the work. This introspective pose helps you turn inward and find peace.",
+        "duration": "8-12 minutes",
+        "materials": "Mat or floor",
+        "affirmation": "I turn inward and find the peace that's always there"
+      },
+      {
+        "title": "Gentle Spinal Twist Series",
+        "instruction": "Lie on back, drop knees to right side while keeping shoulders down. Hold and breathe. Repeat left. This wrings out stress from your spine like a wet towel.",
+        "duration": "8-12 minutes",
+        "materials": "Mat or soft surface", 
+        "affirmation": "I wring out tension and welcome ease"
+      },
+      {
+        "title": "Restorative Savasana",
+        "instruction": "Lie flat with arms at sides, palms up. Place pillows under knees and head for comfort. Completely surrender your body weight to the earth. Let go of all effort and control.",
+        "duration": "15-25 minutes",
+        "materials": "Mat, pillows, blanket",
+        "affirmation": "I completely surrender and trust in the support beneath me"
+      },
+      {
+        "title": "Heart Opening Flow", 
+        "instruction": "Move slowly between camel pose, cobra pose, and fish pose, holding each for 5 breaths. Open your heart space and release stress stored in your chest.",
+        "duration": "10-15 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I open my heart to love and release fear"
+      },
+      {
+        "title": "Grounding Mountain Pose",
+        "instruction": "Stand tall with feet hip-width apart. Feel your connection to the earth through your feet. Breathe and embody the strength and stability of a mountain. You are unshakeable.",
+        "duration": "5-10 minutes",
+        "materials": "Floor space",
+        "affirmation": "I am grounded, stable, and strong like a mountain"
+      }
+    ]
+  }
+}
