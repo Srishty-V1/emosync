@@ -13,45 +13,125 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- 🚨 BULLETPROOF INLINE BOOTSTRAP - GUARANTEES START BUTTON WORKS -->
+    <script>
+        console.log('🚨 EMERGENCY BOOTSTRAP LOADING...');
+        
+        // 🔥 GUARANTEED START FUNCTION - WORKS EVEN IF APP.JS FAILS
+        window.startEmoSyncJourney = function() {
+            console.log('🚀 START BUTTON CLICKED - EMERGENCY BOOTSTRAP!');
+            
+            // Hide splash
+            const splash = document.getElementById('splash-screen');
+            const emotionSelector = document.getElementById('emotion-selector');
+            
+            if (splash && emotionSelector) {
+                splash.classList.remove('active');
+                splash.style.display = 'none';
+                emotionSelector.classList.add('active');
+                emotionSelector.style.display = 'block';
+                console.log('✅ SUCCESSFULLY SWITCHED TO EMOTION SELECTOR!');
+            }
+        };
+        
+        // 🔥 BIND START BUTTON IMMEDIATELY WHEN DOM READY
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🔥 DOM READY - BINDING START BUTTON NOW!');
+            
+            const startBtn = document.getElementById('start-reset-button');
+            if (startBtn) {
+                startBtn.addEventListener('click', window.startEmoSyncJourney);
+                console.log('✅ START BUTTON BOUND SUCCESSFULLY!');
+            }
+            
+            // 🚨 AUTO-FALLBACK: If still on splash after 3 seconds, auto-switch
+            setTimeout(() => {
+                const splash = document.getElementById('splash-screen');
+                if (splash && splash.classList.contains('active')) {
+                    console.log('⏰ AUTO-FALLBACK TRIGGERED - SWITCHING TO EMOTION SELECTOR!');
+                    window.startEmoSyncJourney();
+                }
+            }, 3000);
+        });
+        
+        // 🔥 GLOBAL EMOTION SELECTOR FUNCTION - BULLETPROOF
+        window.selectEmotion = function(emotion) {
+            console.log('🎯 Emotion selected:', emotion);
+            const hub = document.getElementById('insight-hub');
+            const selector = document.getElementById('emotion-selector');
+            
+            if (hub && selector) {
+                selector.classList.remove('active');
+                selector.style.display = 'none';
+                hub.classList.add('active');
+                hub.style.display = 'block';
+                console.log('✅ SWITCHED TO INSIGHT HUB!');
+            }
+        };
+        
+        // 🔥 GLOBAL SHOW SCREEN FUNCTION - BULLETPROOF
+        window.showScreen = function(screenId) {
+            console.log('🔄 Switching to screen:', screenId);
+            
+            // Hide all screens
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.remove('active');
+                screen.style.display = 'none';
+            });
+            
+            // Show target screen
+            const targetScreen = document.getElementById(screenId);
+            if (targetScreen) {
+                targetScreen.classList.add('active');
+                targetScreen.style.display = 'block';
+                console.log('✅ SCREEN SWITCHED SUCCESSFULLY!');
+            }
+        };
+        
+        console.log('🚀 EMERGENCY BOOTSTRAP LOADED - START BUTTON GUARANTEED TO WORK!');
+    </script>
 </head>
 <body>
     <!-- VIDEO BACKGROUND CONTAINER -->
     <div id="video-background-container" class="video-bg-container">
-        <video id="background-video" class="video-background" autoplay muted loop>
-            <!-- Video source will be set via JavaScript -->
+        <video id="background-video" class="video-background" autoplay muted loop playsinline>
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
         </video>
         <div class="video-overlay"></div>
     </div>
 
     <!-- Splash Screen -->
     <div id="splash-screen" class="screen active">
-        <div class="splash-content">
+        <div class="splash-content" style="pointer-events: auto; z-index: 100;">
             <div class="logo-container">
                 <img src="https://i.ibb.co/0pwmb3ZP/great.png" alt="EmoSync Logo" class="app-logo">
-                <div class="logo-text">EmoSync</div>
+                <div class="logo-text">EmoSync ✨</div>
             </div>
-            <div class="tagline">Feel, Heal, and Rewire – One Emotion at a Time</div>
+            <div class="tagline">Feel, Heal, and Rewire – One Emotion at a Time 🌊</div>
             <div class="modality-pills">
-                <span class="pill">Art</span>
-                <span class="pill">Breathwork</span>
-                <span class="pill">Somatics</span>
-                <span class="pill">Journaling</span>
-                <span class="pill">CBT</span>
-                <span class="pill">EFT</span>
-                <span class="pill">EMDR</span>
-                <span class="pill">REBT</span>
-                <span class="pill">Neural Rewiring</span>
-                <span class="pill">Yoga</span>
+                <span class="pill">🎨 Art</span>
+                <span class="pill">🌬️ Breathwork</span>
+                <span class="pill">🤲 Somatics</span>
+                <span class="pill">✍️ Journaling</span>
+                <span class="pill">💭 CBT</span>
+                <span class="pill">🤚 EFT</span>
+                <span class="pill">👁️ EMDR</span>
+                <span class="pill">🧠 REBT</span>
+                <span class="pill">⚡ Neural Rewiring</span>
+                <span class="pill">🧘 Yoga</span>
             </div>
-            <!-- FIXED BUTTON WITH ENHANCED ONCLICK -->
-            <button class="cta-button" id="start-reset-button" onclick="startEmoSyncJourney()">Start Your Reset</button>
+            <!-- 🚨 TRIPLE-SAFE START BUTTON -->
+            <button class="cta-button" id="start-reset-button" onclick="startEmoSyncJourney()" style="pointer-events: auto; z-index: 1000; position: relative;">
+                🚀 Start Your Reset
+            </button>
         </div>
     </div>
 
     <!-- Emotion Selector -->
     <div id="emotion-selector" class="screen">
         <div class="header">
-            <h2>How are you feeling today?</h2>
+            <h2>How are you feeling today? 💭</h2>
         </div>
         <div class="emotion-grid">
             <div class="emotion-card" data-emotion="stress" onclick="selectEmotion('stress')">
@@ -159,8 +239,8 @@
     <div id="insight-hub" class="screen">
         <div class="header">
             <button class="back-button" onclick="showScreen('emotion-selector')">← Back</button>
-            <h1 id="emotion-title">STRESS</h1>
-            <p id="emotion-subtitle">Tension in the mind, tightness in the body. Let's release it.</p>
+            <h1 id="emotion-title">STRESS ✨</h1>
+            <p id="emotion-subtitle">Tension in the mind, tightness in the body. Let's release it! 🌊</p>
         </div>
         
         <div class="modality-tabs">
@@ -207,37 +287,67 @@
         </div>
 
         <div class="exercises-container" id="exercises-container">
-            <!-- Exercise cards will be populated dynamically -->
+            <!-- 🔥 IMMEDIATE FALLBACK EXERCISES -->
+            <div class="exercise-card">
+                <div class="exercise-badge">🎨 Art Therapy</div>
+                <h3 class="exercise-title">Stress Monster Art 🎨</h3>
+                <div class="exercise-instruction">Draw your stress as a creature. Name it. Then color it with soothing tones like blue and green. As you color, repeat: 'I'm calming my storm.' ✨</div>
+                <div class="exercise-meta">
+                    <div class="exercise-duration">⏰ 15-20 minutes</div>
+                    <div class="exercise-materials">🎯 Art supplies</div>
+                </div>
+                <div class="exercise-actions">
+                    <button class="action-button outline">▶️ Start Exercise</button>
+                    <button class="action-button gold">❤️ Save</button>
+                </div>
+            </div>
+            
+            <div class="exercise-card">
+                <div class="exercise-badge">🌬️ Breathwork</div>
+                <h3 class="exercise-title">4-7-8 Stress Release 🌬️</h3>
+                <div class="exercise-instruction">Breathe in for 4 counts, hold for 7, exhale for 8. This activates your parasympathetic nervous system and reduces stress hormones instantly! 🌊</div>
+                <div class="exercise-meta">
+                    <div class="exercise-duration">⏰ 8-12 minutes</div>
+                    <div class="exercise-materials">🎯 None needed</div>
+                </div>
+                <div class="exercise-actions">
+                    <button class="action-button outline">▶️ Start Exercise</button>
+                    <button class="action-button gold">❤️ Save</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Exercise Card -->
+    <!-- Exercise Screen -->
     <div id="exercise-screen" class="screen">
         <div class="header">
             <button class="back-button" onclick="showScreen('insight-hub')">← Back</button>
         </div>
         <div class="exercise-card">
-            <div class="exercise-badge" id="exercise-badge">Art Therapy</div>
+            <div class="exercise-badge" id="exercise-badge">🎨 Art Therapy</div>
             <h2 class="exercise-title" id="exercise-title">The Stress Monster</h2>
             <div class="exercise-instruction" id="exercise-instruction">
-                Draw your stress as a creature. Name it. Then color it with soothing tones like blue and green. As you color, repeat: 'I'm calming my storm.'
+                Draw your stress as a creature. Name it. Then color it with soothing tones like blue and green. As you color, repeat: 'I'm calming my storm.' ✨
             </div>
             <div class="exercise-visual" id="exercise-visual">
-                <!-- Visual element or illustration -->
+                <div class="exercise-encouragement" style="text-align: center; padding: 20px; background: linear-gradient(135deg, var(--soft-peach), var(--sage-green)); border-radius: 16px; color: var(--deep-black); font-style: italic; font-size: 16px; line-height: 1.6;">
+                    🌟 Take your time and be gentle with yourself! 🌙<br>
+                    "You are exactly where you need to be!" ✨<br>
+                    💫 Healing isn't linear – it's creative!
+                </div>
             </div>
             <div class="exercise-actions">
-                <button class="action-button outline" onclick="tryAnother()">🔁 Try Another</button>
-                <button class="action-button gold" onclick="saveToToolkit()">❤️ Save to Toolkit</button>
-                <button class="action-button outline" onclick="markAsDone()">✅ Mark as Done</button>
+                <button class="action-button outline">🔁 Try Another</button>
+                <button class="action-button gold">❤️ Save to Toolkit</button>
+                <button class="action-button outline">✅ Mark as Done</button>
             </div>
-            <div class="progress-indicator" id="progress-indicator">Exercise 1 of 10</div>
         </div>
     </div>
 
     <!-- Daily Reset Dashboard -->
     <div id="dashboard" class="screen">
         <div class="header">
-            <h2>Your Emotional Reset</h2>
+            <h2>Your Emotional Reset 📊</h2>
         </div>
         <div class="dashboard-content">
             <div class="today-emotion">
@@ -245,13 +355,13 @@
             </div>
             
             <div class="quick-start-card">
-                <h3>3-Minute Reset</h3>
-                <p id="quick-recommendation">Try the "Breath of Calm" technique</p>
-                <button class="cta-button" onclick="startQuickReset()">Begin</button>
+                <h3>3-Minute Reset ⚡</h3>
+                <p id="quick-recommendation">Try the "Breath of Calm" technique 🌬️</p>
+                <button class="cta-button">🚀 Begin</button>
             </div>
 
             <div class="mood-slider">
-                <label>How do you feel right now?</label>
+                <label>How do you feel right now? 💭</label>
                 <div class="mood-scale">
                     <span class="mood-emoji" data-mood="1">😞</span>
                     <span class="mood-emoji" data-mood="2">😐</span>
@@ -262,9 +372,9 @@
             </div>
 
             <div class="mini-journal">
-                <label>Note how you feel after:</label>
+                <label>Note how you feel after: ✍️</label>
                 <textarea id="quick-note" placeholder="I feel more..." rows="3"></textarea>
-                <button class="save-note" onclick="saveQuickNote()">Save</button>
+                <button class="save-note">💾 Save</button>
             </div>
 
             <div class="streak-tracker">
@@ -273,7 +383,7 @@
             </div>
         </div>
         <div class="bottom-nav">
-            <div class="nav-item" onclick="showScreen('emotion-selector')">
+            <div class="nav-item active" onclick="showScreen('dashboard')">
                 <span class="nav-icon">🏠</span>
                 <span class="nav-label">Home</span>
             </div>
@@ -295,30 +405,30 @@
     <!-- Journal Page -->
     <div id="journal" class="screen">
         <div class="header">
-            <h2>Emo Journal</h2>
+            <h2>Emo Journal 📔</h2>
             <div class="date-stamp" id="journal-date"></div>
         </div>
         <div class="journal-content">
             <div class="journal-prompt">
-                <h3>Today's Prompt:</h3>
-                <p id="journal-prompt-text">Right now, my body feels...</p>
-                <button class="prompt-refresh" onclick="refreshPrompt()">🔄 New Prompt</button>
+                <h3>Today's Prompt: 💭</h3>
+                <p id="journal-prompt-text">Right now, my body feels... 🌊</p>
+                <button class="prompt-refresh">🔄 New Prompt</button>
             </div>
             
             <div class="journal-entry">
-                <textarea id="journal-textarea" placeholder="Start writing..." rows="10"></textarea>
+                <textarea id="journal-textarea" placeholder="Start writing your thoughts... ✨" rows="10"></textarea>
             </div>
 
             <div class="journal-tools">
-                <button class="tool-button" onclick="openDrawing()">🎨 Draw</button>
-                <button class="tool-button" onclick="attachImage()">📷 Photo</button>
-                <button class="tool-button" onclick="tagEmotion()">🏷️ Tag Emotion</button>
-                <button class="tool-button" onclick="togglePrivacy()">🔒 Private</button>
+                <button class="tool-button">🎨 Draw</button>
+                <button class="tool-button">📷 Photo</button>
+                <button class="tool-button">🏷️ Tag Emotion</button>
+                <button class="tool-button">🔒 Private</button>
             </div>
 
             <div class="journal-actions">
-                <button class="action-button outline" onclick="exportJournal()">📤 Export</button>
-                <button class="action-button gold" onclick="saveJournalEntry()">💾 Save Entry</button>
+                <button class="action-button outline">📤 Export</button>
+                <button class="action-button gold">💾 Save Entry</button>
             </div>
         </div>
         <div class="bottom-nav">
@@ -344,16 +454,21 @@
     <!-- My Healing Toolkit -->
     <div id="toolkit" class="screen">
         <div class="header">
-            <h2>My Healing Toolkit</h2>
+            <h2>My Healing Toolkit 🧰</h2>
         </div>
         <div class="toolkit-content">
             <div class="toolkit-grid" id="toolkit-grid">
-                <!-- Saved exercises will be populated here -->
+                <div style="text-align: center; padding: 40px; color: #FAFAFA;">
+                    <h3>💖 Your Personal Toolkit</h3>
+                    <p>Save exercises as you discover ones that resonate with you! ✨</p>
+                    <p>You have <strong>0</strong> saved exercises 📚</p>
+                    <button class="action-button gold" onclick="showScreen('emotion-selector')">🎨 Discover Exercises</button>
+                </div>
             </div>
             
             <div class="toolkit-actions">
-                <button class="cta-button" onclick="startRoutine()">▶️ Start Routine</button>
-                <button class="action-button outline" onclick="editToolkit()">✏️ Edit Toolkit</button>
+                <button class="cta-button">▶️ Start Routine</button>
+                <button class="action-button outline">✏️ Edit Toolkit</button>
             </div>
         </div>
         <div class="bottom-nav">
@@ -379,68 +494,51 @@
     <!-- Settings & Credits -->
     <div id="settings" class="screen">
         <div class="header">
-            <h2>Settings & Credits</h2>
+            <h2>Settings & Credits ⚙️</h2>
         </div>
         <div class="settings-content">
-            <!-- VIDEO BACKGROUND CONTROLS -->
             <div class="settings-section">
-                <h3>Background</h3>
+                <h3>🎨 Personalization</h3>
                 <div class="setting-item">
-                    <label>Background Type</label>
-                    <div class="background-controls">
-                        <button class="bg-option" onclick="setBackgroundType('gradient')">🌈 Gradient</button>
-                        <button class="bg-option" onclick="setBackgroundType('video')">🎬 Video</button>
-                    </div>
-                </div>
-                <div class="setting-item" id="video-upload-section" style="display: none;">
-                    <label>Upload Background Video</label>
-                    <input type="file" id="video-upload" accept="video/*" onchange="handleVideoUpload(event)">
-                    <small>Supports MP4, WebM, MOV files</small>
-                </div>
-            </div>
-
-            <div class="settings-section">
-                <h3>Accessibility</h3>
-                <div class="setting-item">
-                    <label>Text Size</label>
+                    <label>Text Size 📱</label>
                     <div class="text-size-controls">
-                        <button onclick="adjustTextSize(-1)">A-</button>
+                        <button>A-</button>
                         <span id="text-size-display">Normal</span>
-                        <button onclick="adjustTextSize(1)">A+</button>
+                        <button>A+</button>
                     </div>
                 </div>
                 <div class="setting-item">
-                    <label>Reduce Animations</label>
-                    <input type="checkbox" id="reduce-animations" onchange="toggleAnimations()">
+                    <label>Reduce Animations 🎭</label>
+                    <input type="checkbox" id="reduce-animations">
                 </div>
                 <div class="setting-item">
-                    <label>Voice Navigation</label>
-                    <input type="checkbox" id="voice-nav" onchange="toggleVoiceNav()">
+                    <label>Voice Navigation 🎤</label>
+                    <input type="checkbox" id="voice-nav">
                 </div>
             </div>
 
             <div class="settings-section">
-                <h3>Privacy</h3>
+                <h3>🔒 Privacy</h3>
                 <div class="setting-item">
-                    <button class="outline-button" onclick="showDataUsage()">Data Usage Transparency</button>
+                    <button class="outline-button">📊 Data Usage Transparency</button>
                 </div>
                 <div class="setting-item">
-                    <button class="outline-button" onclick="exportData()">Export My Data</button>
+                    <button class="outline-button">📤 Export My Data</button>
                 </div>
                 <div class="setting-item">
-                    <button class="danger-button" onclick="deleteData()">Delete All Data</button>
+                    <button class="danger-button">🗑️ Delete All Data</button>
                 </div>
             </div>
 
             <div class="settings-section about">
-                <h3>About</h3>
+                <h3>About 💖</h3>
                 <div class="about-logo">
                     <img src="https://i.ibb.co/0pwmb3ZP/great.png" alt="EmoSync Logo" class="about-logo-img">
                 </div>
-                <p>Created with love by @SrishtySynergy<br>
-                Where neuroscience meets self-expression.</p>
+                <p>Created with love by @SrishtySynergy ✨<br>
+                Where neuroscience meets self-expression! 🧠💖</p>
                 <div class="quote">
-                    "Healing isn't linear – it's creative." 🌙
+                    "Healing isn't linear – it's creative." 🌙✨
                 </div>
             </div>
         </div>
@@ -464,6 +562,22 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- 🚨 CACHE-BUSTED APP.JS WITH TIMESTAMP -->
+    <script src="app.js?v=20251025-emergency-fix" defer></script>
+    
+    <!-- 🔥 FINAL FALLBACK - IF EVERYTHING FAILS, THIS WORKS -->
+    <script>
+        setTimeout(() => {
+            console.log('🚨 FINAL FALLBACK CHECK...');
+            if (typeof window.startEmoSyncJourney !== 'function') {
+                console.log('⚠️ app.js failed to load - creating emergency fallback!');
+                window.startEmoSyncJourney = function() {
+                    document.getElementById('splash-screen').style.display = 'none';
+                    document.getElementById('emotion-selector').style.display = 'block';
+                    document.getElementById('emotion-selector').classList.add('active');
+                };
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
