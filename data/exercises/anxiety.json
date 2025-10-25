@@ -1,0 +1,727 @@
+{
+  "emotion": "anxiety",
+  "displayName": "Anxiety",
+  "description": "Worried thoughts and racing heart. Let's find your calm.",
+  "modalities": {
+    "art": [
+      {
+        "title": "The Anxiety Cloud Transformation",
+        "instruction": "Draw your anxiety as a dark storm cloud. Then transform it by adding silver linings, rainbows emerging from it, or gentle rain nourishing flowers below. See your anxiety as temporary weather that will pass.",
+        "duration": "15-20 minutes",
+        "materials": "Paper, colored pencils",
+        "affirmation": "My anxiety is temporary weather in the sky of my mind"
+      },
+      {
+        "title": "Grounding Zentangle",
+        "instruction": "Create repetitive, intricate patterns while focusing on the present moment. Let each line anchor you to the here and now. When anxiety arises, return your attention to the next line or curve.",
+        "duration": "20-30 minutes",
+        "materials": "Paper, fine-tip pens",
+        "affirmation": "Each line I draw brings me back to the present moment"
+      },
+      {
+        "title": "Safe Space Artwork",
+        "instruction": "Create a detailed drawing of your ideal safe space - real or imaginary. Include every detail that makes you feel secure and calm. This becomes your visual anchor during anxious moments.",
+        "duration": "25-35 minutes",
+        "materials": "Paper, art supplies of choice",
+        "affirmation": "I carry safety and peace within me wherever I go"
+      },
+      {
+        "title": "Worry Web Untangling",
+        "instruction": "Draw your worries as a tangled web. Then, using a different color, draw lines that untangle and organize the web into clear, separate paths. This represents clarity emerging from confusion.",
+        "duration": "15-25 minutes",
+        "materials": "Paper, colored pens",
+        "affirmation": "I untangle confusion and find clarity within"
+      },
+      {
+        "title": "Calming Color Gradient",
+        "instruction": "Create a large gradient from your anxiety color (maybe red or black) to your calm color (blue, green, or purple). Slowly blend them, watching anxiety transform into peace.",
+        "duration": "15-25 minutes",
+        "materials": "Paper, pastels or paints",
+        "affirmation": "I transform anxiety into calm with gentle patience"
+      },
+      {
+        "title": "Protective Shield Design",
+        "instruction": "Design a beautiful, strong shield that protects you from anxious thoughts and energy. Include symbols, colors, and patterns that represent your inner strength and resilience.",
+        "duration": "20-30 minutes",
+        "materials": "Paper, art supplies",
+        "affirmation": "I am protected by my inner strength and wisdom"
+      },
+      {
+        "title": "Anxiety Release Scribbles",
+        "instruction": "On one paper, scribble out your anxiety with frantic, chaotic lines. Then on fresh paper, draw slow, gentle, flowing lines. Feel the contrast between chaos and calm.",
+        "duration": "10-15 minutes",
+        "materials": "Multiple sheets of paper, markers",
+        "affirmation": "I release chaos and embrace the flow of peace"
+      },
+      {
+        "title": "Mindful Dot Art",
+        "instruction": "Create art using only dots - different sizes, colors, patterns. Focus completely on each dot as you place it. This meditative practice naturally calms an anxious mind.",
+        "duration": "20-40 minutes",
+        "materials": "Paper, dot-making tools (cotton swabs, markers)",
+        "affirmation": "One mindful moment at a time, I find my peace"
+      },
+      {
+        "title": "Strength Animal Drawing",
+        "instruction": "Draw an animal that represents courage and calm to you - perhaps a wise owl, strong elephant, or peaceful dolphin. Channel their energy as you create.",
+        "duration": "20-30 minutes",
+        "materials": "Paper, colored pencils or paints",
+        "affirmation": "I embody the calm strength of the natural world"
+      },
+      {
+        "title": "Anxiety Transformation Map",
+        "instruction": "Draw a map showing the journey from anxiety to peace. Include obstacles, helpers, rest stops, and the final destination of calm. You are the brave traveler on this journey.",
+        "duration": "25-35 minutes",
+        "materials": "Large paper, colored pencils",
+        "affirmation": "I navigate the path from worry to peace with courage"
+      }
+    ],
+    "breathwork": [
+      {
+        "title": "Box Breathing for Anxiety",
+        "instruction": "Inhale for 4 counts, hold for 4, exhale for 4, hold empty for 4. Visualize drawing a square with your breath. This activates your parasympathetic nervous system and reduces anxiety naturally.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "My breath creates a box of safety around me"
+      },
+      {
+        "title": "5-4-3-2-1 Grounding Breath",
+        "instruction": "Breathe slowly while naming 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, 1 you can taste. This pulls your anxious mind into the present moment.",
+        "duration": "5-8 minutes",
+        "materials": "None needed",
+        "affirmation": "My breath anchors me to the safety of the present moment"
+      },
+      {
+        "title": "Anxiety Cooling Breath",
+        "instruction": "Inhale through pursed lips (like sipping air through a straw), exhale normally through nose. This naturally cools the nervous system and reduces anxious heat in the body.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I cool the fire of anxiety with my healing breath"
+      },
+      {
+        "title": "Belly Breathing for Calm",
+        "instruction": "Place one hand on chest, one on belly. Breathe so only the belly hand moves, like slowly inflating a balloon. This activates your calm response and soothes anxiety.",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I breathe peace deep into my core"
+      },
+      {
+        "title": "Extended Exhale Anxiety Relief",
+        "instruction": "Inhale for 3 counts, exhale for 6 counts. The long exhale activates your relaxation response. With each extended out-breath, feel anxiety leaving your body.",
+        "duration": "6-10 minutes",
+        "materials": "None needed",
+        "affirmation": "With each long exhale, I release worry and embrace calm"
+      },
+      {
+        "title": "Coherent Heart Breathing",
+        "instruction": "Breathe in and out through your heart for 5 counts each. Place your hand on your heart and feel it slow and steady. This creates coherence between heart and mind.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "My heart and breath work together to create inner harmony"
+      },
+      {
+        "title": "Anxiety Wave Breathing",
+        "instruction": "When anxiety rises like a wave, breathe with it - inhale as it peaks, long exhale as it crashes and recedes. Ride the wave instead of fighting it.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I ride the waves of emotion with grace and breath"
+      },
+      {
+        "title": "Nostril Breathing Balance",
+        "instruction": "Close right nostril, inhale left for 4. Close left nostril, exhale right for 4. Inhale right for 4. Close right, exhale left for 4. This balances your nervous system.",
+        "duration": "6-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I balance my energy and find my center through breath"
+      },
+      {
+        "title": "Anxiety Melting Breath",
+        "instruction": "Breathe in golden light and warmth. As you exhale, visualize anxiety melting away like ice in sunlight. Feel your whole body softening and releasing with each breath.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "Anxiety melts away in the warmth of my conscious breathing"
+      },
+      {
+        "title": "Counted Calming Breath",
+        "instruction": "Count backwards from 50 to 1 with each exhale. If you lose count, gently start again. This gives your worried mind something peaceful to focus on.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I count my way to calm, one peaceful breath at a time"
+      }
+    ],
+    "somatic": [
+      {
+        "title": "Anxiety Shake-Out",
+        "instruction": "Stand and gently shake your hands, then arms, then whole body. Animals naturally shake to release stress and trauma. Shake for 2 minutes, then stand still and notice the sensations. Feel anxiety leaving your body.",
+        "duration": "5-10 minutes",
+        "materials": "Standing space",
+        "affirmation": "I shake off anxiety and reclaim my natural calm"
+      },
+      {
+        "title": "Grounding Through Feet",
+        "instruction": "Stand barefoot if possible. Feel your feet connecting to the ground. Press your toes down, lift them up. Rock forward and back. This grounds anxious energy back into the earth.",
+        "duration": "5-10 minutes",
+        "materials": "Floor space",
+        "affirmation": "I am grounded, connected, and supported by the earth beneath me"
+      },
+      {
+        "title": "Chest Anxiety Release",
+        "instruction": "Gently tap your chest with your fists for 30 seconds to release trapped anxiety. Then place both palms on your heart and breathe deeply. Feel your chest opening and softening.",
+        "duration": "5-8 minutes",
+        "materials": "None needed",
+        "affirmation": "I release anxiety from my chest and open my heart to peace"
+      },
+      {
+        "title": "Anxiety Boundary Creation",
+        "instruction": "Sweep your arms in a large circle around your body, creating an energetic boundary. This space is yours, safe from anxiety. Step into this circle of protection.",
+        "duration": "3-5 minutes",
+        "materials": "Standing space",
+        "affirmation": "I create safe boundaries and protect my inner peace"
+      },
+      {
+        "title": "Progressive Anxiety Release",
+        "instruction": "Starting with your toes, notice where anxiety lives in your body. Breathe into each tense area and consciously soften it. Move slowly up through your entire body.",
+        "duration": "12-18 minutes",
+        "materials": "Comfortable lying space",
+        "affirmation": "I soften and release anxiety from every part of my body"
+      },
+      {
+        "title": "Anxiety Containment Gesture",
+        "instruction": "Cup your hands and imagine gathering up all your anxiety into this container. Close your hands, then slowly open them and blow the anxiety away like dandelion seeds.",
+        "duration": "3-5 minutes",
+        "materials": "None needed",
+        "affirmation": "I gather my worries and release them to the wind"
+      },
+      {
+        "title": "Slow Motion Anxiety Relief",
+        "instruction": "Move in extremely slow motion for 5 minutes - walking, reaching, turning your head. This interrupts anxiety's fast pace and brings you back to your body.",
+        "duration": "5-10 minutes",
+        "materials": "Space to move",
+        "affirmation": "I slow down time and return to my natural rhythm"
+      },
+      {
+        "title": "Anxiety Temperature Check",
+        "instruction": "Notice if anxiety feels hot or cold in your body. If hot, imagine cool water or air soothing those areas. If cold, imagine warm sunlight melting the frozen anxiety.",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I regulate my body's temperature and find perfect balance"
+      },
+      {
+        "title": "Protective Posture Practice",
+        "instruction": "Stand tall with feet firmly planted, shoulders back, head high. This is your anxiety-resistant posture. Practice moving through your day in this empowered stance.",
+        "duration": "5-10 minutes",
+        "materials": "Standing space",
+        "affirmation": "I stand strong and confident in the face of any challenge"
+      },
+      {
+        "title": "Anxiety Energy Redistribution",
+        "instruction": "Place hands where anxiety feels strongest in your body. Gently move that energy to your feet, grounding it into the earth, or to your heart, transforming it into compassion.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I redirect anxious energy into grounding and self-compassion"
+      }
+    ],
+    "cbt": [
+      {
+        "title": "Anxiety Thought Record",
+        "instruction": "When anxiety hits, write: What am I thinking? What evidence supports/contradicts this? What's a more realistic thought? How do I feel now? This breaks anxiety's cycle of catastrophic thinking.",
+        "duration": "10-15 minutes",
+        "materials": "Anxiety thought record sheet",
+        "affirmation": "I examine my anxious thoughts with curiosity and kindness"
+      },
+      {
+        "title": "Probability vs. Possibility Check",
+        "instruction": "For each anxious 'what if,' ask: 'What's the actual probability this will happen?' versus 'Is it merely possible?' Focus on likely outcomes, not just possible ones.",
+        "duration": "8-12 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I focus on probabilities, not possibilities, and find peace in reality"
+      },
+      {
+        "title": "Anxiety Fact vs. Fiction",
+        "instruction": "List your anxious thoughts. Label each as 'Fact' (definitely true) or 'Fiction' (assumption, prediction, or worry). You'll likely find most are fiction, not fact.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I distinguish between facts and fearful fiction in my mind"
+      },
+      {
+        "title": "Worst Case Scenario Planning",
+        "instruction": "If your anxiety about the worst case happening, write it out. Then write: 'How would I cope if this happened?' You'll discover you're more resilient than your anxiety believes.",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I trust in my ability to handle whatever life brings"
+      },
+      {
+        "title": "Anxiety Time Travel Check",
+        "instruction": "Notice if your anxiety is about the past (regret) or future (worry). Gently remind yourself: 'Right now, in this moment, I am safe.' Return to the present.",
+        "duration": "8-12 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I live fully in this moment, where peace resides"
+      },
+      {
+        "title": "Anxiety Cost-Benefit Analysis",
+        "instruction": "Write the costs and benefits of your anxious thinking. What does worry cost you in energy, joy, sleep? What does it actually protect you from? Usually costs outweigh benefits.",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I choose thoughts that serve my wellbeing and growth"
+      },
+      {
+        "title": "Anxiety Evidence Court",
+        "instruction": "Put your anxious thought on trial. What evidence would convince a jury it's true? What evidence proves it wrong? Be a fair judge of your own thoughts.",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I judge my thoughts fairly and find the truth beyond anxiety"
+      },
+      {
+        "title": "Realistic Thinking Practice",
+        "instruction": "For each anxiety, create three thoughts: worst case, best case, and most realistic case. Train your mind to default to the realistic middle ground.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I think realistically and find balance in all situations"
+      },
+      {
+        "title": "Anxiety Assumption Check",
+        "instruction": "List assumptions your anxiety makes: 'People will judge me,' 'Something bad will happen.' Ask: 'How do I know this is true?' Challenge anxiety's assumptions with curiosity.",
+        "duration": "12-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I question assumptions and discover the truth beyond worry"
+      },
+      {
+        "title": "Past Evidence Collection",
+        "instruction": "Think of 5 times you worried about something that turned out fine. Your track record shows most anxious predictions don't come true. Trust your resilience.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "My history shows I handle challenges better than anxiety predicts"
+      }
+    ],
+    "rebt": [
+      {
+        "title": "Catastrophic Thinking Challenge",
+        "instruction": "When anxiety creates worst-case scenarios, ask: 'So what if that happened? How would I cope?' Keep asking until you reach something manageable. This reduces anxiety's power over you.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I can handle whatever challenges come my way"
+      },
+      {
+        "title": "Need vs. Want Distinction",
+        "instruction": "Challenge thoughts like 'I need everyone to like me' or 'I need everything to be perfect.' Replace with 'I want' or 'I prefer.' Needs create anxiety; preferences allow peace.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I have preferences, not desperate needs, and this gives me freedom"
+      },
+      {
+        "title": "Anxiety Demand Detection",
+        "instruction": "Find demanding thoughts that create anxiety: 'I must perform perfectly,' 'Life should be fair.' Replace demands with preferences: 'I prefer to do well, but imperfection is human.'",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I release demands and embrace flexible preferences"
+      },
+      {
+        "title": "Terrible vs. Inconvenient",
+        "instruction": "When something feels 'terrible' or 'awful,' ask: 'Is this truly terrible, or just inconvenient and frustrating?' Most anxiety comes from mislabeling inconveniences as catastrophes.",
+        "duration": "8-12 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I see inconveniences as temporary challenges, not terrible threats"
+      },
+      {
+        "title": "Anxiety Approval Seeking",
+        "instruction": "Challenge beliefs like 'I must have approval to be worthwhile.' Ask: 'Where is this written? Who decided this rule?' Your worth isn't determined by others' opinions.",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "My worth comes from within, not from others' approval"
+      },
+      {
+        "title": "Control Demand Challenge",
+        "instruction": "Notice thoughts like 'I must control everything' or 'Things should go my way.' Replace with: 'I prefer things to go well, but I can handle uncertainty and change.'",
+        "duration": "12-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I influence what I can and peacefully accept what I cannot control"
+      },
+      {
+        "title": "Certainty vs. Uncertainty Acceptance",
+        "instruction": "Challenge the belief 'I need to know what will happen.' Practice saying: 'I prefer certainty, but I can tolerate and even thrive in uncertainty.'",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I dance with uncertainty and find adventure in the unknown"
+      },
+      {
+        "title": "Anxiety Global Rating Challenge",
+        "instruction": "Replace global ratings like 'I'm anxious' with specific observations: 'I'm having anxious thoughts about this specific situation.' You are not your anxiety.",
+        "duration": "10-12 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I have anxious thoughts sometimes, but I am not an anxious person"
+      },
+      {
+        "title": "Comfort Zone Rationality",
+        "instruction": "Challenge 'I can't handle discomfort or anxiety.' Remember: you've felt anxiety before and survived. Discomfort is temporary, not dangerous or unbearable.",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I can handle temporary discomfort and grow stronger through challenges"
+      },
+      {
+        "title": "Rational Anxiety Mantras",
+        "instruction": "Create rational responses to anxious thoughts: 'This is uncomfortable, not dangerous,' 'I prefer calm, but I can handle anxiety,' 'This feeling will pass.'",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I respond to anxiety with rational, compassionate self-talk"
+      }
+    ],
+    "neural": [
+      {
+        "title": "Anxiety Resource Installation",
+        "instruction": "Think of a time you felt calm and confident. While doing bilateral stimulation (tapping knees alternately), enhance all aspects of this memory. Install it as a resource you can access when anxiety arises.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I carry calm and confidence within me always"
+      },
+      {
+        "title": "Calm Confidence Visualization",
+        "instruction": "Visualize yourself in an anxiety-provoking situation, but see yourself completely calm, breathing easily, thinking clearly. Rehearse this calm response until it feels natural and automatic.",
+        "duration": "15-20 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I respond to challenges with natural calm and clarity"
+      },
+      {
+        "title": "Anxiety Pattern Interrupt",
+        "instruction": "Notice your anxiety pattern: trigger → anxious thoughts → physical tension → worry behavior. Create a new pattern: trigger → deep breath → calming thought → relaxed action.",
+        "duration": "15-25 minutes",
+        "materials": "None needed",
+        "affirmation": "I create new pathways of peace and calm response"
+      },
+      {
+        "title": "Safe Place Neural Installation",
+        "instruction": "Create a detailed mental safe place - real or imagined. Use all senses: what do you see, hear, smell, feel? Install this as your anxiety refuge through repeated visualization.",
+        "duration": "20-30 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I carry a safe, peaceful place within me wherever I go"
+      },
+      {
+        "title": "Anxiety Antidote Rehearsal",
+        "instruction": "Mentally rehearse your ideal response to anxiety: slow breathing, rational thinking, body relaxation, positive action. Practice this sequence until it becomes your default response.",
+        "duration": "18-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I have trained my mind and body to respond to anxiety with wisdom"
+      },
+      {
+        "title": "Confident Future Self",
+        "instruction": "Visualize yourself 6 months from now, having mastered anxiety management. Feel how confident and peaceful this future you is. Let them teach you their secrets.",
+        "duration": "20-30 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I am becoming more confident and peaceful every day"
+      },
+      {
+        "title": "Anxiety Dissolving Light",
+        "instruction": "Visualize golden, healing light entering your body with each breath. See this light dissolving anxiety like sunlight melts fog. Feel yourself becoming lighter and more peaceful.",
+        "duration": "15-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "Healing light dissolves my anxiety and fills me with peace"
+      },
+      {
+        "title": "Calm Anchor Strengthening",
+        "instruction": "While in a deeply relaxed state, press thumb and forefinger together and say 'calm.' Repeat this pairing 20 times. This creates an instant calm trigger you can use anywhere.",
+        "duration": "15-20 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I have instant access to calm whenever I need it"
+      },
+      {
+        "title": "Anxiety-Free Identity Programming",
+        "instruction": "Imagine yourself as someone who naturally stays calm in challenging situations. How do they walk, talk, breathe, think? Mentally rehearse being this calm person.",
+        "duration": "20-30 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I am naturally calm, centered, and confident in all situations"
+      },
+      {
+        "title": "Neuroplasticity Affirmation",
+        "instruction": "While relaxed, repeat: 'My brain is creating new neural pathways of calm and confidence.' Visualize these pathways as golden threads connecting peaceful thoughts to calm feelings.",
+        "duration": "20-30 minutes",
+        "materials": "Quiet space",
+        "affirmation": "My brain creates new pathways of peace with every calm moment"
+      }
+    ],
+    "journaling": [
+      {
+        "title": "Anxiety Letter to Self",
+        "instruction": "Write a compassionate letter to yourself as if you're your own best friend. Acknowledge your anxiety without judgment, remind yourself of your strengths, and offer yourself the kindness you'd give a friend.",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I treat myself with the same compassion I show my dearest friends"
+      },
+      {
+        "title": "Anxiety Dialogue Journal",
+        "instruction": "Write a conversation between you and your anxiety. Let anxiety speak first - what is it trying to protect you from? Then respond with wisdom and reassurance.",
+        "duration": "18-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I listen to my anxiety's concerns with compassion and respond with wisdom"
+      },
+      {
+        "title": "Evidence Collection Journal",
+        "instruction": "Write about times you worried about something that turned out fine. Collect evidence of your resilience and ability to handle challenges. Your track record is better than anxiety suggests.",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "My history shows I am stronger and more capable than my anxiety believes"
+      },
+      {
+        "title": "Anxiety Worst-Case Planning",
+        "instruction": "Write about your worst fear. Then write detailed plans for how you would cope if it happened. You'll discover you have more resources and resilience than you thought.",
+        "duration": "20-30 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I am resourceful and resilient, capable of handling whatever comes"
+      },
+      {
+        "title": "Present Moment Gratitude",
+        "instruction": "When anxiety pulls you to past regrets or future fears, write 10 things you're grateful for right now in this moment. Anchor yourself in present-moment appreciation.",
+        "duration": "10-15 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I find peace and gratitude in this perfect present moment"
+      },
+      {
+        "title": "Anxiety Story Reframe",
+        "instruction": "Write your anxiety story, then rewrite it from the perspective of a brave hero (you) who faces challenges with courage and wisdom. Change victim stories to hero stories.",
+        "duration": "20-30 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I am the hero of my own story, brave and wise in facing challenges"
+      },
+      {
+        "title": "Future Self Wisdom",
+        "instruction": "Write advice from your future self who has overcome anxiety. What would this wiser, calmer version of you tell you about your current worries?",
+        "duration": "15-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "My future self guides me with wisdom toward peace and confidence"
+      },
+      {
+        "title": "Anxiety Pattern Recognition",
+        "instruction": "Write about your anxiety patterns: triggers, thoughts, body sensations, behaviors. Awareness of patterns is the first step to changing them.",
+        "duration": "20-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "Awareness of my patterns empowers me to create positive change"
+      },
+      {
+        "title": "Calm Moments Collection",
+        "instruction": "Write about moments when you felt naturally calm and peaceful. What was happening? How can you create more of these moments? Build a blueprint for peace.",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I know how to create moments of peace and I choose to have more of them"
+      },
+      {
+        "title": "Anxiety Lessons Learned",
+        "instruction": "Write about what your anxiety has taught you. How has it made you more compassionate, aware, or strong? Find the hidden gifts within the challenge.",
+        "duration": "18-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "My challenges teach me valuable lessons and help me grow in wisdom"
+      }
+    ],
+    "eft": [
+      {
+        "title": "Anxiety Clearing Rounds",
+        "instruction": "Setup: 'Even though I feel anxious about [specific issue], I choose to feel calm and safe.' Tap while saying 'This anxiety... these worried thoughts... this tight chest... I release this now.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I clear anxiety from my energy system and welcome peace"
+      },
+      {
+        "title": "Specific Fear Tapping",
+        "instruction": "Focus on a specific fear. Rate intensity 1-10. Tap while saying: 'Even though I'm afraid of [specific fear], I deeply accept myself and choose to feel safe.' Continue until intensity drops.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I dissolve specific fears and reclaim my natural confidence"
+      },
+      {
+        "title": "Physical Anxiety Tapping",
+        "instruction": "Notice where anxiety lives in your body - tight chest, churning stomach, tense shoulders. Tap while focusing on these sensations: 'This tension in my [body part]... I release it now.'",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "My body releases anxiety and returns to its natural state of ease"
+      },
+      {
+        "title": "Worry Thought Tapping",
+        "instruction": "For repetitive worried thoughts, tap while saying: 'Even though my mind keeps worrying about [specific worry], I choose peaceful thoughts and trust in my ability to handle life.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I release worried thoughts and choose peaceful, confident thinking"
+      },
+      {
+        "title": "Social Anxiety Tapping",
+        "instruction": "For social fears, tap: 'Even though I worry about what others think, I accept myself completely and trust that I am enough exactly as I am.' Focus on self-acceptance.",
+        "duration": "12-18 minutes",
+        "materials": "None needed",
+        "affirmation": "I am enough exactly as I am, regardless of others' opinions"
+      },
+      {
+        "title": "Future Worry Tapping",
+        "instruction": "For anxiety about future events, tap: 'Even though I'm worried about what might happen, I trust in my resilience and ability to handle whatever comes my way.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I face the future with confidence, knowing I can handle whatever comes"
+      },
+      {
+        "title": "Perfectionist Anxiety Tapping",
+        "instruction": "For perfectionistic anxiety, tap: 'Even though I pressure myself to be perfect, I choose to accept my beautiful imperfection and release the need to be flawless.'",
+        "duration": "12-18 minutes",
+        "materials": "None needed",
+        "affirmation": "I embrace my perfectly imperfect humanity with love and acceptance"
+      },
+      {
+        "title": "Panic Attack Prevention Tapping",
+        "instruction": "When feeling panic rising, immediately tap: 'Even though I feel panic rising, I am safe right now. My body is just releasing old fear. I choose to breathe and be calm.'",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I am safe in this moment and my body knows how to return to calm"
+      },
+      {
+        "title": "Anxiety Overwhelm Tapping",
+        "instruction": "When everything feels too much, tap: 'Even though I feel completely overwhelmed, I choose to take life one breath at a time. I can handle this step by step.'",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I handle life one peaceful step at a time, with grace and ease"
+      },
+      {
+        "title": "Anxiety Positive Installation",
+        "instruction": "After clearing anxiety, install positives by tapping: 'I am calm and centered... I trust in my resilience... I feel safe and confident... I handle challenges with ease.'",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I install patterns of calm confidence and peaceful resilience"
+      }
+    ],
+    "emdr": [
+      {
+        "title": "Anxiety Bilateral Processing",
+        "instruction": "While thinking gently about your anxiety, alternate tapping your knees with your hands. Let whatever thoughts, feelings, or images arise just flow through without trying to change them.",
+        "duration": "10-15 minutes",
+        "materials": "Chair",
+        "affirmation": "I allow anxious energy to flow through and naturally process"
+      },
+      {
+        "title": "Calm Resource Installation",
+        "instruction": "Think of a time you felt completely calm and safe while doing butterfly hugs (arms crossed, patting shoulders alternately). Enhance all positive aspects of this memory as your anxiety resource.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I install deep calm and safety as my inner resource"
+      },
+      {
+        "title": "Anxiety Container Visualization",
+        "instruction": "Visualize placing your anxiety into a strong, secure container while doing bilateral movements. Lock it up safely, knowing you can process it when you're ready and resourced.",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I contain my anxiety safely and choose when to process it"
+      },
+      {
+        "title": "Safe Place Bilateral Installation",
+        "instruction": "Create a detailed mental safe place while doing gentle bilateral stimulation. Use all senses - what do you see, hear, feel, smell? Install this as your anxiety refuge.",
+        "duration": "15-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I carry a perfectly safe place within me at all times"
+      },
+      {
+        "title": "Anxiety Memory Processing",
+        "instruction": "If current anxiety connects to past experiences, gently hold that memory while doing bilateral knee tapping. Let the memory process and lose its emotional charge.",
+        "duration": "15-25 minutes",
+        "materials": "Chair",
+        "affirmation": "I process old anxiety and free myself from past fears"
+      },
+      {
+        "title": "Confidence Resource Building",
+        "instruction": "Recall a time you felt confident and capable while doing butterfly hugs. Amplify all the positive feelings and install this confidence as an anxiety antidote.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I am confident, capable, and naturally calm in challenging moments"
+      },
+      {
+        "title": "Bilateral Breathing for Anxiety",
+        "instruction": "Breathe in while tapping left knee, breathe out while tapping right knee. Continue this rhythm while gently holding your anxious feelings, letting them process naturally.",
+        "duration": "8-15 minutes",
+        "materials": "Chair",
+        "affirmation": "My breath and bilateral movement restore natural balance and calm"
+      },
+      {
+        "title": "Anxiety Future Template",
+        "instruction": "While doing bilateral stimulation, visualize yourself handling a future anxiety-provoking situation with complete calm and confidence. Install this positive template.",
+        "duration": "12-18 minutes",
+        "materials": "None needed",
+        "affirmation": "I approach future challenges with installed calm and confidence"
+      },
+      {
+        "title": "Protective Figure Installation",
+        "instruction": "Imagine a wise, protective figure (real or imagined) who makes you feel completely safe. Install this protective presence through bilateral stimulation as your anxiety guardian.",
+        "duration": "12-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I am protected and guided by wise, loving presence"
+      },
+      {
+        "title": "Anxiety Release Walking",
+        "instruction": "Take a slow, mindful walk while holding your anxiety gently in awareness. Let the natural bilateral rhythm of walking help process and release the anxious energy.",
+        "duration": "15-25 minutes",
+        "materials": "Walking space",
+        "affirmation": "Each step carries me toward greater peace and freedom from anxiety"
+      }
+    ],
+    "yoga": [
+      {
+        "title": "Legs Up the Wall Pose",
+        "instruction": "Lie on your back with legs up against a wall. This restorative pose activates your rest-and-digest system, naturally reducing anxiety. Breathe deeply and feel your nervous system calming.",
+        "duration": "10-20 minutes",
+        "materials": "Wall space, mat or blanket",
+        "affirmation": "I rest deeply and allow my nervous system to return to natural calm"
+      },
+      {
+        "title": "Child's Pose with Side Stretch",
+        "instruction": "In child's pose, walk your arms to the right side, hold 1 minute, then to the left. This gentle twist releases anxiety stored in your sides and back.",
+        "duration": "8-12 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I release anxiety from every part of my body with gentle movement"
+      },
+      {
+        "title": "Cat-Cow Anxiety Release",
+        "instruction": "Move slowly between cat and cow poses, syncing with your breath. This gentle spinal wave massages your nervous system and releases anxious tension from your core.",
+        "duration": "8-12 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I move with my breath and massage away anxiety with gentle waves"
+      },
+      {
+        "title": "Supported Fish Pose",
+        "instruction": "Place a pillow lengthwise under your spine and lie back, arms open wide. This heart-opening pose counters anxiety's tendency to make us close and protect our chest.",
+        "duration": "10-15 minutes",
+        "materials": "Yoga mat, pillow or bolster",
+        "affirmation": "I open my heart and release fear, welcoming love and peace"
+      },
+      {
+        "title": "Gentle Seated Twist",
+        "instruction": "Sit cross-legged, place right hand behind you, left hand on right knee. Gently twist right, breathe, then repeat left. This wrings out anxious energy from your spine.",
+        "duration": "8-12 minutes",
+        "materials": "Yoga mat or chair",
+        "affirmation": "I wring out anxiety and twist into ease and flexibility"
+      },
+      {
+        "title": "Anxiety-Releasing Forward Fold",
+        "instruction": "Sit with legs extended, slowly fold forward. Don't force - let gravity do the work. This introspective pose helps calm an overactive mind and nervous system.",
+        "duration": "10-15 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I fold inward and find the deep peace that anxiety cannot touch"
+      },
+      {
+        "title": "Supported Bridge Pose",
+        "instruction": "Lie on back with knees bent, lift hips and place a block or pillow underneath. This gentle backbend opens the heart and counters anxiety's collapsed posture.",
+        "duration": "10-15 minutes",
+        "materials": "Yoga mat, block or pillow",
+        "affirmation": "I lift my heart and rise above anxiety with strength and openness"
+      },
+      {
+        "title": "Calming Moon Salutation",
+        "instruction": "Move slowly through a gentle moon salutation sequence, focusing on the cooling, calming energy of the moon rather than the heating energy of the sun.",
+        "duration": "15-20 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I flow with lunar energy, cooling and calming my anxious mind"
+      },
+      {
+        "title": "Restorative Savasana",
+        "instruction": "Lie flat with pillows under knees and head, arms at sides, palms up. Cover with a blanket. Completely surrender your body weight and let the earth support you fully.",
+        "duration": "15-25 minutes",
+        "materials": "Yoga mat, pillows, blanket",
+        "affirmation": "I surrender completely and trust in the support that always holds me"
+      },
+      {
+        "title": "Grounding Goddess Pose",
+        "instruction": "Sit with soles of feet together, knees wide, hands on ankles. Feel your sitting bones rooted to earth. This grounding pose helps anxious energy settle downward.",
+        "duration": "8-15 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I am grounded like a tree, with roots deep in the nurturing earth"
+      }
+    ]
+  }
+}
