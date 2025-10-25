@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- VIDEO BACKGROUND CONTAINER -->
+    <div id="video-background-container" class="video-bg-container">
+        <video id="background-video" class="video-background" autoplay muted loop>
+            <!-- Video source will be set via JavaScript -->
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
     <!-- Splash Screen -->
     <div id="splash-screen" class="screen active">
         <div class="splash-content">
@@ -35,7 +43,8 @@
                 <span class="pill">Neural Rewiring</span>
                 <span class="pill">Yoga</span>
             </div>
-            <button class="cta-button" onclick="showScreen('emotion-selector')">Start Your Reset</button>
+            <!-- FIXED BUTTON WITH ENHANCED ONCLICK -->
+            <button class="cta-button" id="start-reset-button" onclick="startEmoSyncJourney()">Start Your Reset</button>
         </div>
     </div>
 
@@ -228,10 +237,6 @@
     <!-- Daily Reset Dashboard -->
     <div id="dashboard" class="screen">
         <div class="header">
-            <div class="header-logo">
-                <img src="https://i.ibb.co/0pwmb3ZP/great.png" alt="EmoSync" class="header-logo-img">
-                <span class="header-app-name">EmoSync</span>
-            </div>
             <h2>Your Emotional Reset</h2>
         </div>
         <div class="dashboard-content">
@@ -290,10 +295,6 @@
     <!-- Journal Page -->
     <div id="journal" class="screen">
         <div class="header">
-            <div class="header-logo">
-                <img src="https://i.ibb.co/0pwmb3ZP/great.png" alt="EmoSync" class="header-logo-img">
-                <span class="header-app-name">EmoSync</span>
-            </div>
             <h2>Emo Journal</h2>
             <div class="date-stamp" id="journal-date"></div>
         </div>
@@ -343,10 +344,6 @@
     <!-- My Healing Toolkit -->
     <div id="toolkit" class="screen">
         <div class="header">
-            <div class="header-logo">
-                <img src="https://i.ibb.co/0pwmb3ZP/great.png" alt="EmoSync" class="header-logo-img">
-                <span class="header-app-name">EmoSync</span>
-            </div>
             <h2>My Healing Toolkit</h2>
         </div>
         <div class="toolkit-content">
@@ -382,13 +379,26 @@
     <!-- Settings & Credits -->
     <div id="settings" class="screen">
         <div class="header">
-            <div class="header-logo">
-                <img src="https://i.ibb.co/0pwmb3ZP/great.png" alt="EmoSync" class="header-logo-img">
-                <span class="header-app-name">EmoSync</span>
-            </div>
             <h2>Settings & Credits</h2>
         </div>
         <div class="settings-content">
+            <!-- VIDEO BACKGROUND CONTROLS -->
+            <div class="settings-section">
+                <h3>Background</h3>
+                <div class="setting-item">
+                    <label>Background Type</label>
+                    <div class="background-controls">
+                        <button class="bg-option" onclick="setBackgroundType('gradient')">🌈 Gradient</button>
+                        <button class="bg-option" onclick="setBackgroundType('video')">🎬 Video</button>
+                    </div>
+                </div>
+                <div class="setting-item" id="video-upload-section" style="display: none;">
+                    <label>Upload Background Video</label>
+                    <input type="file" id="video-upload" accept="video/*" onchange="handleVideoUpload(event)">
+                    <small>Supports MP4, WebM, MOV files</small>
+                </div>
+            </div>
+
             <div class="settings-section">
                 <h3>Accessibility</h3>
                 <div class="setting-item">
@@ -398,10 +408,6 @@
                         <span id="text-size-display">Normal</span>
                         <button onclick="adjustTextSize(1)">A+</button>
                     </div>
-                </div>
-                <div class="setting-item">
-                    <label>Dark Mode</label>
-                    <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
                 </div>
                 <div class="setting-item">
                     <label>Reduce Animations</label>
@@ -423,19 +429,6 @@
                 </div>
                 <div class="setting-item">
                     <button class="danger-button" onclick="deleteData()">Delete All Data</button>
-                </div>
-            </div>
-
-            <div class="settings-section">
-                <h3>Notifications</h3>
-                <div class="setting-item">
-                    <label>Daily Check-in Reminders</label>
-                    <input type="time" id="reminder-time" value="09:00">
-                </div>
-                <div class="setting-item">
-                    <label>Private Notifications</label>
-                    <input type="checkbox" id="private-notifications" checked>
-                    <small>Shows only 'EmoSync' on lock screen</small>
                 </div>
             </div>
 
