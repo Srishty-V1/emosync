@@ -13,11 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/video-bg.css?v=1">
+    <link rel="stylesheet" href="css/video-bg.css?v=2">
 
     <!-- Existing BULLETPROOF BOOTSTRAP preserved as-is -->
     <script>
-        /* Restoring previous bootstrap exactly */
         console.log('🚨 EMERGENCY BOOTSTRAP LOADING...');
         window.startEmoSyncJourney = function() {
             const splash = document.getElementById('splash-screen');
@@ -31,12 +30,19 @@
         window.selectModality=function(m){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));const st=document.querySelector(`[data-modality="${m}"]`);if(st){st.classList.add('active');}};
         window.showScreen=function(id){document.querySelectorAll('.screen').forEach(sc=>{sc.classList.remove('active');sc.style.display='none';});const tgt=document.getElementById(id);if(tgt){tgt.classList.add('active');tgt.style.display='block';}};
         document.addEventListener('DOMContentLoaded',function(){const btn=document.getElementById('start-reset-button');if(btn){btn.addEventListener('click',window.startEmoSyncJourney);} setTimeout(()=>{const s=document.getElementById('splash-screen'); if(s&&s.classList.contains('active')) window.startEmoSyncJourney();},3000);});
+        // YouTube autoplay nudge
+        setTimeout(() => {
+            const iframe = document.querySelector('.youtube-bg');
+            if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+            }
+        }, 1200);
     </script>
 </head>
 <body>
     <!-- YouTube rounded background behind all content -->
     <div class="video-bg-container" aria-hidden="true">
-        <iframe class="youtube-bg" src="https://www.youtube.com/embed/iAbOCZhTOEY?autoplay=1&mute=1&loop=1&playlist=iAbOCZhTOEY&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3" allow="autoplay; encrypted-media" title="Background video"></iframe>
+        <iframe class="youtube-bg" src="https://www.youtube-nocookie.com/embed/iAbOCZhTOEY?autoplay=1&mute=1&loop=1&playlist=iAbOCZhTOEY&playsinline=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&enablejsapi=1" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" title="Background video"></iframe>
         <div class="video-bg-overlay"></div>
     </div>
 
@@ -114,18 +120,83 @@
             <div class="tab" data-modality="yoga" onclick="selectModality('yoga')"><span class="tab-icon">🧘</span><span class="tab-label">Yoga</span></div>
         </div>
         <div class="exercises-container" id="exercises-container">
-            <div class="exercise-card"><div class="exercise-badge">🎨 Art Therapy</div><h3 class="exercise-title">Stress Monster Art 🎨</h3><div class="exercise-instruction">Draw your stress as a creature. Name it... ✨</div><div class="exercise-meta" style="display:flex;gap:16px;margin:16px 0;font-size:14px;color:var(--warm-brown);"><div class="exercise-duration">⏰ 15-20 minutes</div><div class="exercise-materials">🎯 Art supplies</div></div><div class="exercise-actions" style="display:flex;gap:12px;justify-content:center;margin-top:20px;"><button class="action-button outline" onclick="showScreen('exercise-screen')">▶️ Start Exercise</button><button class="action-button gold">❤️ Save</button></div></div>
+            <div class="exercise-card"><div class="exercise-badge">🎨 Art Therapy</div><h3 class="exercise-title">Stress Monster Art 🎨</h3><div class="exercise-instruction">Draw your stress as a creature. Name it. Then color it with soothing tones like blue and green. As you color, repeat: 'I'm calming my storm.' ✨</div><div class="exercise-meta" style="display:flex;gap:16px;margin:16px 0;font-size:14px;color:var(--warm-brown);"><div class="exercise-duration">⏰ 15-20 minutes</div><div class="exercise-materials">🎯 Art supplies</div></div><div class="exercise-actions" style="display:flex;gap:12px;justify-content:center;margin-top:20px;"><button class="action-button outline" onclick="showScreen('exercise-screen')">▶️ Start Exercise</button><button class="action-button gold">❤️ Save</button></div></div>
         </div>
     </div>
 
     <!-- Exercise Screen -->
     <div id="exercise-screen" class="screen">
         <div class="header"><button class="back-button" onclick="showScreen('insight-hub')">← Back</button></div>
-        <div class="exercise-card"><div class="exercise-badge" id="exercise-badge">🎨 Art Therapy</div><h2 class="exercise-title" id="exercise-title">The Stress Monster</h2><div class="exercise-instruction" id="exercise-instruction">Draw your stress as a creature...</div><div class="exercise-visual" id="exercise-visual"><div class="exercise-encouragement" style="text-align:center;padding:20px;background:linear-gradient(135deg,var(--soft-peach),var(--sage-green));border-radius:16px;color:var(--deep-black);font-style:italic;font-size:16px;line-height:1.6;">🌟 Take your time and be gentle...</div></div><div class="exercise-actions"><button class="action-button outline">🔁 Try Another</button><button class="action-button gold">❤️ Save to Toolkit</button><button class="action-button outline">✅ Mark as Done</button></div></div>
+        <div class="exercise-card"><div class="exercise-badge" id="exercise-badge">🎨 Art Therapy</div><h2 class="exercise-title" id="exercise-title">The Stress Monster</h2><div class="exercise-instruction" id="exercise-instruction">Draw your stress as a creature. Name it. Then color it with soothing tones like blue and green. As you color, repeat: 'I'm calming my storm.' ✨</div><div class="exercise-visual" id="exercise-visual"><div class="exercise-encouragement" style="text-align:center;padding:20px;background:linear-gradient(135deg,var(--soft-peach),var(--sage-green));border-radius:16px;color:var(--deep-black);font-style:italic;font-size:16px;line-height:1.6;">🌟 Take your time and be gentle with yourself! 🌙<br>"You are exactly where you need to be!" ✨<br>💫 Healing isn't linear – it's creative!</div></div><div class="exercise-actions"><button class="action-button outline">🔁 Try Another</button><button class="action-button gold">❤️ Save to Toolkit</button><button class="action-button outline">✅ Mark as Done</button></div></div>
     </div>
 
-    <!-- Dashboard, Journal, Toolkit, Settings (unchanged) -->
-    <!-- ... keeping as originally restored earlier to avoid truncation in this snippet ... -->
+    <!-- Dashboard -->
+    <div id="dashboard" class="screen">
+        <div class="header"><h2>Your Emotional Reset 📊</h2></div>
+        <div class="dashboard-content">
+            <div class="today-emotion"><div class="emotion-pill" id="today-emotion-pill">Today: Stress 😰</div></div>
+            <div class="quick-start-card"><h3>3-Minute Reset ⚡</h3><p id="quick-recommendation">Try the "Breath of Calm" technique 🌬️</p><button class="cta-button">🚀 Begin</button></div>
+            <div class="mood-slider"><label>How do you feel right now? 💭</label><div class="mood-scale"><span class="mood-emoji" data-mood="1">😞</span><span class="mood-emoji" data-mood="2">😐</span><span class="mood-emoji active" data-mood="3">😌</span><span class="mood-emoji" data-mood="4">😊</span><span class="mood-emoji" data-mood="5">😄</span></div></div>
+            <div class="mini-journal"><label>Note how you feel after: ✍️</label><textarea id="quick-note" placeholder="I feel more..." rows="3"></textarea><button class="save-note">💾 Save</button></div>
+            <div class="streak-tracker"><span class="streak-icon">🔥</span><span class="streak-text">5-day streak</span></div>
+        </div>
+        <div class="bottom-nav">
+            <div class="nav-item active" onclick="showScreen('dashboard')"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></div>
+            <div class="nav-item" onclick="showScreen('toolkit')"><span class="nav-icon">❤️</span><span class="nav-label">Favorites</span></div>
+            <div class="nav-item" onclick="showScreen('journal')"><span class="nav-icon">📔</span><span class="nav-label">Journal</span></div>
+            <div class="nav-item" onclick="showScreen('settings')"><span class="nav-icon">⚙️</span><span class="nav-label">Settings</span></div>
+        </div>
+    </div>
+
+    <!-- Journal -->
+    <div id="journal" class="screen">
+        <div class="header"><h2>Emo Journal 📔</h2><div class="date-stamp" id="journal-date"></div></div>
+        <div class="journal-content">
+            <div class="journal-prompt"><h3>Today's Prompt: 💭</h3><p id="journal-prompt-text">Right now, my body feels... 🌊</p><button class="prompt-refresh">🔄 New Prompt</button></div>
+            <div class="journal-entry"><textarea id="journal-textarea" placeholder="Start writing your thoughts... ✨" rows="10"></textarea></div>
+            <div class="journal-tools"><button class="tool-button">🎨 Draw</button><button class="tool-button">📷 Photo</button><button class="tool-button">🏷️ Tag Emotion</button><button class="tool-button">🔒 Private</button></div>
+            <div class="journal-actions"><button class="action-button outline">📤 Export</button><button class="action-button gold">💾 Save Entry</button></div>
+        </div>
+        <div class="bottom-nav">
+            <div class="nav-item" onclick="showScreen('emotion-selector')"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></div>
+            <div class="nav-item" onclick="showScreen('toolkit')"><span class="nav-icon">❤️</span><span class="nav-label">Favorites</span></div>
+            <div class="nav-item active" onclick="showScreen('journal')"><span class="nav-icon">📔</span><span class="nav-label">Journal</span></div>
+            <div class="nav-item" onclick="showScreen('settings')"><span class="nav-icon">⚙️</span><span class="nav-label">Settings</span></div>
+        </div>
+    </div>
+
+    <!-- Toolkit -->
+    <div id="toolkit" class="screen">
+        <div class="header"><h2>My Healing Toolkit 🧰</h2></div>
+        <div class="toolkit-content">
+            <div class="toolkit-grid" id="toolkit-grid">
+                <div style="text-align:center;padding:40px;color:#FAFAFA;"><h3>💖 Your Personal Toolkit</h3><p>Save exercises as you discover ones that resonate with you! ✨</p><p>You have <strong>0</strong> saved exercises 📚</p><button class="action-button gold" onclick="showScreen('emotion-selector')">🎨 Discover Exercises</button></div>
+            </div>
+            <div class="toolkit-actions"><button class="cta-button">▶️ Start Routine</button><button class="action-button outline">✏️ Edit Toolkit</button></div>
+        </div>
+        <div class="bottom-nav">
+            <div class="nav-item" onclick="showScreen('emotion-selector')"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></div>
+            <div class="nav-item active" onclick="showScreen('toolkit')"><span class="nav-icon">❤️</span><span class="nav-label">Favorites</span></div>
+            <div class="nav-item" onclick="showScreen('journal')"><span class="nav-icon">📔</span><span class="nav-label">Journal</span></div>
+            <div class="nav-item" onclick="showScreen('settings')"><span class="nav-icon">⚙️</span><span class="nav-label">Settings</span></div>
+        </div>
+    </div>
+
+    <!-- Settings -->
+    <div id="settings" class="screen">
+        <div class="header"><h2>Settings & Credits ⚙️</h2></div>
+        <div class="settings-content">
+            <div class="settings-section"><h3>🎨 Personalization</h3><div class="setting-item"><label>Text Size 📱</label><div class="text-size-controls"><button>A-</button><span id="text-size-display">Normal</span><button>A+</button></div></div><div class="setting-item"><label>Reduce Animations 🎭</label><input type="checkbox" id="reduce-animations"></div><div class="setting-item"><label>Voice Navigation 🎤</label><input type="checkbox" id="voice-nav"></div></div>
+            <div class="settings-section"><h3>🔒 Privacy</h3><div class="setting-item"><button class="outline-button">📊 Data Usage Transparency</button></div><div class="setting-item"><button class="outline-button">📤 Export My Data</button></div><div class="setting-item"><button class="danger-button">🗑️ Delete All Data</button></div></div>
+            <div class="settings-section about"><h3>About 💖</h3><div class="about-logo"><img src="https://i.ibb.co/0pwmb3ZP/great.png" alt="EmoSync Logo" class="about-logo-img"></div><p>Created with love by @SrishtySynergy ✨<br>Where neuroscience meets self-expression! 🧠💖</p><div class="quote">"Healing isn't linear – it's creative." 🌙✨</div></div>
+        </div>
+        <div class="bottom-nav">
+            <div class="nav-item" onclick="showScreen('emotion-selector')"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></div>
+            <div class="nav-item" onclick="showScreen('toolkit')"><span class="nav-icon">❤️</span><span class="nav-label">Favorites</span></div>
+            <div class="nav-item" onclick="showScreen('journal')"><span class="nav-icon">📔</span><span class="nav-label">Journal</span></div>
+            <div class="nav-item active" onclick="showScreen('settings')"><span class="nav-icon">⚙️</span><span class="nav-label">Settings</span></div>
+        </div>
+    </div>
 
     <script src="app.js?v=20251025-emergency-fix" defer></script>
 </body>
