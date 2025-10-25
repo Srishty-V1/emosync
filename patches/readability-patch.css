@@ -1,0 +1,20 @@
+/* Patch: White cards with black text for maximum readability */
+:root {
+  --card-bg: #FFFFFF;
+  --card-border: rgba(212, 175, 55, 0.28);
+}
+
+/* Exercise cards */
+.exercise-card { background: var(--card-bg) !important; border: 2px solid var(--card-border) !important; }
+.exercise-title { color: #000 !important; }
+.exercise-instruction { color: #111 !important; background: rgba(212,175,55,0.12) !important; }
+.exercise-meta { color: #333 !important; }
+
+/* Emotion cards */
+.emotion-card { background: #FFFFFF !important; }
+.emotion-label { color: #000 !important; }
+
+/* Tabs */
+.tab { color: #000 !important; }
+
+/* Overlay readability stays off for cards */
