@@ -579,8 +579,8 @@ function loadExercises(modality) {
         container.innerHTML = `
             <div class="no-exercises" style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(168, 181, 160, 0.1)); border-radius: 20px; margin: 20px 0;">
                 <div class="no-exercises-icon" style="font-size: 60px; margin-bottom: 20px;">💎</div>
-                <h3 style="color: #FAFAFA; margin-bottom: 16px;">Loading Exercises... 🔄</h3>
-                <p style="color: #A8B5A0; margin-bottom: 24px;">Building your personalized healing experience! ✨</p>
+                <h3 style="color: #1A1A1A; margin-bottom: 16px;">Loading Exercises... 🔄</h3>
+                <p style="color: #333; margin-bottom: 24px;">Building your personalized healing experience! ✨</p>
                 <button class="action-button gold" onclick="selectModality('art')">🎨 Try Art Therapy</button>
             </div>
         `;
@@ -610,7 +610,7 @@ function loadExercises(modality) {
     }, 100);
 }
 
-// Create Exercise Card with enhanced styling 💫
+// Create Exercise Card with READABLE TEXT COLORS 💫
 function createExerciseCard(exercise, index) {
     const card = document.createElement('div');
     card.className = 'exercise-card';
@@ -621,14 +621,14 @@ function createExerciseCard(exercise, index) {
     const modalityName = getModalityName(currentModality);
     
     card.innerHTML = `
-        <div class="exercise-badge" style="background: linear-gradient(135deg, var(--sage-green), var(--primary-gold)); color: white; font-weight: 600; padding: 8px 16px; border-radius: 20px; display: inline-block; margin-bottom: 16px;">
+        <div class="exercise-badge" style="background: linear-gradient(135deg, #4ECDC4, #A8B5A0); color: white; font-weight: 600; padding: 8px 16px; border-radius: 20px; display: inline-block; margin-bottom: 16px;">
             ${modalityIcon} ${modalityName}
         </div>
-        <h3 class="exercise-title" style="margin: 16px 0; color: var(--deep-black); font-size: 20px; font-weight: 600;">${exercise.title}</h3>
-        <div class="exercise-instruction" style="background: rgba(212, 175, 55, 0.1); padding: 16px; border-radius: 12px; margin: 16px 0; border-left: 4px solid var(--primary-gold); line-height: 1.6; color: var(--deep-black);">
+        <h3 class="exercise-title" style="margin: 16px 0; color: #1A1A1A; font-size: 20px; font-weight: 600;">${exercise.title}</h3>
+        <div class="exercise-instruction" style="background: rgba(212, 175, 55, 0.15); padding: 16px; border-radius: 12px; margin: 16px 0; border-left: 4px solid #D4AF37; line-height: 1.6; color: #2D2D2D;">
             ${exercise.instruction.length > 120 ? exercise.instruction.substring(0, 120) + '...' : exercise.instruction}
         </div>
-        <div class="exercise-meta" style="display: flex; gap: 16px; margin: 16px 0; font-size: 14px; color: var(--warm-brown);">
+        <div class="exercise-meta" style="display: flex; gap: 16px; margin: 16px 0; font-size: 14px; color: #555;">
             <div class="exercise-duration">⏰ ${exercise.duration}</div>
             <div class="exercise-materials">🎯 ${exercise.materials || 'No materials needed'}</div>
         </div>
@@ -695,16 +695,16 @@ function openExercise(exerciseIndex) {
     if (visual) {
         visual.innerHTML = `
             <div class="exercise-meta-full" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; padding: 20px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(168, 181, 160, 0.1)); border-radius: 16px;">
-                <div class="meta-item" style="display: flex; align-items: center; gap: 8px; color: #FAFAFA;">
+                <div class="meta-item" style="display: flex; align-items: center; gap: 8px; color: #1A1A1A;">
                     <span class="meta-icon" style="font-size: 18px;">⏰</span>
                     <span class="meta-text" style="font-weight: 600;">${exercise.duration}</span>
                 </div>
-                <div class="meta-item" style="display: flex; align-items: center; gap: 8px; color: #FAFAFA;">
+                <div class="meta-item" style="display: flex; align-items: center; gap: 8px; color: #1A1A1A;">
                     <span class="meta-icon" style="font-size: 18px;">🎯</span>
                     <span class="meta-text" style="font-weight: 600;">${exercise.materials || 'None needed'}</span>
                 </div>
             </div>
-            <div class="exercise-encouragement" style="text-align: center; padding: 20px; background: linear-gradient(135deg, var(--soft-peach), var(--sage-green)); border-radius: 16px; color: var(--deep-black); font-style: italic; font-size: 16px; line-height: 1.6;">
+            <div class="exercise-encouragement" style="text-align: center; padding: 20px; background: linear-gradient(135deg, #FFE4B5, #E6F3E6); border-radius: 16px; color: #1A1A1A; font-style: italic; font-size: 16px; line-height: 1.6;">
                 🌟 Take your time and be gentle with yourself! 🌙<br>
                 "${exercise.affirmation || 'You are exactly where you need to be! ✨'}"<br>
                 💫 Healing isn't linear – it's creative!
@@ -758,7 +758,7 @@ function saveExercise(emotion, modality, exerciseIndex) {
         saveButtons.forEach(btn => {
             if (btn.textContent.includes('Save')) {
                 btn.innerHTML = '✔️ Saved! 🎉';
-                btn.style.background = 'linear-gradient(135deg, var(--sage-green), #4ECDC4)';
+                btn.style.background = 'linear-gradient(135deg, #4ECDC4, #A8B5A0)';
                 setTimeout(() => {
                     btn.innerHTML = '❤️ Save';
                     btn.style.background = '';
@@ -781,9 +781,9 @@ function showToast(message, type = 'success') {
     toast.textContent = message;
     
     const colors = {
-        success: 'linear-gradient(135deg, var(--primary-gold), #E8C547)',
-        info: 'linear-gradient(135deg, var(--sage-green), #4ECDC4)',
-        warning: 'linear-gradient(135deg, var(--soft-peach), #FFB347)'
+        success: 'linear-gradient(135deg, #D4AF37, #E8C547)',
+        info: 'linear-gradient(135deg, #4ECDC4, #A8B5A0)',
+        warning: 'linear-gradient(135deg, #FFE4B5, #FFB347)'
     };
     
     toast.style.cssText = `
@@ -792,7 +792,7 @@ function showToast(message, type = 'success') {
         left: 50%;
         transform: translateX(-50%) translateY(-100%);
         background: ${colors[type] || colors.success};
-        color: var(--deep-black);
+        color: #1A1A1A;
         padding: 16px 28px;
         border-radius: 30px;
         font-weight: 600;
@@ -896,7 +896,7 @@ function initializeToolkit() {
     if (grid) {
         if (savedExercises.length === 0) {
             grid.innerHTML = `
-                <div style="text-align: center; padding: 40px; color: #FAFAFA;">
+                <div style="text-align: center; padding: 40px; color: #1A1A1A;">
                     <h3>💖 Your Personal Toolkit</h3>
                     <p>Save exercises as you discover ones that resonate with you! ✨</p>
                     <p>You have <strong>${savedExercises.length}</strong> saved exercises 📚</p>
@@ -905,7 +905,7 @@ function initializeToolkit() {
             `;
         } else {
             grid.innerHTML = `
-                <div style="text-align: center; padding: 20px; color: #FAFAFA;">
+                <div style="text-align: center; padding: 20px; color: #1A1A1A;">
                     <h3>💖 Your Healing Toolkit (${savedExercises.length} exercises) 🎯</h3>
                 </div>
             `;
@@ -922,11 +922,11 @@ function createSavedExerciseCard(savedExercise) {
     const card = document.createElement('div');
     card.className = 'exercise-card saved';
     card.innerHTML = `
-        <div class="exercise-badge" style="background: linear-gradient(135deg, var(--sage-green), var(--primary-gold)); color: white; font-weight: 600; padding: 8px 16px; border-radius: 20px; display: inline-block; margin-bottom: 16px;">
+        <div class="exercise-badge" style="background: linear-gradient(135deg, #4ECDC4, #A8B5A0); color: white; font-weight: 600; padding: 8px 16px; border-radius: 20px; display: inline-block; margin-bottom: 16px;">
             ${getModalityIcon(savedExercise.modality)} ${getModalityName(savedExercise.modality)}
         </div>
-        <h3 style="color: var(--deep-black); margin: 8px 0;">${savedExercise.title}</h3>
-        <p style="color: var(--warm-brown); font-size: 14px; margin: 8px 0;">🎯 ${savedExercise.emotion.charAt(0).toUpperCase() + savedExercise.emotion.slice(1).replace('-', ' ')}</p>
+        <h3 style="color: #1A1A1A; margin: 8px 0;">${savedExercise.title}</h3>
+        <p style="color: #555; font-size: 14px; margin: 8px 0;">🎯 ${savedExercise.emotion.charAt(0).toUpperCase() + savedExercise.emotion.slice(1).replace('-', ' ')}</p>
         <div style="display: flex; gap: 8px; margin-top: 16px;">
             <button class="action-button outline" onclick="openSavedExercise('${savedExercise.id}')" style="flex: 1;">▶️ Practice</button>
         </div>
@@ -948,16 +948,16 @@ function openSavedExercise(exerciseId) {
         if (visual) {
             visual.innerHTML = `
                 <div class="exercise-meta-full" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; padding: 20px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(168, 181, 160, 0.1)); border-radius: 16px;">
-                    <div class="meta-item" style="display: flex; align-items: center; gap: 8px; color: #FAFAFA;">
+                    <div class="meta-item" style="display: flex; align-items: center; gap: 8px; color: #1A1A1A;">
                         <span class="meta-icon" style="font-size: 18px;">⏰</span>
                         <span class="meta-text" style="font-weight: 600;">${savedExercise.duration}</span>
                     </div>
-                    <div class="meta-item" style="display: flex; align-items: center; gap: 8px; color: #FAFAFA;">
+                    <div class="meta-item" style="display: flex; align-items: center; gap: 8px; color: #1A1A1A;">
                         <span class="meta-icon" style="font-size: 18px;">🎯</span>
                         <span class="meta-text" style="font-weight: 600;">${savedExercise.materials || 'None needed'}</span>
                     </div>
                 </div>
-                <div class="exercise-encouragement" style="text-align: center; padding: 20px; background: linear-gradient(135deg, var(--soft-peach), var(--sage-green)); border-radius: 16px; color: var(--deep-black); font-style: italic; font-size: 16px; line-height: 1.6;">
+                <div class="exercise-encouragement" style="text-align: center; padding: 20px; background: linear-gradient(135deg, #FFE4B5, #E6F3E6); border-radius: 16px; color: #1A1A1A; font-style: italic; font-size: 16px; line-height: 1.6;">
                     🌟 From your personal toolkit with love! 💖<br>
                     "${savedExercise.affirmation}"<br>
                     ✨ Healing isn't linear – it's creative!
