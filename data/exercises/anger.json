@@ -1,0 +1,727 @@
+{
+  "emotion": "anger",
+  "displayName": "Anger",
+  "description": "Fire in your chest, power in your voice. Let's channel it wisely.",
+  "modalities": {
+    "art": [
+      {
+        "title": "Anger Fire Transformation",
+        "instruction": "Draw your anger as fierce flames or fire. Then transform the fire into something positive - a hearth warming a home, a forge creating something beautiful, or a campfire bringing people together. Channel anger's energy into creation.",
+        "duration": "15-20 minutes",
+        "materials": "Paper, red/orange/yellow art supplies",
+        "affirmation": "I transform the fire of anger into the power of positive change"
+      },
+      {
+        "title": "Rage Release Scribbles",
+        "instruction": "On large paper, scribble out your anger with bold, intense strokes. Use dark colors, press hard, let it all out. Then on fresh paper, create something beautiful with gentle, flowing lines. Feel the contrast.",
+        "duration": "10-15 minutes",
+        "materials": "Large paper, dark markers or crayons",
+        "affirmation": "I release destructive anger and create beauty"
+      },
+      {
+        "title": "Anger Animal Portrait",
+        "instruction": "Draw the animal that represents your anger - maybe a lion, bull, or dragon. Then draw the same animal at peace - the lion resting, the bull grazing calmly. See anger's power in both states.",
+        "duration": "20-25 minutes",
+        "materials": "Paper, art supplies",
+        "affirmation": "My anger has power that can be fierce or peaceful"
+      },
+      {
+        "title": "Injustice Poster Art",
+        "instruction": "Create a poster about something that makes you angry - injustice, inequality, or harm. Channel your anger into advocacy art. Turn rage into positive action for change.",
+        "duration": "25-35 minutes",
+        "materials": "Poster board, markers, paints",
+        "affirmation": "I channel anger into positive action for justice and change"
+      },
+      {
+        "title": "Anger Volcano Expression",
+        "instruction": "Draw a volcano representing your anger. Show it erupting with all your feelings, then draw the same volcano dormant and beautiful, with fertile ground around it where new life grows.",
+        "duration": "18-25 minutes",
+        "materials": "Paper, colored pencils or paints",
+        "affirmation": "My anger's power can destroy or create - I choose creation"
+      },
+      {
+        "title": "Protective Boundary Art",
+        "instruction": "Create art showing healthy boundaries. Draw or paint a beautiful fence, wall, or shield that protects what you value. Anger often signals violated boundaries - honor this protective message.",
+        "duration": "20-30 minutes",
+        "materials": "Art supplies of choice",
+        "affirmation": "I honor anger's message and create healthy boundaries"
+      },
+      {
+        "title": "Anger Color Explosion",
+        "instruction": "Using reds, oranges, and yellows, create an explosive, energetic piece. Let the colors clash and blend. Then add cooling colors - blues and greens - to find balance.",
+        "duration": "15-25 minutes",
+        "materials": "Paints or pastels, paper",
+        "affirmation": "I express anger's intensity and find my way back to balance"
+      },
+      {
+        "title": "Justice Warrior Self-Portrait",
+        "instruction": "Draw yourself as a warrior for justice - strong, fierce, protective of what's right. Show anger as your ally in fighting for what matters, not your enemy.",
+        "duration": "25-35 minutes",
+        "materials": "Paper, art supplies",
+        "affirmation": "I am a warrior for justice, using anger's power wisely"
+      },
+      {
+        "title": "Anger Message Mandala",
+        "instruction": "Create a mandala while asking: 'What is my anger trying to tell me?' Let the repetitive patterns help you listen to anger's deeper message about your needs and values.",
+        "duration": "25-40 minutes",
+        "materials": "Paper, fine-tip pens or pencils",
+        "affirmation": "I listen to anger's wisdom and honor its protective message"
+      },
+      {
+        "title": "Calm After the Storm",
+        "instruction": "Draw or paint a powerful storm (your anger), then create a companion piece showing the calm, clean air and rainbow after the storm passes. Anger can clear the air.",
+        "duration": "30-45 minutes",
+        "materials": "Two sheets of paper, art supplies",
+        "affirmation": "After anger's storm, I find clarity and renewed peace"
+      }
+    ],
+    "breathwork": [
+      {
+        "title": "Cooling Anger Breath",
+        "instruction": "Inhale through pursed lips (like sipping cool air), exhale normally through nose. This naturally cools the heat of anger in your body and nervous system. Continue until you feel temperature balance.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I cool the fire of anger with my healing breath"
+      },
+      {
+        "title": "Lion's Breath for Anger Release",
+        "instruction": "Inhale deeply, then exhale forcefully through your mouth while sticking out your tongue and making a 'roar' sound. This safely releases anger's energy through breath and sound.",
+        "duration": "3-8 minutes",
+        "materials": "None needed",
+        "affirmation": "I roar out anger and reclaim my inner peace"
+      },
+      {
+        "title": "Anger Wave Breathing",
+        "instruction": "When anger rises like a wave, breathe with it - deep inhale as it peaks, long, forceful exhale as it crashes. Don't fight the wave; ride it with conscious breathing.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I ride anger's waves with consciousness and return to calm shores"
+      },
+      {
+        "title": "Fire Breathing Regulation",
+        "instruction": "Breathe in slowly and deeply, then exhale in short, forceful bursts like blowing out candles. This helps regulate the intense energy of anger without suppressing it.",
+        "duration": "5-8 minutes",
+        "materials": "None needed",
+        "affirmation": "I regulate anger's fire and direct its energy wisely"
+      },
+      {
+        "title": "Counted Anger Release",
+        "instruction": "Count slowly from 10 to 1 with each exhale, breathing out anger and tension. If you lose count, start again. This gives your heated mind a cooling focus.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I count my way from anger to calm, one breath at a time"
+      },
+      {
+        "title": "Belly Anger Transformation",
+        "instruction": "Place hands on belly. Breathe anger's heat into your core, then exhale it transformed into powerful, positive energy. Feel anger become fuel for positive change.",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I transform anger's energy into power for positive change"
+      },
+      {
+        "title": "Nostril Balance for Anger",
+        "instruction": "When angry, breathe through your left nostril only (cooling breath) by closing the right. This activates your parasympathetic nervous system and cools anger naturally.",
+        "duration": "5-8 minutes",
+        "materials": "None needed",
+        "affirmation": "I balance my inner fire with cooling, calming breath"
+      },
+      {
+        "title": "Anger Discharge Breathing",
+        "instruction": "Take a deep breath, hold for 3 seconds while clenching fists, then exhale powerfully while releasing fists and shaking out your hands. Discharge anger safely.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I safely discharge anger and reclaim my peaceful power"
+      },
+      {
+        "title": "Compassion Breath for Anger",
+        "instruction": "Breathe in compassion for yourself (anger is human), breathe out compassion for others (they're human too). This doesn't dismiss anger but adds healing perspective.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I breathe compassion into anger and find understanding"
+      },
+      {
+        "title": "Ocean Wave Anger Soothing",
+        "instruction": "Breathe like ocean waves - long, deep inhale like a wave building, then long exhale like waves receding. Let the ocean's rhythm soothe anger's intensity.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I flow with ocean rhythms and let waves of peace wash over anger"
+      }
+    ],
+    "somatic": [
+      {
+        "title": "Anger Fist Clench and Release",
+        "instruction": "Clench your fists tightly while breathing in, hold for 5 seconds feeling anger's tension, then release completely while exhaling. Feel the contrast between tension and release.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I acknowledge anger's power and choose when to hold or release it"
+      },
+      {
+        "title": "Anger Stomp and Ground",
+        "instruction": "Stand and stomp your feet firmly into the ground for 30 seconds, releasing anger through your legs into the earth. Then stand still and feel yourself grounded and stable.",
+        "duration": "3-8 minutes",
+        "materials": "Floor space",
+        "affirmation": "I ground anger's energy into the earth and find my stability"
+      },
+      {
+        "title": "Jaw Tension Release for Anger",
+        "instruction": "Notice how anger tightens your jaw. Massage your jaw muscles, open and close your mouth slowly, then let your jaw hang loose. We hold much anger in our jaw.",
+        "duration": "5-8 minutes",
+        "materials": "None needed",
+        "affirmation": "I release anger from my jaw and speak my truth with clarity"
+      },
+      {
+        "title": "Shoulder Anger Shake-Off",
+        "instruction": "Lift your shoulders to your ears, hold the tension, then drop them completely. Shake your shoulders vigorously for 30 seconds. Feel anger leaving through movement.",
+        "duration": "5-8 minutes",
+        "materials": "None needed",
+        "affirmation": "I shake off anger's burden and free my shoulders from its weight"
+      },
+      {
+        "title": "Anger Power Pose",
+        "instruction": "Stand tall, feet wide, hands on hips (like a superhero). Hold for 2 minutes. This pose honors anger's power while helping you feel in control of it rather than controlled by it.",
+        "duration": "3-5 minutes",
+        "materials": "Standing space",
+        "affirmation": "I harness anger's power and stand strong in my truth"
+      },
+      {
+        "title": "Chest Opening Anger Release",
+        "instruction": "Anger contracts the chest. Stretch your arms wide, arch your back gently, open your chest to the sky. Breathe deeply into this expanded space.",
+        "duration": "5-10 minutes",
+        "materials": "Space to stretch",
+        "affirmation": "I open my chest and heart, releasing anger's contraction"
+      },
+      {
+        "title": "Anger Energy Redistribution",
+        "instruction": "Place hands where you feel anger in your body. Consciously move that energy down to your feet (grounding) or up to your heart (transforming into compassion).",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I consciously direct anger's energy where it serves me best"
+      },
+      {
+        "title": "Pillow Punch Anger Release",
+        "instruction": "Use a pillow or cushion to safely punch out anger. Punch with intention, not violence - releasing energy, not creating more aggression. End with gentle self-soothing.",
+        "duration": "5-10 minutes",
+        "materials": "Pillow or soft cushion",
+        "affirmation": "I release anger safely and return to my gentle strength"
+      },
+      {
+        "title": "Anger Boundary Gestures",
+        "instruction": "Practice firm boundary gestures - palm out in 'stop' position, arms crossed protectively, stepping back. Anger often signals boundary violations. Practice protecting your space.",
+        "duration": "5-10 minutes",
+        "materials": "Standing space",
+        "affirmation": "I honor anger's boundary message and protect my sacred space"
+      },
+      {
+        "title": "Whole Body Anger Discharge",
+        "instruction": "Tense your entire body for 10 seconds while holding your breath (containing anger), then release everything at once with a loud exhale. Feel the full-body release.",
+        "duration": "5-8 minutes",
+        "materials": "Private space",
+        "affirmation": "I discharge anger fully and reclaim my body's natural ease"
+      }
+    ],
+    "cbt": [
+      {
+        "title": "Anger Thought Analysis",
+        "instruction": "Write down angry thoughts. Ask: What triggered this? What am I telling myself? Is this thought helping or hurting? What would be a more balanced perspective?",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I examine my angry thoughts with curiosity and find balanced truth"
+      },
+      {
+        "title": "Anger Trigger Mapping",
+        "instruction": "Map your anger triggers: situations, people, thoughts, physical states. Understanding your patterns helps you prepare better responses and take back control.",
+        "duration": "15-25 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "Understanding my triggers gives me power to respond with wisdom"
+      },
+      {
+        "title": "Anger Assumptions Check",
+        "instruction": "List assumptions you make when angry: 'They did this on purpose,' 'They don't respect me.' Ask: How do I know this is true? What other explanations are possible?",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I question angry assumptions and remain open to multiple perspectives"
+      },
+      {
+        "title": "Anger Cost-Benefit Analysis",
+        "instruction": "Write the costs and benefits of your anger. What does it protect? What does it cost you in relationships, health, peace? Make informed choices about when anger serves you.",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I make conscious choices about when and how to express anger"
+      },
+      {
+        "title": "Alternative Response Planning",
+        "instruction": "For your common anger triggers, write 3 different response options: your usual reaction, a more calm response, and a creative solution. Practice having choices.",
+        "duration": "18-25 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I have multiple choices in how to respond to triggering situations"
+      },
+      {
+        "title": "Anger Needs Investigation",
+        "instruction": "Ask: What does my anger need? Respect? Boundaries? Justice? Understanding? Identify the legitimate need behind anger, then find healthy ways to meet it.",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I honor anger's message about my needs and find healthy ways to meet them"
+      },
+      {
+        "title": "Anger Perspective Shifting",
+        "instruction": "Write your anger story from your perspective, then rewrite it from the other person's perspective. This doesn't excuse harm but adds understanding and reduces righteousness.",
+        "duration": "20-30 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I see situations from multiple angles and find compassionate understanding"
+      },
+      {
+        "title": "Anger Evidence Examination",
+        "instruction": "For angry beliefs like 'They always disrespect me,' collect evidence for and against. Often our anger sees patterns that aren't as absolute as they feel.",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I examine evidence fairly and see situations more clearly"
+      },
+      {
+        "title": "Anger Thought Stopping",
+        "instruction": "When angry thought spirals start, practice saying 'STOP' and redirecting to a prepared calming thought or image. Train your mind to interrupt destructive anger patterns.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I interrupt destructive thought patterns and choose peace"
+      },
+      {
+        "title": "Future Consequence Consideration",
+        "instruction": "Before acting on anger, mentally fast-forward: 'If I do/say this, what will likely happen in 1 hour? 1 day? 1 week?' Use wisdom to guide anger's power.",
+        "duration": "8-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I consider consequences and use anger's energy wisely"
+      }
+    ],
+    "rebt": [
+      {
+        "title": "Shoulds and Musts in Anger",
+        "instruction": "Identify 'should' thoughts fueling anger: 'They should respect me,' 'Life must be fair.' Replace with preferences: 'I prefer respect, but I can handle disrespect and still maintain my worth.'",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I have preferences, not demands, and this gives me emotional freedom"
+      },
+      {
+        "title": "Awfulizing Anger Check",
+        "instruction": "When something feels 'terrible' or 'awful,' ask: 'Is this truly awful, or just very unpleasant?' Rate it 1-100%. Most anger comes from making things seem worse than they are.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I see unpleasant situations clearly without making them worse than they are"
+      },
+      {
+        "title": "Fairness Demand Challenge",
+        "instruction": "Challenge the belief 'Life should be fair' that often underlies anger. Life is often unfair, and demanding fairness creates suffering. Accept unfairness while working for justice.",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I work for fairness while accepting that life is often unfair"
+      },
+      {
+        "title": "Respect Demand Examination",
+        "instruction": "Question 'Everyone must respect me.' While respect is nice, demanding it creates anger. Practice: 'I prefer respect, but I can maintain my self-respect regardless of others' behavior.'",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "My self-respect is independent of how others treat me"
+      },
+      {
+        "title": "Control Illusion in Anger",
+        "instruction": "Examine beliefs like 'Others should do what I want' or 'Things must go my way.' Recognize what you can and cannot control. Focus energy on your sphere of influence.",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I focus my energy on what I can control and release what I cannot"
+      },
+      {
+        "title": "Approval Anger Analysis",
+        "instruction": "If angry when disapproved of, challenge: 'I need approval to be worthwhile.' Replace with: 'I prefer approval, but my worth isn't determined by others' opinions.'",
+        "duration": "12-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "My worth is inherent and not dependent on others' approval"
+      },
+      {
+        "title": "Perfection Anger Release",
+        "instruction": "Challenge perfectionist anger: 'I/others must perform perfectly.' Replace with: 'I prefer good performance, but humans are fallible and imperfection is acceptable.'",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I accept human imperfection in myself and others"
+      },
+      {
+        "title": "Catastrophic Anger Scaling",
+        "instruction": "For things that make you angry, ask: 'On a scale of 1-100, where 100 is the worst thing imaginable, where does this actually rank?' Usually it's much lower than it feels.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I see situations in proper perspective and respond proportionally"
+      },
+      {
+        "title": "Anger Tolerance Building",
+        "instruction": "Practice the thought: 'I can tolerate people doing things I don't like. It's unpleasant, not unbearable.' Build tolerance for life's inevitable frustrations.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I can tolerate frustration and respond with wisdom rather than reactivity"
+      },
+      {
+        "title": "Rational Anger Mantras",
+        "instruction": "Create rational responses to anger: 'This is frustrating, not terrible,' 'Others have the right to act differently than I prefer,' 'I can handle this annoyance.'",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I respond to frustration with rational, balanced thinking"
+      }
+    ],
+    "neural": [
+      {
+        "title": "Calm Response Programming",
+        "instruction": "Visualize anger triggers, then rehearse responding with complete calm and wisdom. See yourself breathing deeply, thinking clearly, speaking respectfully. Train this new automatic response.",
+        "duration": "15-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I program my mind to respond to triggers with wisdom and calm"
+      },
+      {
+        "title": "Anger Transformation Visualization",
+        "instruction": "Visualize anger as red energy in your body. See it transforming into golden light of positive action, or blue light of wisdom. Program your brain to automatically transform anger.",
+        "duration": "15-20 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I transform anger's energy into wisdom and positive action"
+      },
+      {
+        "title": "Peaceful Authority Installation",
+        "instruction": "Visualize yourself as someone who has natural authority without aggression - calm, confident, respected. Install this identity through repeated mental rehearsal.",
+        "duration": "18-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I embody peaceful authority and natural leadership"
+      },
+      {
+        "title": "Anger Pattern Interrupt",
+        "instruction": "Create a new neural pathway: anger trigger → pause → three deep breaths → wise response. Mentally rehearse this sequence until it becomes automatic.",
+        "duration": "15-20 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I automatically pause and breathe when triggered, allowing wisdom to guide me"
+      },
+      {
+        "title": "Compassionate Strength Visualization",
+        "instruction": "Visualize yourself as powerfully compassionate - strong enough to be gentle, confident enough to be understanding. See this as your natural state when dealing with difficult people.",
+        "duration": "20-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I am strong enough to be gentle and confident enough to be compassionate"
+      },
+      {
+        "title": "Anger Wisdom Integration",
+        "instruction": "Visualize anger as a wise counselor who alerts you to boundary violations or injustice, but you remain the calm, wise ruler who decides the response. Integrate anger as ally, not master.",
+        "duration": "18-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I listen to anger's wisdom while maintaining my power to choose my response"
+      },
+      {
+        "title": "Future Self Anger Mastery",
+        "instruction": "Visualize yourself 1 year from now, having mastered anger. See how calmly and wisely this future you handles provocations. Let them teach you their secrets.",
+        "duration": "20-30 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I am becoming a master of my emotions, using anger's power wisely"
+      },
+      {
+        "title": "Protective Calm Installation",
+        "instruction": "Install the belief that calm is your most powerful protection. Visualize staying calm in difficult situations and see how this calm strength protects and empowers you.",
+        "duration": "15-20 minutes",
+        "materials": "Quiet space",
+        "affirmation": "My calm is my power, my protection, and my strength"
+      },
+      {
+        "title": "Anger Energy Redirection",
+        "instruction": "Visualize anger's intense energy being redirected into positive actions - creating, building, protecting, healing. Train your brain to automatically channel anger constructively.",
+        "duration": "18-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I redirect anger's powerful energy into positive, constructive action"
+      },
+      {
+        "title": "Righteous Anger Programming",
+        "instruction": "Visualize using anger appropriately - for justice, protection of the vulnerable, standing up for what's right. Program appropriate anger expression while maintaining inner peace.",
+        "duration": "20-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I use anger appropriately for justice while maintaining my inner peace"
+      }
+    ],
+    "journaling": [
+      {
+        "title": "Anger Letter (Unsent)",
+        "instruction": "Write a raw, honest letter to whoever/whatever triggered your anger. Say everything you feel - don't hold back. Then burn or tear it up. This releases anger without harmful consequences.",
+        "duration": "15-25 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I express my anger safely and release it completely"
+      },
+      {
+        "title": "Anger Message Investigation",
+        "instruction": "Journal: What is my anger trying to tell me? What need is it highlighting? What boundary has been crossed? What value is being threatened? Listen to anger's protective wisdom.",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I listen to anger's wisdom and honor its protective message"
+      },
+      {
+        "title": "Anger Transformation Story",
+        "instruction": "Write about how you want to transform your relationship with anger. What would it look like to befriend anger instead of fear it? How could anger serve your highest good?",
+        "duration": "20-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I transform my relationship with anger into one of wisdom and alliance"
+      },
+      {
+        "title": "Anger Trigger Timeline",
+        "instruction": "Write about your anger triggers over time. When did they develop? What experiences shaped them? Understanding origins can help you respond with more awareness.",
+        "duration": "20-30 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "Understanding my anger's history helps me respond with greater wisdom"
+      },
+      {
+        "title": "Anger Dialogue Journal",
+        "instruction": "Write a conversation between you and your anger. Let anger speak first about its concerns and needs. Then respond with understanding and wisdom.",
+        "duration": "18-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I dialogue with anger as an ally and find mutual understanding"
+      },
+      {
+        "title": "Anger Strength Recognition",
+        "instruction": "Write about the positive aspects of your anger - how it protects you, motivates justice, energizes action, maintains boundaries. Honor anger's gifts while managing its expression.",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I honor anger's gifts while choosing wise expression"
+      },
+      {
+        "title": "Anger Release and Renewal",
+        "instruction": "Write about what you want to release about your relationship with anger, and what you want to invite in. Create a conscious intention for anger transformation.",
+        "duration": "20-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I consciously evolve my relationship with anger toward wisdom and peace"
+      },
+      {
+        "title": "Anger Compassion Practice",
+        "instruction": "Write with compassion for yourself about your anger struggles. Then extend compassion to others who have triggered your anger. Find the humanity in everyone.",
+        "duration": "18-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I extend compassion to myself and others in moments of anger"
+      },
+      {
+        "title": "Anger Pattern Recognition",
+        "instruction": "Journal about your anger patterns - situations, people, thoughts, physical sensations. What patterns do you notice? How might you interrupt unhelpful patterns?",
+        "duration": "20-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "Recognizing my patterns gives me power to choose new responses"
+      },
+      {
+        "title": "Anger Integration Wisdom",
+        "instruction": "Write about how to integrate anger wisely into your life. When is anger appropriate? How can you express it constructively? What would healthy anger look like?",
+        "duration": "20-30 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I integrate anger wisely as a source of strength and protection"
+      }
+    ],
+    "eft": [
+      {
+        "title": "Anger Release Tapping",
+        "instruction": "Setup: 'Even though I feel this intense anger, I deeply accept myself and choose to release it safely.' Tap while saying: 'This anger... this rage... this heat in my body... I release it now.'",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I release anger safely and reclaim my peaceful power"
+      },
+      {
+        "title": "Anger Trigger Tapping",
+        "instruction": "Think of what triggered your anger. Rate intensity 1-10. Tap: 'Even though [person/situation] triggered my anger, I accept my feelings and choose to respond with wisdom.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I acknowledge triggers and choose wise responses"
+      },
+      {
+        "title": "Righteous Anger Balance",
+        "instruction": "For justified anger, tap: 'Even though I have every right to be angry about this injustice, I choose to channel this energy into positive action rather than destructive rage.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I channel righteous anger into positive, constructive action"
+      },
+      {
+        "title": "Anger Body Sensation Tapping",
+        "instruction": "Focus on where anger lives in your body - tight jaw, clenched fists, hot chest. Tap while saying: 'This tension in my [body part]... this heat... I release it and choose ease.'",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "My body releases anger and returns to natural ease and flow"
+      },
+      {
+        "title": "Anger Boundary Tapping",
+        "instruction": "If anger comes from boundary violations, tap: 'Even though my boundaries were crossed and I feel angry, I honor this protective feeling and choose to strengthen my boundaries wisely.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I honor anger's boundary message and protect myself wisely"
+      },
+      {
+        "title": "Anger Shame Release",
+        "instruction": "Many feel shame about anger. Tap: 'Even though I feel ashamed of my anger, I accept that anger is human and natural. I choose to express it in healthy ways.'",
+        "duration": "12-18 minutes",
+        "materials": "None needed",
+        "affirmation": "I accept my anger as natural and choose healthy expression"
+      },
+      {
+        "title": "Anger Forgiveness Tapping",
+        "instruction": "When ready (don't rush), tap: 'Even though they hurt me and I felt angry, I'm open to releasing this for my own peace. I choose freedom over resentment.'",
+        "duration": "12-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I choose freedom from resentment for my own peace and wellbeing"
+      },
+      {
+        "title": "Anger Control Tapping",
+        "instruction": "For fear of anger, tap: 'Even though I'm afraid of my anger and try to control it, I accept that anger has wisdom and I can learn to express it safely.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I befriend my anger and learn to express it with wisdom"
+      },
+      {
+        "title": "Anger Transformation Tapping",
+        "instruction": "Tap: 'Even though anger feels destructive, I choose to transform this powerful energy into fuel for positive change and protection of what I value.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I transform anger's power into positive change and protection"
+      },
+      {
+        "title": "Anger Wisdom Installation",
+        "instruction": "After releasing anger, tap in positives: 'I respond to triggers with wisdom... I use anger's energy constructively... I maintain inner peace while standing strong...'",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I install patterns of wise, peaceful strength in all situations"
+      }
+    ],
+    "emdr": [
+      {
+        "title": "Anger Bilateral Processing",
+        "instruction": "While thinking about what made you angry, do bilateral knee tapping or butterfly hugs. Let anger process naturally without trying to change it. Notice what shifts.",
+        "duration": "10-15 minutes",
+        "materials": "Chair or space for movement",
+        "affirmation": "I allow anger to process naturally and find its own resolution"
+      },
+      {
+        "title": "Calm Strength Installation",
+        "instruction": "Think of a time you handled conflict with calm strength while doing bilateral stimulation. Enhance all positive aspects - how centered and powerful you felt.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I access calm strength and handle conflicts with wisdom"
+      },
+      {
+        "title": "Anger Memory Desensitization",
+        "instruction": "If anger connects to past hurts, gently hold that memory while doing bilateral movements. Let the emotional charge drain from the memory naturally.",
+        "duration": "15-25 minutes",
+        "materials": "Chair or movement space",
+        "affirmation": "I process past hurts and free myself from old anger"
+      },
+      {
+        "title": "Protective Anger Resource",
+        "instruction": "Think of a time your anger appropriately protected you or someone else while doing bilateral stimulation. Install this as a positive resource for healthy anger expression.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I use anger appropriately to protect and defend what matters"
+      },
+      {
+        "title": "Anger Trigger Desensitization",
+        "instruction": "Think of situations that typically trigger anger while doing bilateral movements. Notice if the emotional intensity decreases as you process these triggers.",
+        "duration": "12-18 minutes",
+        "materials": "Chair or movement space",
+        "affirmation": "I reduce the power of triggers and respond with increasing wisdom"
+      },
+      {
+        "title": "Anger Container Visualization",
+        "instruction": "Visualize placing your anger in a strong, secure container while doing bilateral movements. You can return to process it when you're calm and resourced.",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I contain anger safely and process it when I'm ready"
+      },
+      {
+        "title": "Wise Response Installation",
+        "instruction": "Visualize responding to anger triggers with complete wisdom and calm while doing bilateral stimulation. Install this wise response as your new default pattern.",
+        "duration": "12-18 minutes",
+        "materials": "None needed",
+        "affirmation": "I respond to all provocations with wisdom, calm, and strength"
+      },
+      {
+        "title": "Anger Energy Transformation",
+        "instruction": "While doing bilateral movements, visualize anger's red energy transforming into golden light of positive action or blue light of wisdom. Feel the transformation happening.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I transform anger's energy into wisdom and positive action"
+      },
+      {
+        "title": "Compassionate Boundary Installation",
+        "instruction": "Visualize setting firm boundaries with complete compassion - strong but not aggressive, clear but not mean. Install this balanced approach through bilateral stimulation.",
+        "duration": "12-18 minutes",
+        "materials": "None needed",
+        "affirmation": "I set boundaries with both strength and compassion"
+      },
+      {
+        "title": "Anger Healing Integration",
+        "instruction": "Do bilateral movements while holding the intention to integrate anger as a healthy part of your emotional spectrum - neither suppressed nor explosive, but wisely expressed.",
+        "duration": "15-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I integrate anger wisely as part of my complete emotional wisdom"
+      }
+    ],
+    "yoga": [
+      {
+        "title": "Lion's Breath Pose",
+        "instruction": "Sit tall, inhale deeply, then exhale forcefully through your mouth while sticking out your tongue and opening your eyes wide. This safely releases anger's fierce energy.",
+        "duration": "5-10 minutes",
+        "materials": "Yoga mat or chair",
+        "affirmation": "I roar out anger and reclaim my peaceful power"
+      },
+      {
+        "title": "Warrior Pose Sequence",
+        "instruction": "Move through Warrior I, II, and III poses. Feel your strength without aggression. Warriors protect with power, not violence. Channel anger into protective strength.",
+        "duration": "12-18 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I am a peaceful warrior, strong in protection of what matters"
+      },
+      {
+        "title": "Anger Release Twists",
+        "instruction": "Sit cross-legged and twist gently right and left, wringing out anger like water from a cloth. Breathe into the twists and let tension release from your spine.",
+        "duration": "8-12 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I wring out anger and twist into flexibility and ease"
+      },
+      {
+        "title": "Cooling Forward Folds",
+        "instruction": "Practice seated or standing forward folds to cool anger's heat. Let your head hang heavy, releasing the need to figure everything out. Find surrender within strength.",
+        "duration": "10-15 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I cool anger's fire and find peace through gentle surrender"
+      },
+      {
+        "title": "Heart Opening for Anger",
+        "instruction": "Practice camel pose, fish pose, or simple chest stretches. Anger closes the heart; these poses gently reopen it. Breathe space back into your heart center.",
+        "duration": "10-15 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I open my heart and release anger's protective walls"
+      },
+      {
+        "title": "Grounding Mountain Pose",
+        "instruction": "Stand in mountain pose, feeling your feet rooted to earth. Feel solid, stable, unshakeable. Let anger's storm rage around you without moving your center.",
+        "duration": "8-15 minutes",
+        "materials": "Floor space",
+        "affirmation": "I am unshakeable like a mountain, grounded in my truth"
+      },
+      {
+        "title": "Cooling Moon Salutation",
+        "instruction": "Practice a slow, cooling moon salutation to counteract anger's heat. Move with lunar, cooling energy rather than solar, heating energy.",
+        "duration": "15-20 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I flow with cooling, calming energy and release anger's heat"
+      },
+      {
+        "title": "Anger Discharge Shaking",
+        "instruction": "Stand and shake your whole body vigorously for 2 minutes, then stand in mountain pose. This naturally discharges anger's intense energy through movement.",
+        "duration": "5-10 minutes",
+        "materials": "Standing space",
+        "affirmation": "I discharge anger naturally and return to my calm center"
+      },
+      {
+        "title": "Restorative Child's Pose",
+        "instruction": "Rest in child's pose with arms alongside your body. Breathe deeply and let your forehead touch the ground. Surrender the need to fight and find peace in yielding.",
+        "duration": "10-20 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I find strength in surrender and power in peaceful yielding"
+      },
+      {
+        "title": "Anger Integration Savasana",
+        "instruction": "Lie in savasana and visualize anger as energy that can flow freely through you without getting stuck. Let it pass through like wind through trees - acknowledged but not resisted.",
+        "duration": "15-25 minutes",
+        "materials": "Yoga mat, blanket",
+        "affirmation": "I let anger flow through me like wind through trees - present but not stuck"
+      }
+    ]
+  }
+}
