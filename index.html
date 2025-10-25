@@ -243,13 +243,7 @@
                 startBtn.addEventListener('click', window.startEmoSyncJourney);
             }
             
-            // Auto-transition fallback
-            setTimeout(() => {
-                const splash = document.getElementById('splash-screen');
-                if (splash && splash.classList.contains('active')) {
-                    window.startEmoSyncJourney();
-                }
-            }, 3000);
+            // REMOVED AUTO-ADVANCE - APP NOW WAITS FOR START BUTTON ONLY
             
             // Initialize native video background
             window.initNativeVideoBackground();
@@ -661,6 +655,6 @@
         </div>
     </div>
 
-    <script src="app.js?v=gdrive-bg-swipe-nav" defer></script>
+    <script src="app.js?v=no-auto-advance" defer></script>
 </body>
 </html>
