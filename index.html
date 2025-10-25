@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     
-    <!-- 🚨 BULLETPROOF INLINE BOOTSTRAP - GUARANTEES START BUTTON WORKS -->
+    <!-- 🚨 BULLETPROOF INLINE BOOTSTRAP - GUARANTEES ALL FUNCTIONS WORK -->
     <script>
         console.log('🚨 EMERGENCY BOOTSTRAP LOADING...');
         
@@ -32,6 +32,62 @@
                 emotionSelector.classList.add('active');
                 emotionSelector.style.display = 'block';
                 console.log('✅ SUCCESSFULLY SWITCHED TO EMOTION SELECTOR!');
+            }
+        };
+        
+        // 🔥 GUARANTEED EMOTION SELECTION - WORKS ALWAYS
+        window.selectEmotion = function(emotion) {
+            console.log('🎯 Emotion selected:', emotion);
+            const hub = document.getElementById('insight-hub');
+            const selector = document.getElementById('emotion-selector');
+            
+            if (hub && selector) {
+                selector.classList.remove('active');
+                selector.style.display = 'none';
+                hub.classList.add('active');
+                hub.style.display = 'block';
+                
+                // Update emotion title
+                const titleEl = document.getElementById('emotion-title');
+                if (titleEl) {
+                    titleEl.textContent = emotion.toUpperCase().replace('-', ' ') + ' ✨';
+                }
+                
+                console.log('✅ SWITCHED TO INSIGHT HUB!');
+            }
+        };
+        
+        // 🔥 GUARANTEED MODALITY SELECTION
+        window.selectModality = function(modality) {
+            console.log('🎨 Modality selected:', modality);
+            
+            // Update tab states
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            const selectedTab = document.querySelector(`[data-modality="${modality}"]`);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+        };
+        
+        // 🔥 GUARANTEED SHOW SCREEN FUNCTION - BULLETPROOF
+        window.showScreen = function(screenId) {
+            console.log('🔄 Switching to screen:', screenId);
+            
+            // Hide all screens
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.remove('active');
+                screen.style.display = 'none';
+            });
+            
+            // Show target screen
+            const targetScreen = document.getElementById(screenId);
+            if (targetScreen) {
+                targetScreen.classList.add('active');
+                targetScreen.style.display = 'block';
+                console.log('✅ SCREEN SWITCHED SUCCESSFULLY!');
             }
         };
         
@@ -55,41 +111,7 @@
             }, 3000);
         });
         
-        // 🔥 GLOBAL EMOTION SELECTOR FUNCTION - BULLETPROOF
-        window.selectEmotion = function(emotion) {
-            console.log('🎯 Emotion selected:', emotion);
-            const hub = document.getElementById('insight-hub');
-            const selector = document.getElementById('emotion-selector');
-            
-            if (hub && selector) {
-                selector.classList.remove('active');
-                selector.style.display = 'none';
-                hub.classList.add('active');
-                hub.style.display = 'block';
-                console.log('✅ SWITCHED TO INSIGHT HUB!');
-            }
-        };
-        
-        // 🔥 GLOBAL SHOW SCREEN FUNCTION - BULLETPROOF
-        window.showScreen = function(screenId) {
-            console.log('🔄 Switching to screen:', screenId);
-            
-            // Hide all screens
-            document.querySelectorAll('.screen').forEach(screen => {
-                screen.classList.remove('active');
-                screen.style.display = 'none';
-            });
-            
-            // Show target screen
-            const targetScreen = document.getElementById(screenId);
-            if (targetScreen) {
-                targetScreen.classList.add('active');
-                targetScreen.style.display = 'block';
-                console.log('✅ SCREEN SWITCHED SUCCESSFULLY!');
-            }
-        };
-        
-        console.log('🚀 EMERGENCY BOOTSTRAP LOADED - START BUTTON GUARANTEED TO WORK!');
+        console.log('🚀 EMERGENCY BOOTSTRAP LOADED - ALL FUNCTIONS GUARANTEED TO WORK!');
     </script>
 </head>
 <body>
@@ -292,12 +314,12 @@
                 <div class="exercise-badge">🎨 Art Therapy</div>
                 <h3 class="exercise-title">Stress Monster Art 🎨</h3>
                 <div class="exercise-instruction">Draw your stress as a creature. Name it. Then color it with soothing tones like blue and green. As you color, repeat: 'I'm calming my storm.' ✨</div>
-                <div class="exercise-meta">
+                <div class="exercise-meta" style="display: flex; gap: 16px; margin: 16px 0; font-size: 14px; color: var(--warm-brown);">
                     <div class="exercise-duration">⏰ 15-20 minutes</div>
                     <div class="exercise-materials">🎯 Art supplies</div>
                 </div>
-                <div class="exercise-actions">
-                    <button class="action-button outline">▶️ Start Exercise</button>
+                <div class="exercise-actions" style="display: flex; gap: 12px; justify-content: center; margin-top: 20px;">
+                    <button class="action-button outline" onclick="showScreen('exercise-screen')">▶️ Start Exercise</button>
                     <button class="action-button gold">❤️ Save</button>
                 </div>
             </div>
@@ -306,12 +328,26 @@
                 <div class="exercise-badge">🌬️ Breathwork</div>
                 <h3 class="exercise-title">4-7-8 Stress Release 🌬️</h3>
                 <div class="exercise-instruction">Breathe in for 4 counts, hold for 7, exhale for 8. This activates your parasympathetic nervous system and reduces stress hormones instantly! 🌊</div>
-                <div class="exercise-meta">
+                <div class="exercise-meta" style="display: flex; gap: 16px; margin: 16px 0; font-size: 14px; color: var(--warm-brown);">
                     <div class="exercise-duration">⏰ 8-12 minutes</div>
                     <div class="exercise-materials">🎯 None needed</div>
                 </div>
-                <div class="exercise-actions">
-                    <button class="action-button outline">▶️ Start Exercise</button>
+                <div class="exercise-actions" style="display: flex; gap: 12px; justify-content: center; margin-top: 20px;">
+                    <button class="action-button outline" onclick="showScreen('exercise-screen')">▶️ Start Exercise</button>
+                    <button class="action-button gold">❤️ Save</button>
+                </div>
+            </div>
+            
+            <div class="exercise-card">
+                <div class="exercise-badge">🤲 Somatic Practice</div>
+                <h3 class="exercise-title">Stress Body Scan 🤲</h3>
+                <div class="exercise-instruction">Notice where stress lives in your body. Send gentle attention and movement to release tension from these areas! 💆‍♀️</div>
+                <div class="exercise-meta" style="display: flex; gap: 16px; margin: 16px 0; font-size: 14px; color: var(--warm-brown);">
+                    <div class="exercise-duration">⏰ 10-15 minutes</div>
+                    <div class="exercise-materials">🎯 Comfortable space</div>
+                </div>
+                <div class="exercise-actions" style="display: flex; gap: 12px; justify-content: center; margin-top: 20px;">
+                    <button class="action-button outline" onclick="showScreen('exercise-screen')">▶️ Start Exercise</button>
                     <button class="action-button gold">❤️ Save</button>
                 </div>
             </div>
