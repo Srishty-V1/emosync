@@ -1,0 +1,727 @@
+{
+  "emotion": "sadness",
+  "displayName": "Sadness", 
+  "description": "Heavy heart, tender soul. Let's honor this feeling with care.",
+  "modalities": {
+    "art": [
+      {
+        "title": "Tears to Flowers Art",
+        "instruction": "Draw or paint your tears falling, but transform them into water nourishing beautiful flowers as they fall. See your sadness as life-giving, not just painful.",
+        "duration": "15-20 minutes",
+        "materials": "Paper, watercolors or colored pencils",
+        "affirmation": "My tears water the flowers of my growth and healing"
+      },
+      {
+        "title": "Heavy Heart Expression",
+        "instruction": "Draw your heart as it feels right now - heavy, cracked, tired, or however sadness appears in your chest. Then add gentle colors and healing light around it, showing care for your tender heart.",
+        "duration": "15-25 minutes", 
+        "materials": "Paper, soft colored pencils or pastels",
+        "affirmation": "I honor my tender heart with gentle care and compassion"
+      },
+      {
+        "title": "Sadness Color Journey",
+        "instruction": "Start with colors that match your sadness - grays, blues, purples. Fill a page with these colors, then gradually introduce warmer colors, showing the journey from sadness toward hope.",
+        "duration": "20-30 minutes",
+        "materials": "Paper, paints or pastels",
+        "affirmation": "I honor sadness and gently journey toward renewed hope"
+      },
+      {
+        "title": "Memory Garden Art",
+        "instruction": "Create art honoring what you've lost - a person, relationship, opportunity, or dream. Paint or draw a garden where these precious memories can be tended with love.",
+        "duration": "25-35 minutes",
+        "materials": "Art supplies of choice",
+        "affirmation": "I tend the garden of cherished memories with love and gratitude"
+      },
+      {
+        "title": "Gentle Self-Portrait",
+        "instruction": "Draw yourself with complete gentleness and compassion. Show the sadness but also the strength it takes to feel deeply. Honor your sensitivity as a gift.",
+        "duration": "20-30 minutes",
+        "materials": "Paper, soft art supplies",
+        "affirmation": "I see myself with compassion and honor my sensitive, feeling heart"
+      },
+      {
+        "title": "Rain and Rainbow Art",
+        "instruction": "Paint a gentle rain scene (representing your tears and sadness), then add a rainbow emerging from the clouds. Every storm eventually clears to reveal beauty.",
+        "duration": "25-35 minutes", 
+        "materials": "Watercolors or paints, paper",
+        "affirmation": "After every storm of sadness, I find rainbows of renewed hope"
+      },
+      {
+        "title": "Comfort Creature Drawing",
+        "instruction": "Draw an imaginary creature whose only job is to comfort those who are sad. Make it soft, warm, understanding. This represents the self-compassion you deserve.",
+        "duration": "20-25 minutes",
+        "materials": "Paper, soft colors",
+        "affirmation": "I offer myself the same comfort I would give to others in pain"
+      },
+      {
+        "title": "Sadness Transformation Mandala",
+        "instruction": "Create a mandala starting with patterns that represent your sadness in the center, then radiating outward with patterns of healing, growth, and renewed life.",
+        "duration": "30-45 minutes",
+        "materials": "Paper, colored pencils or pens",
+        "affirmation": "From the center of sadness, I create patterns of healing and growth"
+      },
+      {
+        "title": "Healing Light Visualization Art",
+        "instruction": "Draw or paint gentle, healing light surrounding a figure in sadness. Show the light not removing sadness but holding it with love and tenderness.",
+        "duration": "20-30 minutes",
+        "materials": "Paper, light colors",
+        "affirmation": "I am surrounded by healing light even in my darkest moments"
+      },
+      {
+        "title": "Bridge to Tomorrow Art",
+        "instruction": "Draw yourself on one side of a bridge in sadness, and on the other side, a future self who has integrated this sadness into wisdom and compassion. The bridge represents your journey.",
+        "duration": "25-35 minutes",
+        "materials": "Large paper, art supplies",
+        "affirmation": "I trust in my ability to journey from sadness toward renewed wholeness"
+      }
+    ],
+    "breathwork": [
+      {
+        "title": "Gentle Heart Breathing",
+        "instruction": "Place one hand on your heart, one on belly. Breathe gently and slowly, as if you're breathing directly into your tender heart. Send each breath as an act of self-care.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I breathe love and gentleness into my tender, healing heart"
+      },
+      {
+        "title": "Sadness Honoring Breath", 
+        "instruction": "Don't try to breathe away sadness - breathe with it. Inhale acknowledging 'I feel sad,' exhale with 'And that's okay.' Honor sadness as a natural part of being human.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I honor my sadness as a natural and valid human experience"
+      },
+      {
+        "title": "Compassion Breathing",
+        "instruction": "Breathe in self-compassion with phrases like 'May I be kind to myself,' breathe out compassion with 'May I be gentle with my pain.' Send yourself the love you need.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I breathe compassion into my pain and offer myself tender care"
+      },
+      {
+        "title": "Tears and Breath Integration",
+        "instruction": "If tears come while breathing, let them flow while continuing gentle breath. Tears are healing - let them cleanse while breath supports and soothes.",
+        "duration": "10-20 minutes",
+        "materials": "Tissues nearby",
+        "affirmation": "My tears are healing rain and my breath is the gentle wind that soothes"
+      },
+      {
+        "title": "Sadness Wave Breathing",
+        "instruction": "When waves of sadness come, breathe with them like ocean waves. Don't fight the wave - inhale as it rises, exhale as it recedes. Let sadness move through naturally.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I breathe with sadness's waves and trust in their natural rhythm"
+      },
+      {
+        "title": "Gentle Belly Comfort Breathing",
+        "instruction": "Breathe deeply into your belly, imagining each breath as a warm, comforting embrace for yourself. Your breath is giving yourself the hug you need.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I embrace myself with warm, comforting breath and gentle care"
+      },
+      {
+        "title": "Sighing Release Breath",
+        "instruction": "Take deep breaths and let natural sighs come. Sighing is your body's way of releasing sadness. Don't force sighs, but don't hold them back either.",
+        "duration": "5-10 minutes",
+        "materials": "None needed", 
+        "affirmation": "I release sadness with natural sighs and trust my body's wisdom"
+      },
+      {
+        "title": "Loving-Kindness Breathing",
+        "instruction": "Breathe loving-kindness to yourself first: 'May I be happy, may I be peaceful.' Then extend to others. When sad, we need extra love - start with yourself.",
+        "duration": "10-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I breathe love into my sadness and extend that love to all beings"
+      },
+      {
+        "title": "Hope Breathing",
+        "instruction": "Even in sadness, breathe in tiny seeds of hope with each inhale. You don't need to feel hopeful - just be open to hope's possibility. Let hope plant itself gently.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I plant seeds of hope with each breath, trusting they will grow when ready"
+      },
+      {
+        "title": "Sadness Acceptance Breathing",
+        "instruction": "Breathe in with 'This sadness is here,' breathe out with 'And I can hold it with love.' Practice radical acceptance of your emotional experience.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I can hold sadness with love and acceptance, without needing to fix it"
+      }
+    ],
+    "somatic": [
+      {
+        "title": "Gentle Self-Hug",
+        "instruction": "Wrap your arms around yourself in a loving hug. Hold for 30 seconds, breathe deeply. This activates your own oxytocin and provides the comfort you need in sadness.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I give myself the loving embrace I need and deserve"
+      },
+      {
+        "title": "Heart Center Soothing",
+        "instruction": "Place both palms over your heart center. Feel the warmth of your hands. Breathe gently and imagine sending love directly into your tender, aching heart.",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I soothe my tender heart with gentle touch and loving presence"
+      },
+      {
+        "title": "Sadness Body Scan",
+        "instruction": "Slowly scan your body and notice where sadness lives - heavy chest, tight throat, aching head. Send gentle breath and loving attention to each area that hurts.",
+        "duration": "12-18 minutes",
+        "materials": "Comfortable lying space",
+        "affirmation": "I tend to my body's sadness with the care of a loving healer"
+      },
+      {
+        "title": "Rocking Self-Soothing",
+        "instruction": "Sit comfortably and gently rock forward and back or side to side. This natural self-soothing motion comforts your nervous system the way a parent rocks a child.",
+        "duration": "5-15 minutes",
+        "materials": "Chair or floor space",
+        "affirmation": "I comfort myself with gentle movement and tender self-care"
+      },
+      {
+        "title": "Sad Energy Grounding",
+        "instruction": "Feel sadness's heaviness and consciously send that heavy energy down through your body into the earth. Let the earth hold and transform your sadness.",
+        "duration": "8-12 minutes", 
+        "materials": "Connection to floor/ground",
+        "affirmation": "I ground my sadness in the earth and trust in natural transformation"
+      },
+      {
+        "title": "Gentle Throat Release",
+        "instruction": "Sadness often tightens the throat. Gently massage your throat, swallow slowly, hum softly. Give your voice permission to express sadness in whatever way feels right.",
+        "duration": "5-10 minutes",
+        "materials": "None needed",
+        "affirmation": "I give my voice permission to express sadness in healthy ways"
+      },
+      {
+        "title": "Comforting Touch Practice",
+        "instruction": "Practice different ways of comforting yourself through touch - stroking your arm, holding your own hand, gentle face touching. Find what soothes your particular sadness.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I know how to comfort myself through gentle, loving touch"
+      },
+      {
+        "title": "Sadness Container Creation",
+        "instruction": "Imagine creating a safe, soft container in your body where sadness can rest without overwhelming you. This container has strong walls but a comfortable interior.",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I create safe space within myself to hold sadness with love"
+      },
+      {
+        "title": "Weighted Blanket Visualization",
+        "instruction": "Even without a weighted blanket, lie down and imagine the gentle weight of comfort surrounding your body. Feel held and supported in your sadness.",
+        "duration": "10-20 minutes",
+        "materials": "Comfortable lying space",
+        "affirmation": "I am held and supported even in my sadness and pain"
+      },
+      {
+        "title": "Gentle Movement Flow", 
+        "instruction": "Move your body very slowly and gently - stretching, swaying, or walking. Let your body move like it's underwater or in honey. This honors sadness's slower pace.",
+        "duration": "10-20 minutes",
+        "materials": "Space to move gently",
+        "affirmation": "I move with sadness's gentle rhythm and honor my need for slowness"
+      }
+    ],
+    "cbt": [
+      {
+        "title": "Sadness Thought Examination",
+        "instruction": "Examine thoughts fueling sadness: 'I'll never feel better,' 'Nothing matters,' 'I'm worthless.' Ask: Is this thought realistic? What evidence contradicts it? What would be more balanced?",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I examine sad thoughts with gentle curiosity and find balanced truth"
+      },
+      {
+        "title": "Depression vs. Sadness Distinction",
+        "instruction": "Write about whether this is situational sadness (grief, loss, disappointment) or general depression. Understanding the difference helps you respond appropriately.",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen", 
+        "affirmation": "I understand my emotional experience and respond with appropriate care"
+      },
+      {
+        "title": "Sadness Trigger Analysis",
+        "instruction": "Map what triggers your deepest sadness - anniversaries, certain songs, places, memories. Understanding triggers helps you prepare and care for yourself.",
+        "duration": "15-25 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "Understanding my triggers helps me prepare loving care for difficult moments"
+      },
+      {
+        "title": "Hopelessness Reality Check",
+        "instruction": "For thoughts like 'Nothing will ever get better,' collect evidence of times things did improve. Your sadness may be telling you lies about the future.",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I have evidence of my resilience and capacity for renewed joy"
+      },
+      {
+        "title": "Sadness Purpose Investigation",
+        "instruction": "Ask: What might this sadness be trying to teach me? How might it be connecting me to my values, compassion, or what matters most? Find sadness's wisdom.",
+        "duration": "15-25 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I listen to sadness's wisdom and learn from its gentle teachings"
+      },
+      {
+        "title": "All-or-Nothing Sadness Check",
+        "instruction": "Challenge black-and-white thinking: 'Nothing is good' becomes 'Some things are difficult right now, and some things are still okay.' Find the grays between extremes.",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I see life's complexity and find good alongside difficulty"
+      },
+      {
+        "title": "Sadness vs. Facts Separation",
+        "instruction": "Separate sad feelings from facts. 'I feel worthless' is a feeling. 'I am worthless' would be claiming a fact. Feelings are valid; they're not always factual.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I honor my feelings while distinguishing them from facts"
+      },
+      {
+        "title": "Meaning-Making in Sadness",
+        "instruction": "Write about how this sadness might contribute to your growth, compassion, or understanding. Not all sadness has meaning, but some does. Explore gently.",
+        "duration": "18-25 minutes",
+        "materials": "Paper and pen", 
+        "affirmation": "I gently explore sadness for any wisdom it might offer"
+      },
+      {
+        "title": "Self-Compassion vs. Self-Pity",
+        "instruction": "Write the difference between self-compassion ('This is hard and I deserve kindness') and self-pity ('Why me? Life is unfair'). Practice moving toward compassion.",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I offer myself compassion without falling into victim stories"
+      },
+      {
+        "title": "Gentle Challenge Practice",
+        "instruction": "Gently question sadness thoughts without being harsh: 'Is this thought helping me heal?' 'What would be kinder to think?' Balance acceptance with gentle reframing.",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I gently question thoughts that increase suffering while honoring my pain"
+      }
+    ],
+    "rebt": [
+      {
+        "title": "Loss Demands Challenge",
+        "instruction": "Challenge demands like 'I shouldn't have to lose things I love.' Loss is part of life. Replace with: 'I strongly prefer not to lose what I love, but loss is part of human experience.'",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I accept loss as part of life while grieving what I've cherished"
+      },
+      {
+        "title": "Life Should Be Happy Belief",
+        "instruction": "Question 'Life should always be happy' or 'I shouldn't feel sad.' Sadness is a natural human emotion with its own wisdom. Practice accepting the full spectrum of feeling.",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I accept all emotions as natural parts of my human experience"
+      },
+      {
+        "title": "Worthlessness Belief Challenge", 
+        "instruction": "Challenge global self-ratings like 'I'm worthless' or 'I'm a failure.' You're a complex human with worth independent of circumstances. Replace ratings with acceptance.",
+        "duration": "15-25 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "My worth is inherent and unchangeable, regardless of my current struggles"
+      },
+      {
+        "title": "Approval Need in Sadness",
+        "instruction": "If sadness comes from disapproval or rejection, challenge: 'I need others' approval to be happy.' Practice: 'I prefer approval, but I can find worth and joy from within.'",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I find worth and joy from within, independent of others' approval"
+      },
+      {
+        "title": "Fairness Demand in Grief",
+        "instruction": "When grieving, we often think 'This isn't fair.' While true, demanding fairness increases suffering. Practice: 'I wish this were different, but I can find peace even in unfairness.'",
+        "duration": "15-20 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I find peace even when life feels unfair and difficult"
+      },
+      {
+        "title": "Sadness Awfulizing Check",
+        "instruction": "Question thoughts like 'This sadness is terrible' or 'I can't stand feeling this way.' Rate the actual awful-ness 1-100%. Usually sadness is painful but manageable.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I can handle painful emotions - they are difficult but not unbearable"
+      },
+      {
+        "title": "Future Prediction Challenge",
+        "instruction": "Challenge sadness predictions: 'I'll never be happy again' or 'Nothing will ever be the same.' Ask: 'How do I know this? What evidence do I have for future predictions?'",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen", 
+        "affirmation": "I cannot predict the future, and healing and joy remain possible"
+      },
+      {
+        "title": "Sadness Tolerance Building",
+        "instruction": "Practice: 'I can tolerate sadness without it being terrible or unbearable.' Build your capacity to feel sad without adding extra suffering about being sad.",
+        "duration": "10-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I can feel sadness fully without adding unnecessary suffering to the pain"
+      },
+      {
+        "title": "Meaning Demand Challenge",
+        "instruction": "Question 'This loss must have meaning' or 'There must be a reason for this sadness.' Sometimes there isn't a reason, and that's okay. Release the demand for meaning.",
+        "duration": "12-18 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I can find peace without needing everything to have a reason or meaning"
+      },
+      {
+        "title": "Sadness Urgency Challenge",
+        "instruction": "Challenge 'I must get over this sadness quickly.' Healing has its own timeline. Practice: 'I prefer to feel better, but I can be patient with my healing process.'",
+        "duration": "12-15 minutes",
+        "materials": "Paper and pen",
+        "affirmation": "I am patient with my healing process and trust in my natural timing"
+      }
+    ],
+    "neural": [
+      {
+        "title": "Self-Compassion Installation",
+        "instruction": "Recall a time someone showed you deep compassion. While relaxed, install this feeling as your default self-response during sadness. Program your brain for self-kindness.",
+        "duration": "15-20 minutes", 
+        "materials": "Quiet space",
+        "affirmation": "I automatically respond to my own pain with deep compassion and kindness"
+      },
+      {
+        "title": "Joy Memory Resource Building",
+        "instruction": "Recall a time of pure joy or contentment. While doing bilateral stimulation, enhance all aspects of this memory. Install it as proof that joy is always possible again.",
+        "duration": "12-18 minutes",
+        "materials": "None needed",
+        "affirmation": "Joy lives within me and can return when I'm ready to receive it"
+      },
+      {
+        "title": "Resilience Pattern Programming",
+        "instruction": "Visualize yourself moving through sadness with grace - feeling it fully but not getting stuck, asking for help, taking care of yourself. Program this resilient response.",
+        "duration": "18-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I move through sadness with grace, wisdom, and self-care"
+      },
+      {
+        "title": "Hope Anchor Installation",
+        "instruction": "Even in sadness, find one tiny thing that brings a moment of peace or beauty. Anchor this with a physical touch (thumb to finger). Train your brain to find hope anchors.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I can find anchors of hope and beauty even in difficult times"
+      },
+      {
+        "title": "Healing Timeline Visualization",
+        "instruction": "Visualize your healing journey as a gentle path through a forest. You're currently in a shadowy part, but the path leads to clearings of light. Install trust in your healing process.",
+        "duration": "15-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I trust in my healing journey and know that clearings of light await me"
+      },
+      {
+        "title": "Sadness Integration Programming",
+        "instruction": "Program the belief that sadness is part of a full, rich emotional life. Visualize yourself as someone who can feel deeply and still find joy - not despite sadness, but including it.",
+        "duration": "18-25 minutes", 
+        "materials": "Quiet space",
+        "affirmation": "I embrace my capacity to feel deeply as a gift, including both sadness and joy"
+      },
+      {
+        "title": "Gentle Strength Installation",
+        "instruction": "Visualize yourself as gently strong - able to feel sadness without breaking, to ask for help without shame, to care for yourself with tenderness. Install this gentle strength.",
+        "duration": "15-20 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I am gently strong, able to feel deeply while caring for myself wisely"
+      },
+      {
+        "title": "Sadness Wisdom Programming",
+        "instruction": "Install the understanding that sadness often indicates what matters most to you. Program your brain to see sadness as information about your values and loves.",
+        "duration": "12-18 minutes",
+        "materials": "Quiet space",
+        "affirmation": "My sadness teaches me what I value most and guides me toward what matters"
+      },
+      {
+        "title": "Comfort Resource Installation",
+        "instruction": "Identify what truly comforts you in sadness - certain people, places, activities, memories. Install these as resources you can access when sadness visits.",
+        "duration": "15-20 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I know what comforts me and give myself permission to seek that comfort"
+      },
+      {
+        "title": "Future Joy Possibility",
+        "instruction": "While not dismissing current sadness, gently install the possibility that joy can coexist with or return after sadness. Program hope without bypassing current pain.",
+        "duration": "15-25 minutes",
+        "materials": "Quiet space",
+        "affirmation": "I hold both current sadness and future joy possibilities with tender hands"
+      }
+    ],
+    "journaling": [
+      {
+        "title": "Sadness Love Letter",
+        "instruction": "Write a love letter to yourself in your sadness. Acknowledge your pain, appreciate your sensitivity, and offer yourself the unconditional love you need right now.",
+        "duration": "15-25 minutes",
+        "materials": "Journal and pen", 
+        "affirmation": "I offer myself unconditional love especially when I'm hurting"
+      },
+      {
+        "title": "What I Need Right Now",
+        "instruction": "Journal about what you truly need in this sadness - comfort, understanding, time, help, rest, connection. Be specific and honest about your needs.",
+        "duration": "12-18 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I honor my needs and seek healthy ways to meet them"
+      },
+      {
+        "title": "Sadness Dialogue Journal",
+        "instruction": "Write a gentle conversation with your sadness. Let it speak about its concerns, then respond with understanding and care. Befriend rather than fight your sadness.",
+        "duration": "18-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I befriend my sadness and listen to its tender wisdom"
+      },
+      {
+        "title": "Loss and Love Integration",
+        "instruction": "Write about how your sadness connects to love - we grieve what we've loved, feel sad about what matters to us. Honor sadness as a testament to your capacity for love.",
+        "duration": "20-30 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "My sadness is proof of my great capacity to love deeply"
+      },
+      {
+        "title": "Gentle Future Visioning",
+        "instruction": "Without bypassing current sadness, gently write about small possibilities for tomorrow, next week, next month. What tiny steps toward healing feel possible?",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I take gentle steps toward healing while honoring my current pain"
+      },
+      {
+        "title": "Sadness Gratitude Practice",
+        "instruction": "Write gratitudes that don't dismiss your sadness: 'I'm grateful for my ability to feel deeply,' 'I'm grateful for friends who sit with me in sadness.'",
+        "duration": "10-15 minutes",
+        "materials": "Journal and pen", 
+        "affirmation": "I find gratitude that honors both my pain and my blessings"
+      },
+      {
+        "title": "Comforting Memories Journal",
+        "instruction": "Write about times you felt deeply comforted - who was there, what was said, what was done. Create a comfort menu you can reference when sadness visits.",
+        "duration": "15-20 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I know what comforts me and give myself permission to seek that comfort"
+      },
+      {
+        "title": "Sadness Strength Recognition",
+        "instruction": "Write about the strength it takes to feel sadness - to stay open, to care deeply, to continue living when things hurt. Honor your courage in feeling.",
+        "duration": "15-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I am courageous in my willingness to feel deeply and stay open to life"
+      },
+      {
+        "title": "Healing Timeline Journal",
+        "instruction": "Write about your healing journey without pressure for timelines. What does healing look like for you? What small signs of progress can you acknowledge?",
+        "duration": "20-25 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I honor my unique healing timeline and celebrate small steps forward"
+      },
+      {
+        "title": "Sadness Integration Wisdom",
+        "instruction": "Journal about how to integrate sadness as a natural part of life. How can you honor sadness without being overwhelmed by it? What would a wise relationship with sadness look like?",
+        "duration": "20-30 minutes",
+        "materials": "Journal and pen",
+        "affirmation": "I develop a wise, compassionate relationship with all of my emotions"
+      }
+    ],
+    "eft": [
+      {
+        "title": "Gentle Sadness Tapping",
+        "instruction": "Setup: 'Even though I feel deeply sad, I completely accept myself and this natural human emotion.' Tap gently while saying: 'This sadness... this heavy heart... I hold it with love.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed", 
+        "affirmation": "I hold my sadness with complete acceptance and gentle love"
+      },
+      {
+        "title": "Loss and Grief Tapping",
+        "instruction": "For specific losses, tap: 'Even though I've lost [person/thing/dream], I honor what this loss meant to me and trust in my ability to carry love forward.'",
+        "duration": "12-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I honor my losses and trust in my ability to carry love through grief"
+      },
+      {
+        "title": "Sadness Shame Release",
+        "instruction": "Many feel shame about sadness. Tap: 'Even though I feel ashamed of being sad, I accept that sadness is natural and shows my capacity for deep feeling.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I accept my sadness without shame and honor my sensitive heart"
+      },
+      {
+        "title": "Hopelessness Tapping",
+        "instruction": "For feelings of hopelessness, tap: 'Even though everything feels hopeless right now, I'm open to the possibility that hope can return when I'm ready.'",
+        "duration": "10-18 minutes",
+        "materials": "None needed",
+        "affirmation": "I remain open to hope's return while honoring my current darkness"
+      },
+      {
+        "title": "Sadness Resistance Tapping",
+        "instruction": "If you're fighting sadness, tap: 'Even though I don't want to feel this sadness, I accept that fighting it creates more pain. I choose to feel with compassion.'",
+        "duration": "10-15 minutes", 
+        "materials": "None needed",
+        "affirmation": "I stop fighting my sadness and choose to feel with gentle acceptance"
+      },
+      {
+        "title": "Sadness Isolation Tapping",
+        "instruction": "For isolating in sadness, tap: 'Even though I want to hide in my sadness, I'm open to gentle connection and support from those who care about me.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I remain open to loving support even in my darkest moments"
+      },
+      {
+        "title": "Sadness Overwhelm Tapping",
+        "instruction": "When sadness feels overwhelming, tap: 'Even though this sadness feels too big for me to handle, I can take it one moment at a time. I don't have to carry it all at once.'",
+        "duration": "8-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I handle sadness one gentle moment at a time, without overwhelming myself"
+      },
+      {
+        "title": "Sadness Meaning Tapping", 
+        "instruction": "Tap: 'Even though I don't understand why I'm so sad, I trust that my emotions have their own wisdom and timing. I don't need to understand everything right now.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I trust in my emotions' wisdom even when I don't understand their message"
+      },
+      {
+        "title": "Sadness Stuck Feeling Tapping",
+        "instruction": "If sadness feels stuck, tap: 'Even though I feel stuck in sadness, I trust that emotions are meant to flow. I choose to allow gentle movement when I'm ready.'",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I trust in emotion's natural flow and allow gentle movement toward healing"
+      },
+      {
+        "title": "Sadness Positive Installation",
+        "instruction": "After processing sadness, gently tap in: 'I can feel sadness and still be okay... I hold my tender heart with love... I trust in my resilience and healing.'",
+        "duration": "8-12 minutes",
+        "materials": "None needed",
+        "affirmation": "I install gentle strength and self-compassion as my foundation"
+      }
+    ],
+    "emdr": [
+      {
+        "title": "Sadness Bilateral Processing", 
+        "instruction": "While gently holding your sadness in awareness, do bilateral knee tapping or butterfly hugs. Don't try to change the sadness - just let it be held and processed naturally.",
+        "duration": "10-15 minutes",
+        "materials": "Chair or space for movement",
+        "affirmation": "I allow sadness to be held and processed with gentle bilateral support"
+      },
+      {
+        "title": "Comfort Resource Installation",
+        "instruction": "Think of a time you felt deeply comforted while doing bilateral stimulation. Install all aspects of this comfort as a resource you can access during sad times.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I carry deep comfort within me and can access it whenever needed"
+      },
+      {
+        "title": "Sadness Memory Processing",
+        "instruction": "If current sadness connects to specific memories, gently hold those memories while doing bilateral movements. Let the emotional charge process naturally.",
+        "duration": "15-25 minutes",
+        "materials": "Chair or movement space",
+        "affirmation": "I process painful memories and reduce their power to cause current suffering"
+      },
+      {
+        "title": "Love Resource Installation",
+        "instruction": "Think of times you felt deeply loved while doing bilateral stimulation. Install this love as an internal resource. You carry love within even when you feel sad and alone.",
+        "duration": "12-18 minutes",
+        "materials": "None needed",
+        "affirmation": "I carry deep love within me even in moments of sadness and loneliness"
+      },
+      {
+        "title": "Sadness Container Exercise",
+        "instruction": "Visualize placing your sadness in a beautiful, safe container while doing bilateral movements. This doesn't dismiss sadness but contains it so it doesn't overwhelm your whole being.",
+        "duration": "8-12 minutes",
+        "materials": "None needed", 
+        "affirmation": "I contain sadness safely while preserving space for other experiences"
+      },
+      {
+        "title": "Nurturing Figure Installation",
+        "instruction": "Visualize a perfectly nurturing figure (real or imagined) who holds you with complete compassion in your sadness. Install this nurturing presence through bilateral stimulation.",
+        "duration": "12-18 minutes",
+        "materials": "None needed",
+        "affirmation": "I am held and nurtured by infinite compassion even in my sadness"
+      },
+      {
+        "title": "Sadness Wisdom Integration", 
+        "instruction": "While doing bilateral movements, explore what wisdom your sadness might offer - about what you value, what you need, how to live more authentically.",
+        "duration": "15-20 minutes",
+        "materials": "None needed",
+        "affirmation": "I receive sadness's wisdom about what matters most in life"
+      },
+      {
+        "title": "Hope Spark Installation",
+        "instruction": "Find even the tiniest spark of hope or possibility while doing bilateral stimulation. Install this hope spark as a resource, no matter how small it seems.",
+        "duration": "10-15 minutes",
+        "materials": "None needed",
+        "affirmation": "I nurture sparks of hope and trust in their power to grow"
+      },
+      {
+        "title": "Sadness Flow Enhancement",
+        "instruction": "Use bilateral movements to help sadness flow naturally through your system instead of getting stuck. Visualize sadness as water that needs to flow, not stagnate.",
+        "duration": "12-18 minutes",
+        "materials": "Chair or movement space",
+        "affirmation": "I allow sadness to flow naturally through me without getting stuck or stagnant"
+      },
+      {
+        "title": "Healing Light Integration",
+        "instruction": "While processing sadness with bilateral movements, visualize gentle, healing light surrounding and penetrating your sadness. The light doesn't remove sadness but transforms its quality.",
+        "duration": "15-25 minutes",
+        "materials": "None needed",
+        "affirmation": "Healing light transforms my sadness into wisdom and compassion"
+      }
+    ],
+    "yoga": [
+      {
+        "title": "Heart Opening for Sadness",
+        "instruction": "Practice gentle heart-opening poses like fish pose or simple chest stretches. Sadness contracts the heart - these poses gently reopen it to love and possibility.",
+        "duration": "12-18 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I gently open my heart and make space for both sadness and love"
+      },
+      {
+        "title": "Supported Child's Pose",
+        "instruction": "Rest in child's pose with a pillow under your torso for extra support. Let yourself feel completely held and supported by the earth. Stay as long as you need.",
+        "duration": "10-20 minutes", 
+        "materials": "Yoga mat, pillow",
+        "affirmation": "I am held and supported by the earth beneath me"
+      },
+      {
+        "title": "Gentle Sadness Flow",
+        "instruction": "Move slowly through cat-cow, child's pose, and gentle twists. Let your body move like it's underwater - slow, fluid, honoring sadness's heavy feeling.",
+        "duration": "15-25 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I move with sadness's rhythm and honor my need for gentleness"
+      },
+      {
+        "title": "Legs Up the Wall Restoration",
+        "instruction": "Lie with legs up the wall, arms open wide. This pose literally lifts your legs toward hope while keeping you grounded. Rest here and breathe.",
+        "duration": "15-25 minutes",
+        "materials": "Wall space, yoga mat",
+        "affirmation": "I lift toward hope while staying grounded in self-care"
+      },
+      {
+        "title": "Sadness Hip Opening",
+        "instruction": "Practice gentle hip openers like pigeon pose or seated figure-4. We store emotions in our hips. Let whatever feelings arise be welcomed and released.",
+        "duration": "12-20 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I open my hips and release stored sadness with gentle acceptance"
+      },
+      {
+        "title": "Restorative Side-Lying Pose",
+        "instruction": "Lie on your side in a fetal position with pillows between your knees and under your head. This position naturally comforts and soothes sadness.",
+        "duration": "15-25 minutes",
+        "materials": "Yoga mat, pillows", 
+        "affirmation": "I comfort myself with gentle positioning and tender self-care"
+      },
+      {
+        "title": "Sadness Spinal Waves",
+        "instruction": "On hands and knees, create gentle waves through your spine - not forced movement, but allowing natural, fluid motion. Let sadness move through your body like gentle water.",
+        "duration": "8-15 minutes",
+        "materials": "Yoga mat",
+        "affirmation": "I allow sadness to flow through my body like gentle, healing water"
+      },
+      {
+        "title": "Supported Forward Fold",
+        "instruction": "Sit with legs extended, fold forward over a pillow or bolster. This introspective pose helps you go inward safely and process sadness with support.",
+        "duration": "12-20 minutes",
+        "materials": "Yoga mat, pillow or bolster",
+        "affirmation": "I go inward safely and process emotions with gentle support"
+      },
+      {
+        "title": "Gentle Backbend Series",
+        "instruction": "Practice supported fish pose, camel pose, or simple chest opening. Counter sadness's tendency to collapse inward by gently opening toward the sky.",
+        "duration": "10-15 minutes",
+        "materials": "Yoga mat, props as needed",
+        "affirmation": "I gently open toward the light while honoring my tender heart"
+      },
+      {
+        "title": "Sadness Integration Savasana",
+        "instruction": "Rest in savasana and practice holding both sadness and peace simultaneously. You don't have to choose between them - they can coexist in your tender heart.",
+        "duration": "15-30 minutes",
+        "materials": "Yoga mat, blanket",
+        "affirmation": "I hold both sadness and peace in my heart, knowing both are part of wholeness"
+      }
+    ]
+  }
+}
