@@ -1,2 +1,1 @@
-// import loader to insert autohide script
-import './snippets/load-backbutton-js.js';
+// Remove loader injection (revert)
