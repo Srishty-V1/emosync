@@ -15,19 +15,7 @@
     <link rel="stylesheet" href="styles.css">
     
     <style>
-        /* NUCLEAR FORCE HIDE ALL SCREENS */
-        .screen { display: none !important; }
-        #splash-screen { display: block !important; }
-        .screen.active { display: block !important; }
-        #emotion-selector { display: none !important; }
-        #insight-hub { display: none !important; }
-        #exercise-screen { display: none !important; }
-        #dashboard { display: none !important; }
-        #journal { display: none !important; }
-        #toolkit { display: none !important; }
-        #settings { display: none !important; }
-        
-        /* BEAMS BACKGROUND */
+        /* ANIMATED BEAMS BACKGROUND */
         .beams-container {
             position: fixed;
             top: 20px;
@@ -50,84 +38,115 @@
             pointer-events: none;
         }
         
-        /* NAVIGATION - FORCE HIDE */
-        .swipe-nav-drawer { display: none !important; }
-        .swipe-nav-trigger { display: none !important; }
-        .nav-overlay { display: none !important; }
-        
-        /* SPLASH SCREEN STYLING */
-        .splash-content {
-            text-align: center;
-            padding: 60px 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
+        .beams-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.2), rgba(0,0,0,0.3));
+            pointer-events: none;
+            z-index: -9;
         }
         
-        .app-logo {
-            width: 120px;
-            height: 120px;
-            border-radius: 24px;
-        }
-        
-        .logo-text {
-            font-size: 36px;
-            font-weight: 800;
-            color: #D4AF37;
-            margin-top: 20px;
-            font-family: "Playwrite US Modern", cursive;
-        }
-        
-        .tagline {
-            font-size: 18px;
-            color: #FAFAFA;
-            margin: 20px 0;
-            font-family: "Playwrite US Modern", cursive;
-        }
-        
-        .modality-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            justify-content: center;
-            margin: 30px 0;
-        }
-        
-        .pill {
-            background: rgba(255,255,255,0.1);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            color: #FAFAFA;
-            font-family: "Playwrite US Modern", cursive;
-        }
-        
-        .cta-button {
-            background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%);
-            color: #1A1A1A;
-            border: 2px solid rgba(212,175,55,0.4);
-            padding: 16px 40px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 18px;
+        /* SWIPE-IN NAVIGATION DRAWER */
+        .swipe-nav-trigger {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            bottom: 20px;
+            width: 12px;
+            z-index: 500;
             cursor: pointer;
-            font-family: "Playwrite US Modern", cursive;
-            transition: all 0.3s ease;
         }
         
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(212,175,55,0.3);
+        .swipe-nav-drawer {
+            position: fixed;
+            left: 20px;
+            top: 60px;
+            width: 180px;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            transform: translateX(-200px);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 1000;
+            padding: 16px;
+            border: 2px solid rgba(212,175,55,0.3);
         }
         
-        body {
-            margin: 0;
-            padding: 0;
-            background: #1A1A1A;
+        .swipe-nav-drawer.open {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+        .nav-chip {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            margin-bottom: 8px;
+            background: rgba(255,255,255,0.8);
+            border: 1px solid rgba(212,175,55,0.2);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 13px;
+            font-weight: 500;
+            color: #1A1A1A;
             font-family: "Playwrite US Modern", cursive;
+        }
+        
+        .nav-chip:hover {
+            background: rgba(212,175,55,0.2);
+            transform: translateX(4px);
+            box-shadow: 0 2px 8px rgba(212,175,55,0.3);
+        }
+        
+        .nav-chip.active {
+            background: linear-gradient(135deg, #D4AF37, #E8C547);
+            color: #1A1A1A;
+            box-shadow: 0 4px 16px rgba(212,175,55,0.4);
+        }
+        
+        .nav-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 999;
+        }
+        
+        .nav-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        /* REMOVE OLD FLOATING NAV */
+        .floating-nav {
+            display: none !important;
+        }
+        
+        /* SCREEN ADJUSTMENTS */
+        .screen {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* MOBILE OPTIMIZATIONS */
+        @media (max-width: 768px) {
+            .swipe-nav-drawer {
+                width: 160px;
+                padding: 12px;
+            }
+            .nav-chip {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
         }
     </style>
 </head>
@@ -135,9 +154,32 @@
     <!-- ANIMATED BEAMS BACKGROUND -->
     <div class="beams-container">
         <canvas class="beams-canvas" id="beamsCanvas"></canvas>
+        <div class="beams-overlay"></div>
     </div>
 
-    <!-- SPLASH SCREEN ONLY -->
+    <!-- SWIPE NAV TRIGGER ZONE -->
+    <div class="swipe-nav-trigger"></div>
+    
+    <!-- NAV OVERLAY -->
+    <div class="nav-overlay"></div>
+
+    <!-- SWIPE-IN NAVIGATION DRAWER -->
+    <div class="swipe-nav-drawer">
+        <div class="nav-chip active" data-screen="emotion-selector" onclick="showScreen('emotion-selector')">
+            🏠 Home
+        </div>
+        <div class="nav-chip" data-screen="toolkit" onclick="showScreen('toolkit')">
+            ❤️ Favorites
+        </div>
+        <div class="nav-chip" data-screen="journal" onclick="showScreen('journal')">
+            📔 Journal
+        </div>
+        <div class="nav-chip" data-screen="settings" onclick="showScreen('settings')">
+            ⚙️ Settings
+        </div>
+    </div>
+
+    <!-- Splash Screen -->
     <div id="splash-screen" class="screen active">
         <div class="splash-content">
             <div class="logo-container">
@@ -157,13 +199,14 @@
                 <span class="pill">⚡ Neural Rewiring</span>
                 <span class="pill">🧘 Yoga</span>
             </div>
-            <button class="cta-button" id="start-reset-button" onclick="alert('Navigation restored! Splash screen working!')">            🚀 Start Your Reset
+            <button class="cta-button" id="start-reset-button" onclick="startEmoSyncJourney()">
+                🚀 Start Your Reset
             </button>
         </div>
     </div>
 
-    <!-- ALL OTHER SCREENS - HIDDEN -->
-    <div id="emotion-selector" class="screen" style="display: none !important;">
+    <!-- Emotion Selector -->
+    <div id="emotion-selector" class="screen">
         <div class="header">
             <h2>How are you feeling today? 💭</h2>
         </div>
@@ -176,156 +219,307 @@
                 <div class="emotion-icon">🔥</div>
                 <div class="emotion-label">Burnout</div>
             </div>
+            <div class="emotion-card" data-emotion="fear" onclick="selectEmotion('fear')">
+                <div class="emotion-icon">😨</div>
+                <div class="emotion-label">Fear</div>
+            </div>
+            <div class="emotion-card" data-emotion="anxiety" onclick="selectEmotion('anxiety')">
+                <div class="emotion-icon">💭</div>
+                <div class="emotion-label">Anxiety</div>
+            </div>
+            <div class="emotion-card" data-emotion="sadness" onclick="selectEmotion('sadness')">
+                <div class="emotion-icon">😢</div>
+                <div class="emotion-label">Sadness</div>
+            </div>
+            <div class="emotion-card" data-emotion="guilt" onclick="selectEmotion('guilt')">
+                <div class="emotion-icon">🙁</div>
+                <div class="emotion-label">Guilt</div>
+            </div>
+            <div class="emotion-card" data-emotion="shame" onclick="selectEmotion('shame')">
+                <div class="emotion-icon">😔</div>
+                <div class="emotion-label">Shame</div>
+            </div>
+            <div class="emotion-card" data-emotion="anger" onclick="selectEmotion('anger')">
+                <div class="emotion-icon">😡</div>
+                <div class="emotion-label">Anger</div>
+            </div>
+            <div class="emotion-card" data-emotion="overwhelm" onclick="selectEmotion('overwhelm')">
+                <div class="emotion-icon">🌊</div>
+                <div class="emotion-label">Overwhelm</div>
+            </div>
+            <div class="emotion-card" data-emotion="loneliness" onclick="selectEmotion('loneliness')">
+                <div class="emotion-icon">🌑</div>
+                <div class="emotion-label">Loneliness</div>
+            </div>
+            <div class="emotion-card" data-emotion="low-confidence" onclick="selectEmotion('low-confidence')">
+                <div class="emotion-icon">😟</div>
+                <div class="emotion-label">Low Confidence</div>
+            </div>
+            <div class="emotion-card" data-emotion="lack-motivation" onclick="selectEmotion('lack-motivation')">
+                <div class="emotion-icon">😶</div>
+                <div class="emotion-label">Lack of Motivation</div>
+            </div>
+            <div class="emotion-card" data-emotion="inconsistency" onclick="selectEmotion('inconsistency')">
+                <div class="emotion-icon">⏸️</div>
+                <div class="emotion-label">Lack of Consistency</div>
+            </div>
+            <div class="emotion-card" data-emotion="self-doubt" onclick="selectEmotion('self-doubt')">
+                <div class="emotion-icon">🤔</div>
+                <div class="emotion-label">Self-Doubt</div>
+            </div>
+            <div class="emotion-card" data-emotion="perfectionism" onclick="selectEmotion('perfectionism')">
+                <div class="emotion-icon">🎯</div>
+                <div class="emotion-label">Perfectionism</div>
+            </div>
+            <div class="emotion-card" data-emotion="rejection" onclick="selectEmotion('rejection')">
+                <div class="emotion-icon">🚫</div>
+                <div class="emotion-label">Fear of Rejection</div>
+            </div>
+            <div class="emotion-card" data-emotion="comparison" onclick="selectEmotion('comparison')">
+                <div class="emotion-icon">👁️</div>
+                <div class="emotion-label">Comparison</div>
+            </div>
+            <div class="emotion-card" data-emotion="resentment" onclick="selectEmotion('resentment')">
+                <div class="emotion-icon">😤</div>
+                <div class="emotion-label">Resentment</div>
+            </div>
+            <div class="emotion-card" data-emotion="numbness" onclick="selectEmotion('numbness')">
+                <div class="emotion-icon">😐</div>
+                <div class="emotion-label">Numbness</div>
+            </div>
+            <div class="emotion-card" data-emotion="hopelessness" onclick="selectEmotion('hopelessness')">
+                <div class="emotion-icon">🌫️</div>
+                <div class="emotion-label">Hopelessness</div>
+            </div>
         </div>
     </div>
 
-    <div id="insight-hub" class="screen" style="display: none !important;">
+    <!-- Insight Hub -->
+    <div id="insight-hub" class="screen">
         <div class="header">
-            <h2>Insight Hub</h2>
+            <button class="back-button" onclick="showScreen('emotion-selector')">← Back</button>
+            <h1 id="emotion-title">STRESS ✨</h1>
+            <p id="emotion-subtitle">Tension in the mind, tightness in the body. Let's release it! 🌊</p>
         </div>
-    </div>
-
-    <div id="exercise-screen" class="screen" style="display: none !important;">
-        <div class="header">
-            <h2>Exercise Screen</h2>
-        </div>
-    </div>
-
-    <div id="dashboard" class="screen" style="display: none !important;">
-        <div class="header">
-            <h2>Dashboard</h2>
-        </div>
-    </div>
-
-    <div id="journal" class="screen" style="display: none !important;">
-        <div class="header">
-            <h2>Journal</h2>
-        </div>
-    </div>
-
-    <div id="toolkit" class="screen" style="display: none !important;">
-        <div class="header">
-            <h2>Toolkit</h2>
-        </div>
-    </div>
-
-    <div id="settings" class="screen" style="display: none !important;">
-        <div class="header">
-            <h2>Settings</h2>
-        </div>
-    </div>
-
-    <script>
-        // SIMPLIFIED BEAMS BACKGROUND
-        class BeamsBackground {
-            constructor() {
-                this.canvas = document.getElementById('beamsCanvas');
-                if (!this.canvas) return;
-                this.ctx = this.canvas.getContext('2d');
-                this.beams = [];
-                this.animationFrame = null;
-                this.init();
-            }
-            
-            init() {
-                this.updateCanvasSize();
-                this.createBeams();
-                this.animate();
-                window.addEventListener('resize', () => this.updateCanvasSize());
-            }
-            
-            updateCanvasSize() {
-                if (!this.canvas) return;
-                const dpr = window.devicePixelRatio || 1;
-                const rect = this.canvas.getBoundingClientRect();
-                this.canvas.width = rect.width * dpr;
-                this.canvas.height = rect.height * dpr;
-                this.canvas.style.width = rect.width + 'px';
-                this.canvas.style.height = rect.height + 'px';
-                if (this.ctx) this.ctx.scale(dpr, dpr);
-                this.createBeams();
-            }
-            
-            createBeam() {
-                const width = this.canvas.clientWidth;
-                const height = this.canvas.clientHeight;
-                return {
-                    x: Math.random() * width * 1.5 - width * 0.25,
-                    y: Math.random() * height * 1.5 - height * 0.25,
-                    width: 30 + Math.random() * 60,
-                    length: height * 2.5,
-                    angle: -35 + Math.random() * 10,
-                    speed: 0.6 + Math.random() * 1.2,
-                    opacity: 0.12 + Math.random() * 0.16,
-                    hue: 190 + Math.random() * 70,
-                    pulse: Math.random() * Math.PI * 2,
-                    pulseSpeed: 0.02 + Math.random() * 0.03
-                };
-            }
-            
-            createBeams() {
-                this.beams = Array.from({ length: 30 }, () => this.createBeam());
-            }
-            
-            drawBeam(beam) {
-                if (!this.ctx) return;
-                this.ctx.save();
-                this.ctx.translate(beam.x, beam.y);
-                this.ctx.rotate((beam.angle * Math.PI) / 180);
-                const pulsingOpacity = beam.opacity * (0.8 + Math.sin(beam.pulse) * 0.2);
-                const gradient = this.ctx.createLinearGradient(0, 0, 0, beam.length);
-                gradient.addColorStop(0, `hsla(${beam.hue}, 85%, 65%, 0)`);
-                gradient.addColorStop(0.4, `hsla(${beam.hue}, 85%, 65%, ${pulsingOpacity})`);
-                gradient.addColorStop(0.6, `hsla(${beam.hue}, 85%, 65%, ${pulsingOpacity})`);
-                gradient.addColorStop(1, `hsla(${beam.hue}, 85%, 65%, 0)`);
-                this.ctx.fillStyle = gradient;
-                this.ctx.fillRect(-beam.width / 2, 0, beam.width, beam.length);
-                this.ctx.restore();
-            }
-            
-            animate() {
-                if (!this.ctx || !this.canvas) return;
-                this.ctx.clearRect(0, 0, this.canvas.clientWidth, this.canvas.clientHeight);
-                this.ctx.filter = 'blur(35px)';
-                this.beams.forEach((beam, index) => {
-                    beam.y -= beam.speed;
-                    beam.pulse += beam.pulseSpeed;
-                    if (beam.y + beam.length < -100) {
-                        const width = this.canvas.clientWidth;
-                        const height = this.canvas.clientHeight;
-                        beam.y = height + 100;
-                        beam.x = Math.random() * width;
-                    }
-                    this.drawBeam(beam);
-                });
-                this.animationFrame = requestAnimationFrame(() => this.animate());
-            }
-        }
         
-        // INITIALIZE ON LOAD
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('🚨 EMERGENCY MODE: Only splash screen should be visible');
+        <div class="modality-tabs">
+            <div class="tab active" data-modality="art" onclick="selectModality('art')">
+                <span class="tab-icon">🎨</span>
+                <span class="tab-label">Art Therapy</span>
+            </div>
+            <div class="tab" data-modality="emdr" onclick="selectModality('emdr')">
+                <span class="tab-icon">👁️</span>
+                <span class="tab-label">EMDR</span>
+            </div>
+            <div class="tab" data-modality="breathwork" onclick="selectModality('breathwork')">
+                <span class="tab-icon">🌬️</span>
+                <span class="tab-label">Breathwork</span>
+            </div>
+            <div class="tab" data-modality="somatic" onclick="selectModality('somatic')">
+                <span class="tab-icon">🤲</span>
+                <span class="tab-label">Somatic</span>
+            </div>
+            <div class="tab" data-modality="cbt" onclick="selectModality('cbt')">
+                <span class="tab-icon">💭</span>
+                <span class="tab-label">CBT</span>
+            </div>
+            <div class="tab" data-modality="rebt" onclick="selectModality('rebt')">
+                <span class="tab-icon">🧠</span>
+                <span class="tab-label">REBT</span>
+            </div>
+            <div class="tab" data-modality="neural" onclick="selectModality('neural')">
+                <span class="tab-icon">⚡</span>
+                <span class="tab-label">Neural Rewiring</span>
+            </div>
+            <div class="tab" data-modality="journaling" onclick="selectModality('journaling')">
+                <span class="tab-icon">✍️</span>
+                <span class="tab-label">Journaling</span>
+            </div>
+            <div class="tab" data-modality="eft" onclick="selectModality('eft')">
+                <span class="tab-icon">🤚</span>
+                <span class="tab-label">EFT</span>
+            </div>
+            <div class="tab" data-modality="yoga" onclick="selectModality('yoga')">
+                <span class="tab-icon">🧘</span>
+                <span class="tab-label">Yoga</span>
+            </div>
+        </div>
+
+        <div class="exercises-container" id="exercises-container">
+            <div class="exercise-card">
+                <div class="exercise-badge">🎨 Art Therapy</div>
+                <h3 class="exercise-title">Stress Monster Art 🎨</h3>
+                <div class="exercise-instruction">Draw your stress as a creature. Name it. Then color it with soothing tones like blue and green. As you color, repeat: 'I'm calming my storm.' ✨</div>
+                <div class="exercise-actions" style="display: flex; gap: 12px; justify-content: center; margin-top: 20px;">
+                    <button class="action-button outline" onclick="showScreen('exercise-screen')">▶️ Start Exercise</button>
+                    <button class="action-button gold">❤️ Save</button>
+                </div>
+            </div>
             
-            // Force hide all other screens
-            const allScreens = document.querySelectorAll('.screen');
-            allScreens.forEach(screen => {
-                if (screen.id !== 'splash-screen') {
-                    screen.style.display = 'none';
-                }
-            });
-            
-            // Force show splash
-            const splash = document.getElementById('splash-screen');
-            if (splash) {
-                splash.style.display = 'block';
-                splash.classList.add('active');
-            }
-            
-            // Initialize beams
-            new BeamsBackground();
-            
-            console.log('✅ EMERGENCY MODE: Splash screen activated');
-        });
-    </script>
+            <div class="exercise-card">
+                <div class="exercise-badge">🌬️ Breathwork</div>
+                <h3 class="exercise-title">4-7-8 Stress Release 🌬️</h3>
+                <div class="exercise-instruction">Breathe in for 4 counts, hold for 7, exhale for 8. This activates your parasympathetic nervous system! 🌊</div>
+                <div class="exercise-actions" style="display: flex; gap: 12px; justify-content: center; margin-top: 20px;">
+                    <button class="action-button outline" onclick="showScreen('exercise-screen')">▶️ Start Exercise</button>
+                    <button class="action-button gold">❤️ Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exercise Screen -->
+    <div id="exercise-screen" class="screen">
+        <div class="header">
+            <button class="back-button" onclick="showScreen('insight-hub')">← Back</button>
+        </div>
+        <div class="exercise-card">
+            <div class="exercise-badge">🎨 Art Therapy</div>
+            <h2 class="exercise-title">The Stress Monster</h2>
+            <div class="exercise-instruction">
+                Draw your stress as a creature. Name it. Then color it with soothing tones like blue and green. As you color, repeat: 'I'm calming my storm.' ✨
+            </div>
+            <div class="exercise-visual">
+                <div style="text-align: center; padding: 20px; background: linear-gradient(135deg, var(--soft-peach), var(--sage-green)); border-radius: 16px; color: var(--deep-black); font-style: italic;">
+                    🌟 Take your time and be gentle with yourself! 🌙<br>
+                    "You are exactly where you need to be!" ✨<br>
+                    💫 Healing isn't linear – it's creative!
+                </div>
+            </div>
+            <div class="exercise-actions">
+                <button class="action-button outline">🔁 Try Another</button>
+                <button class="action-button gold">❤️ Save to Toolkit</button>
+                <button class="action-button outline">✅ Mark as Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="screen">
+        <div class="header">
+            <h2>Your Emotional Reset 📊</h2>
+        </div>
+        <div class="dashboard-content">
+            <div class="today-emotion">
+                <div class="emotion-pill">Today: Stress 😰</div>
+            </div>
+            <div class="quick-start-card">
+                <h3>3-Minute Reset ⚡</h3>
+                <p>Try the "Breath of Calm" technique 🌬️</p>
+                <button class="cta-button">🚀 Begin</button>
+            </div>
+            <div class="mood-slider">
+                <label>How do you feel right now? 💭</label>
+                <div class="mood-scale">
+                    <span class="mood-emoji" data-mood="1">😞</span>
+                    <span class="mood-emoji" data-mood="2">😐</span>
+                    <span class="mood-emoji active" data-mood="3">😌</span>
+                    <span class="mood-emoji" data-mood="4">😊</span>
+                    <span class="mood-emoji" data-mood="5">😄</span>
+                </div>
+            </div>
+            <div class="mini-journal">
+                <label>Note how you feel after: ✍️</label>
+                <textarea placeholder="I feel more..." rows="3"></textarea>
+                <button class="save-note">💾 Save</button>
+            </div>
+            <div class="streak-tracker">
+                <span class="streak-icon">🔥</span>
+                <span class="streak-text">5-day streak</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Journal -->
+    <div id="journal" class="screen">
+        <div class="header">
+            <h2>Emo Journal 📔</h2>
+        </div>
+        <div class="journal-content">
+            <div class="journal-prompt">
+                <h3>Today's Prompt: 💭</h3>
+                <p>Right now, my body feels... 🌊</p>
+                <button class="prompt-refresh">🔄 New Prompt</button>
+            </div>
+            <div class="journal-entry">
+                <textarea placeholder="Start writing your thoughts... ✨" rows="10"></textarea>
+            </div>
+            <div class="journal-tools">
+                <button class="tool-button">🎨 Draw</button>
+                <button class="tool-button">📷 Photo</button>
+                <button class="tool-button">🏷️ Tag Emotion</button>
+                <button class="tool-button">🔒 Private</button>
+            </div>
+            <div class="journal-actions">
+                <button class="action-button outline">📤 Export</button>
+                <button class="action-button gold">💾 Save Entry</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toolkit -->
+    <div id="toolkit" class="screen">
+        <div class="header">
+            <h2>My Healing Toolkit 🧰</h2>
+        </div>
+        <div class="toolkit-content">
+            <div style="text-align: center; padding: 40px; color: #FAFAFA;">
+                <h3>💖 Your Personal Toolkit</h3>
+                <p>Save exercises as you discover ones that resonate with you! ✨</p>
+                <p>You have <strong>0</strong> saved exercises 📚</p>
+                <button class="action-button gold" onclick="showScreen('emotion-selector')">🎨 Discover Exercises</button>
+            </div>
+            <div class="toolkit-actions">
+                <button class="cta-button">▶️ Start Routine</button>
+                <button class="action-button outline">✏️ Edit Toolkit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings -->
+    <div id="settings" class="screen">
+        <div class="header">
+            <h2>Settings & Credits ⚙️</h2>
+        </div>
+        <div class="settings-content">
+            <div class="settings-section">
+                <h3>🎨 Personalization</h3>
+                <div class="setting-item">
+                    <label>Text Size 📱</label>
+                    <div class="text-size-controls">
+                        <button>A-</button>
+                        <span>Normal</span>
+                        <button>A+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-section">
+                <h3>🔒 Privacy</h3>
+                <div class="setting-item">
+                    <button class="outline-button">📊 Data Usage</button>
+                </div>
+                <div class="setting-item">
+                    <button class="outline-button">📤 Export Data</button>
+                </div>
+                <div class="setting-item">
+                    <button class="danger-button">🗑️ Delete All</button>
+                </div>
+            </div>
+            <div class="settings-section about">
+                <h3>About 💖</h3>
+                <div class="about-logo">
+                    <img src="https://i.ibb.co/0pwmb3ZP/great.png" alt="EmoSync Logo" class="about-logo-img">
+                </div>
+                <p>Created with love by @SrishtySynergy ✨<br>
+                Where neuroscience meets self-expression! 🧠💖</p>
+                <div class="quote">
+                    "Healing isn't linear – it's creative." 🌙✨
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load external app.js -->
+    <script src="app.js"></script>
 </body>
 </html>
