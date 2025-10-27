@@ -1,0 +1,20 @@
+/* Smooth UX enhancements */
+:root{ --ease-spring: cubic-bezier(0.22, 1, 0.36, 1); --ease-soft: cubic-bezier(0.4, 0, 0.2, 1); --dur-fast: .25s; --dur-med: .45s; --dur-slow: .7s; }
+
+/* Screen transitions: fade+slide with reduced motion respect */
+@media (prefers-reduced-motion:no-preference){
+  .screen{opacity:0; transform:translateY(18px) scale(.98); transition: opacity var(--dur-med) var(--ease-soft), transform var(--dur-med) var(--ease-spring);}
+  .screen.active{opacity:1; transform:translateY(0) scale(1)}
+}
+
+/* Tab, pill, and button hover transitions tuned */
+.tab, .pill, .action-button, .cta-button{ transition: transform var(--dur-fast) var(--ease-spring), box-shadow var(--dur-fast) var(--ease-soft), background var(--dur-fast) var(--ease-soft), border-color var(--dur-fast) var(--ease-soft); will-change: transform; }
+
+/* Back button subtle transition */
+.back-button{ transition: transform var(--dur-fast) var(--ease-spring), background var(--dur-fast) var(--ease-soft), box-shadow var(--dur-fast) var(--ease-soft) }
+
+/* GPU hints for smoother animation */
+.emotion-card, .tab, .pill, .action-button, .cta-button{ transform: translateZ(0) }
+
+/* Beams canvas perf tweaks */
+.beams-canvas{ will-change: transform, opacity; }
