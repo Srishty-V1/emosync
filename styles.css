@@ -1,2 +1,1 @@
-/* include smooth ux patch */
-@import url('../patches/smooth-ux.css');
+/* REMOVE buggy smooth patch import, restore vanilla state */
