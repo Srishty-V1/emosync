@@ -1,3 +1,20 @@
+/* EMERGENCY SCREEN MANAGEMENT - CRITICAL FIXES */
+
+/* FORCE HIDE ALL SCREENS BY DEFAULT */
+.screen {
+    display: none !important;
+}
+
+/* ONLY SPLASH SCREEN VISIBLE BY DEFAULT */
+#splash-screen {
+    display: block !important;
+}
+
+/* ACTIVE SCREEN OVERRIDE */
+.screen.active {
+    display: block !important;
+}
+
 /* Restored full stable styles.css from commit 505b7a6 */
 :root {
     --primary-gold: #D4AF37;
@@ -15,10 +32,6 @@
     --radius-xs: 6px; --radius-sm: 12px; --radius-md: 18px; --radius-lg: 24px; --radius-xl: 32px; --radius-pill: 50px;
     --spacing-xs: 4px; --spacing-sm: 8px; --spacing-md: 16px; --spacing-lg: 24px; --spacing-xl: 32px; --spacing-xxl: 48px;
 }
-
-/* Critical screen management */
-.screen { display: none; }
-.screen.active { display: block; }
 
 /* Typography */
 body { font-family: "Playwrite US Modern", cursive; color: var(--text-color); background: var(--deep-black); line-height: 1.5; }
