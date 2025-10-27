@@ -1,1 +1,3 @@
-/* Revert back-button autohide import */
+/* Critical restore: screen visibility */
+.screen{display:none}
+.screen.active{display:block}
