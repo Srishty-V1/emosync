@@ -1,21 +1,4 @@
-/* EMERGENCY SCREEN MANAGEMENT - CRITICAL FIXES */
-
-/* FORCE HIDE ALL SCREENS BY DEFAULT */
-.screen {
-    display: none !important;
-}
-
-/* ONLY SPLASH SCREEN VISIBLE BY DEFAULT */
-#splash-screen {
-    display: block !important;
-}
-
-/* ACTIVE SCREEN OVERRIDE */
-.screen.active {
-    display: block !important;
-}
-
-/* Restored full stable styles.css from commit 505b7a6 */
+/* Restored full stable styles.css from transfer package - VIBE CODER APPROVED */
 :root {
     --primary-gold: #D4AF37;
     --warm-brown: #8B7355;
@@ -33,42 +16,368 @@
     --spacing-xs: 4px; --spacing-sm: 8px; --spacing-md: 16px; --spacing-lg: 24px; --spacing-xl: 32px; --spacing-xxl: 48px;
 }
 
+/* Critical screen management */
+.screen { display: none; }
+.screen.active { display: block; }
+
 /* Typography */
-body { font-family: "Playwrite US Modern", cursive; color: var(--text-color); background: var(--deep-black); line-height: 1.5; }
+body {
+    font-family: "Playwrite US Modern", cursive;
+    color: var(--text-color);
+    background: var(--deep-black);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
 
 /* Beams background */
-.beams-container { position: fixed; inset: 0; overflow: hidden; z-index: -1; }
-.beams-canvas { width: 100%; height: 100%; display: block; filter: blur(35px); opacity: 0.9; }
+.beams-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
 
-/* Cards and readability */
-.emotion-card, .exercise-card { border-radius: var(--radius-xl); border: 2px solid rgba(212,175,55,0.3); background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(245,245,220,0.9) 100%); }
+.beams-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: blur(35px);
+    opacity: 0.9;
+}
+
+/* Splash Screen */
+.splash-content {
+    text-align: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.app-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+}
+
+.logo-text {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary-gold);
+    margin-top: 20px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: var(--text-color);
+    margin: 20px 0;
+}
+
+.modality-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.pill {
+    background: rgba(255,255,255,0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Cards and readability - CRITICAL BLACK TEXT */
+.emotion-card, .exercise-card {
+    border-radius: var(--radius-xl);
+    border: 2px solid rgba(212,175,55,0.3);
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(245,245,220,0.9) 100%);
+    padding: var(--spacing-xl);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.emotion-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(212,175,55,0.4);
+}
+
+/* CRITICAL: Exercise card text readability */
 .exercise-card * { color: var(--card-text-color) !important; text-shadow: none !important; }
-.exercise-title { color: #000 !important; }
-.exercise-instruction { color: #1A1A1A !important; }
+.exercise-title { color: #000 !important; font-size: 20px; font-weight: 700; }
+.exercise-instruction { color: #1A1A1A !important; line-height: 1.6; }
 .exercise-meta { color: #333 !important; }
 
+.emotion-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.emotion-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--card-text-color);
+}
+
 /* Buttons */
-.cta-button { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%); color: var(--deep-black); border: 2px solid rgba(212,175,55,0.4); padding: var(--spacing-lg) var(--spacing-xxl); border-radius: var(--radius-pill); font-weight: 700; min-height: 56px; }
+.cta-button {
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%);
+    color: var(--deep-black);
+    border: 2px solid rgba(212,175,55,0.4);
+    padding: var(--spacing-lg) var(--spacing-xxl);
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    font-size: 18px;
+    min-height: 56px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212,175,55,0.3);
+}
+
+.action-button {
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.action-button.outline {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.3);
+    color: var(--text-color);
+}
+
+.action-button.gold {
+    background: var(--primary-gold);
+    border: none;
+    color: var(--deep-black);
+}
 
 /* Back button */
-.back-button { position: absolute; top: var(--spacing-lg); left: var(--spacing-lg); width: 50px; height: 50px; background: rgba(255,255,255,0.9); border-radius: var(--radius-pill); z-index: 20; }
+.back-button {
+    position: absolute;
+    top: var(--spacing-lg);
+    left: var(--spacing-lg);
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: var(--radius-pill);
+    z-index: 20;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--deep-black);
+}
 
-/* Layout helpers (minimal subset) */
-.container { max-width: 640px; margin: 0 auto; padding: var(--spacing-xl); }
-.grid { display: grid; gap: var(--spacing-lg); }
-.grid.emotions { grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 768px) { .grid.emotions { grid-template-columns: repeat(4, 1fr); } }
+/* Layout helpers */
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--spacing-xxl);
+    position: relative;
+}
+
+.emotion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    .emotion-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Modality tabs */
+.modality-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 80px;
+}
+
+.tab.active {
+    background: var(--primary-gold);
+    border-color: var(--primary-gold);
+    color: var(--deep-black);
+}
+
+.tab-icon {
+    font-size: 20px;
+}
+
+.tab-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Exercise cards container */
+.exercises-container {
+    display: grid;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-xl);
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.exercise-badge {
+    background: var(--primary-gold);
+    color: var(--deep-black);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.exercise-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
 
 /* Nav drawer */
-.swipe-nav-drawer { position: fixed; top:0; left:0; bottom:0; width: 280px; background: rgba(0,0,0,0.6); backdrop-filter: blur(12px); transform: translateX(-100%); transition: transform 250ms ease; z-index: 30; }
-.swipe-nav-drawer.open { transform: translateX(0); }
-.nav-chip { padding: 14px 18px; border-radius: var(--radius-pill); border: 1px solid rgba(212,175,55,0.4); margin: 10px; background: rgba(255,255,255,0.1); }
-.nav-chip.active { background: rgba(255,255,255,0.2); }
+.swipe-nav-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(12px);
+    transform: translateX(-100%);
+    transition: transform 250ms ease;
+    z-index: 30;
+    padding: var(--spacing-xl);
+}
+
+.swipe-nav-drawer.open {
+    transform: translateX(0);
+}
+
+.nav-chip {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(212,175,55,0.4);
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.1);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-chip.active {
+    background: rgba(255,255,255,0.2);
+    border-color: var(--primary-gold);
+}
 
 /* Headers */
-.h1 { font-size: 32px; font-weight: 800; color: #fff; }
-.h2 { font-size: 24px; font-weight: 700; color: #fff; }
+.h1, h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.h2, h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0 0 var(--spacing-md) 0;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 var(--spacing-sm) 0;
+}
 
 /* Basic spacing */
-.section { padding: var(--spacing-xxl) var(--spacing-xl); }
-.card { padding: var(--spacing-xl); border-radius: var(--radius-lg); }
+.section {
+    padding: var(--spacing-xxl) var(--spacing-xl);
+}
+
+.card {
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .splash-content {
+        padding: 40px 20px;
+    }
+    
+    .logo-text {
+        font-size: 28px;
+    }
+    
+    .tagline {
+        font-size: 16px;
+    }
+    
+    .modality-pills {
+        gap: 6px;
+    }
+    
+    .pill {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .tab {
+        min-width: 70px;
+        padding: 8px 12px;
+    }
+    
+    .tab-label {
+        font-size: 11px;
+    }
+}
